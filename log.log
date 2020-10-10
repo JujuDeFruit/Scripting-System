@@ -1,0 +1,99 @@
+08/10/2020 02:28:05 PM - INFO - Config file read.
+08/10/2020 02:28:05 PM - ERROR - File and zip must not be blank
+08/10/2020 02:28:58 PM - INFO - Config file read.
+08/10/2020 02:28:58 PM - ERROR - File and zip must not be blank
+08/10/2020 02:29:29 PM - INFO - Config file read.
+08/10/2020 02:29:29 PM - ERROR - File and zip must not be blank in 'conf.txt'
+08/10/2020 02:30:35 PM - INFO - Config file read.
+08/10/2020 02:30:59 PM - INFO - Config file read.
+08/10/2020 02:30:59 PM - INFO - Done
+08/10/2020 02:33:01 PM - INFO - Config file read.
+08/10/2020 02:33:01 PM - INFO - Done
+08/10/2020 02:33:18 PM - INFO - Config file read.
+08/10/2020 02:33:22 PM - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023373CA20A0>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /test.zip
+08/10/2020 02:33:26 PM - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023373CA21F0>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /test.zip
+08/10/2020 02:33:30 PM - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023373CA2340>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /test.zip
+08/10/2020 02:34:22 PM - INFO - Config file read.
+08/10/2020 02:34:22 PM - INFO - Done
+08/10/2020 02:38:31 PM - INFO - Config file read.
+08/10/2020 02:38:44 PM - INFO - Config file read.
+08/10/2020 02:38:44 PM - ERROR - test.zipdoes not contain dumpfil.sql
+08/10/2020 02:39:09 PM - INFO - Config file read.
+08/10/2020 02:39:09 PM - ERROR - test.zip does not contain dumpfil.sql
+09/10/2020 05:43:38 PM - INFO - Config file read.
+09/10/2020 05:43:38 PM - ERROR - test.zip does not contain dumpfil.sql
+09/10/2020 05:43:56 PM - INFO - Config file read.
+09/10/2020 05:43:56 PM - INFO - Zip extracted
+09/10/2020 05:44:07 PM - INFO - Config file read.
+09/10/2020 05:44:07 PM - INFO - Zip extracted
+09/10/2020 05:44:07 PM - INFO - Done
+09/10/2020 05:46:39 PM - INFO - Config file read.
+09/10/2020 05:46:39 PM - INFO - Zip extracted
+09/10/2020 05:46:43 PM - INFO - Config file read.
+09/10/2020 05:46:43 PM - INFO - Zip extracted
+09/10/2020 05:46:43 PM - INFO - Done
+09/10/2020 05:52:07 PM - INFO - Config file read.
+09/10/2020 05:52:07 PM - INFO - Zip extracted
+09/10/2020 05:52:22 PM - INFO - Config file read.
+09/10/2020 05:52:23 PM - INFO - Zip extracted
+09/10/2020 05:52:23 PM - INFO - Done
+09/10/2020 05:52:57 PM - INFO - Config file read.
+09/10/2020 05:52:57 PM - INFO - Zip extracted
+09/10/2020 05:52:57 PM - INFO - Done
+09/10/2020 05:54:23 PM - INFO - Config file read.
+09/10/2020 05:54:23 PM - INFO - Zip extracted
+09/10/2020 05:54:23 PM - INFO - Done
+09/10/2020 05:54:54 PM - INFO - Config file read.
+09/10/2020 05:54:54 PM - INFO - Zip extracted
+09/10/2020 05:54:54 PM - INFO - Done
+09/10/2020 05:55:02 PM - INFO - Config file read.
+09/10/2020 05:55:02 PM - INFO - Zip extracted
+09/10/2020 05:58:13 PM - INFO - Config file read.
+09/10/2020 05:58:13 PM - INFO - Zip extracted
+09/10/2020 05:58:13 PM - INFO - Done
+09/10/2020 05:58:16 PM - INFO - Config file read.
+09/10/2020 05:58:16 PM - INFO - Zip extracted
+09/10/2020 05:58:16 PM - INFO - Done
+09/10/2020 05:58:18 PM - INFO - Config file read.
+09/10/2020 05:58:18 PM - INFO - Zip extracted
+09/10/2020 05:58:18 PM - INFO - Done
+09/10/2020 05:58:20 PM - INFO - Config file read.
+09/10/2020 05:58:20 PM - INFO - Zip extracted
+09/10/2020 05:58:20 PM - INFO - Done
+09/10/2020 06:12:39 PM - INFO - Config file read.
+09/10/2020 06:12:39 PM - INFO - Zip extracted
+09/10/2020 06:12:54 PM - INFO - Config file read.
+09/10/2020 06:12:54 PM - INFO - Zip extracted
+09/10/2020 06:13:27 PM - INFO - Config file read.
+09/10/2020 06:13:27 PM - INFO - Zip extracted
+09/10/2020 06:13:34 PM - INFO - Config file read.
+09/10/2020 06:13:34 PM - INFO - Zip extracted
+09/10/2020 06:13:43 PM - INFO - Config file read.
+09/10/2020 06:13:43 PM - INFO - Zip extracted
+09/10/2020 06:13:43 PM - INFO - Done
+09/10/2020 06:13:56 PM - INFO - Config file read.
+09/10/2020 06:13:56 PM - INFO - Zip extracted
+09/10/2020 06:15:33 PM - INFO - Config file read.
+09/10/2020 06:15:33 PM - INFO - Zip extracted
+09/10/2020 06:15:33 PM - INFO - Done
+09/10/2020 06:16:08 PM - INFO - Config file read.
+09/10/2020 06:16:08 PM - INFO - Zip extracted
+09/10/2020 06:16:08 PM - INFO - Done
+09/10/2020 06:16:48 PM - INFO - Config file read.
+09/10/2020 06:16:48 PM - INFO - Zip extracted
+09/10/2020 06:16:53 PM - INFO - Config file read.
+09/10/2020 06:16:53 PM - INFO - Zip extracted
+09/10/2020 06:17:32 PM - INFO - Config file read.
+09/10/2020 06:17:32 PM - INFO - Zip extracted
+09/10/2020 06:17:32 PM - INFO - Done
+09/10/2020 06:17:52 PM - INFO - Config file read.
+09/10/2020 06:17:52 PM - INFO - Zip extracted
+09/10/2020 06:17:52 PM - INFO - Done
+09/10/2020 06:18:05 PM - INFO - Config file read.
+09/10/2020 06:18:05 PM - INFO - Zip extracted
+09/10/2020 06:18:05 PM - INFO - Done
+09/10/2020 06:18:20 PM - INFO - Config file read.
+09/10/2020 06:18:20 PM - INFO - Zip extracted
+09/10/2020 06:18:28 PM - INFO - Config file read.
+09/10/2020 06:18:28 PM - INFO - Zip extracted
+09/10/2020 06:18:28 PM - INFO - Done
