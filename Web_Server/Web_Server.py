@@ -21,8 +21,9 @@ def launch():
         myServer = socketserver.TCPServer(("", PORT), handler_object);
         print("http://localhost:" + str(PORT) + " | OK");
         myServer.serve_forever();
-    except ValueError:
+    except Exception:
         print("Error launching server web !");
+        raise Exception();
         
 def launchWebServerAsAService():
     download_thread = threading.Thread(target=launch, name="launcher");

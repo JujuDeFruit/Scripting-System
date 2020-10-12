@@ -707,3 +707,252 @@
 11/10/2020 12:53:14 PM - INFO - Config file read.
 11/10/2020 12:53:15 PM - INFO - Zip extracted
 11/10/2020 12:53:15 PM - INFO - Done
+11/10/2020 01:02:01 PM - INFO - Config file read.
+11/10/2020 01:02:01 PM - INFO - Zip extracted
+11/10/2020 01:02:01 PM - INFO - Done
+11/10/2020 01:05:00 PM - INFO - Config file read.
+11/10/2020 01:05:00 PM - INFO - Zip extracted
+11/10/2020 01:05:00 PM - INFO - Done
+11/10/2020 01:05:20 PM - INFO - Config file read.
+11/10/2020 01:05:20 PM - INFO - Zip extracted
+11/10/2020 01:05:20 PM - INFO - Done
+11/10/2020 01:05:43 PM - INFO - Config file read.
+11/10/2020 01:05:43 PM - INFO - Zip extracted
+11/10/2020 01:05:43 PM - INFO - Done
+11/10/2020 01:06:20 PM - INFO - Config file read.
+11/10/2020 01:06:20 PM - INFO - Zip extracted
+11/10/2020 01:06:20 PM - INFO - Done
+11/10/2020 01:06:26 PM - INFO - Config file read.
+11/10/2020 01:06:26 PM - INFO - Zip extracted
+11/10/2020 01:06:26 PM - INFO - Done
+11/10/2020 01:06:41 PM - INFO - Config file read.
+11/10/2020 01:06:41 PM - INFO - Zip extracted
+11/10/2020 01:06:42 PM - INFO - Done
+11/10/2020 01:07:05 PM - INFO - Config file read.
+11/10/2020 01:07:05 PM - INFO - Zip extracted
+11/10/2020 01:07:05 PM - INFO - Done
+11/10/2020 01:07:12 PM - INFO - Config file read.
+11/10/2020 01:07:12 PM - INFO - Zip extracted
+11/10/2020 01:07:12 PM - INFO - Done
+11/10/2020 01:07:31 PM - INFO - Config file read.
+11/10/2020 01:07:31 PM - INFO - Zip extracted
+11/10/2020 01:07:31 PM - INFO - Done
+11/10/2020 01:08:47 PM - INFO - Config file read.
+11/10/2020 01:08:47 PM - INFO - Zip extracted
+11/10/2020 01:08:47 PM - INFO - Done
+11/10/2020 01:08:53 PM - INFO - Config file read.
+11/10/2020 01:08:53 PM - INFO - Zip extracted
+11/10/2020 01:08:53 PM - INFO - Done
+11/10/2020 01:09:21 PM - INFO - Config file read.
+11/10/2020 01:09:21 PM - INFO - Zip extracted
+11/10/2020 01:09:21 PM - INFO - Done
+11/10/2020 01:09:45 PM - INFO - Config file read.
+11/10/2020 01:09:45 PM - INFO - Zip extracted
+11/10/2020 01:09:45 PM - INFO - Done
+11/10/2020 01:41:55 PM - INFO - Config file read.
+11/10/2020 01:41:55 PM - INFO - Zip extracted
+11/10/2020 01:41:56 PM - INFO - Done
+11/10/2020 01:42:11 PM - INFO - Config file read.
+11/10/2020 01:42:11 PM - INFO - Zip extracted
+11/10/2020 01:42:11 PM - INFO - Done
+11/10/2020 01:42:21 PM - INFO - Config file read.
+11/10/2020 01:42:21 PM - INFO - Zip extracted
+12/10/2020 09:49:38 PM - INFO - Config file read.
+12/10/2020 09:49:38 PM - INFO - Zip extracted
+12/10/2020 09:49:39 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 09:49:39 PM - INFO - Authentication (password) successful!
+12/10/2020 09:49:39 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 09:49:39 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 09:49:39 PM - INFO - Done
+12/10/2020 10:00:27 PM - INFO - Config file read.
+12/10/2020 10:00:27 PM - INFO - Zip extracted
+12/10/2020 10:00:27 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 10:00:27 PM - INFO - Authentication (password) successful!
+12/10/2020 10:00:28 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 10:00:28 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 10:00:28 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+12/10/2020 10:00:28 PM - INFO - Done
+12/10/2020 10:01:17 PM - INFO - Config file read.
+12/10/2020 10:01:17 PM - INFO - Zip extracted
+12/10/2020 10:01:18 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 10:01:18 PM - INFO - Authentication (password) successful!
+12/10/2020 10:01:18 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 10:01:18 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 10:01:18 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+12/10/2020 10:01:18 PM - INFO - Done
+12/10/2020 10:02:04 PM - INFO - Config file read.
+12/10/2020 10:02:04 PM - INFO - Zip extracted
+12/10/2020 10:02:04 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 10:02:04 PM - INFO - Authentication (password) successful!
+12/10/2020 10:02:05 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 10:02:05 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 10:02:05 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+12/10/2020 10:02:05 PM - INFO - Done
+12/10/2020 10:33:40 PM - INFO - Config file read.
+12/10/2020 10:33:40 PM - INFO - Zip extracted
+12/10/2020 10:33:40 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 10:33:41 PM - INFO - Authentication (password) successful!
+12/10/2020 10:33:41 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 10:33:41 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+12/10/2020 10:33:41 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 10:33:41 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 10:33:41 PM - INFO - Authentication (password) successful!
+12/10/2020 10:33:42 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 10:33:42 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 10:37:46 PM - INFO - Config file read.
+12/10/2020 10:37:46 PM - INFO - Zip extracted
+12/10/2020 10:37:46 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 10:37:46 PM - INFO - Authentication (password) successful!
+12/10/2020 10:37:47 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 10:37:47 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+12/10/2020 10:37:47 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 10:37:47 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 10:37:47 PM - INFO - Authentication (password) successful!
+12/10/2020 10:37:47 PM - ERROR - Unknown error occured while getting Ack
+12/10/2020 10:38:57 PM - INFO - Config file read.
+12/10/2020 10:38:57 PM - INFO - Zip extracted
+12/10/2020 10:38:57 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 10:38:57 PM - INFO - Authentication (password) successful!
+12/10/2020 10:38:58 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 10:38:58 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+12/10/2020 10:38:58 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 10:38:58 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 10:38:58 PM - INFO - Authentication (password) successful!
+12/10/2020 10:39:06 PM - INFO - Config file read.
+12/10/2020 10:39:06 PM - INFO - Zip extracted
+12/10/2020 10:39:06 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 10:39:06 PM - INFO - Authentication (password) successful!
+12/10/2020 10:39:06 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 10:39:06 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+12/10/2020 10:39:06 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 10:39:06 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 10:39:06 PM - INFO - Authentication (password) successful!
+12/10/2020 10:39:07 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 10:39:07 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 10:39:38 PM - INFO - Config file read.
+12/10/2020 10:39:38 PM - INFO - Zip extracted
+12/10/2020 10:39:38 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 10:39:38 PM - INFO - Authentication (password) successful!
+12/10/2020 10:39:38 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 10:39:38 PM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
+12/10/2020 10:39:38 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 10:39:38 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+12/10/2020 10:40:11 PM - INFO - Config file read.
+12/10/2020 10:40:11 PM - INFO - Zip extracted
+12/10/2020 10:40:11 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 10:40:11 PM - INFO - Authentication (password) successful!
+12/10/2020 10:40:12 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 10:40:12 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+12/10/2020 10:40:12 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 10:40:12 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 10:40:12 PM - INFO - Authentication (password) successful!
+12/10/2020 10:40:12 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 10:40:12 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 10:42:56 PM - INFO - Config file read.
+12/10/2020 10:42:56 PM - INFO - Zip extracted
+12/10/2020 10:42:56 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 10:42:56 PM - INFO - Authentication (password) successful!
+12/10/2020 10:42:57 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 10:42:57 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+12/10/2020 10:42:57 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 10:42:57 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 10:42:57 PM - INFO - Authentication (password) successful!
+12/10/2020 10:42:57 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 10:42:57 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 10:52:27 PM - INFO - Config file read.
+12/10/2020 10:52:28 PM - INFO - Zip extracted
+12/10/2020 10:52:28 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 10:52:28 PM - INFO - Authentication (password) successful!
+12/10/2020 10:52:29 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 10:52:29 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+12/10/2020 10:52:29 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 10:52:29 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 10:52:29 PM - INFO - Authentication (password) successful!
+12/10/2020 10:52:29 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 10:52:29 PM - INFO - Ack
+12/10/2020 10:52:29 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 11:13:51 PM - INFO - Zip extracted
+12/10/2020 11:13:51 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 11:13:51 PM - INFO - Authentication (password) successful!
+12/10/2020 11:13:52 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 11:13:52 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 11:13:52 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+12/10/2020 11:13:52 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 11:13:52 PM - INFO - Authentication (password) successful!
+12/10/2020 11:13:52 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 11:13:52 PM - INFO - Ack
+12/10/2020 11:13:52 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 11:14:07 PM - INFO - Zip extracted
+12/10/2020 11:14:07 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 11:14:07 PM - INFO - Authentication (password) successful!
+12/10/2020 11:14:07 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 11:14:07 PM - INFO - [chan 0] sftp session closed.
+12/10/2020 11:14:07 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+12/10/2020 11:14:08 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+12/10/2020 11:14:08 PM - INFO - Authentication (password) successful!
+12/10/2020 11:14:08 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+12/10/2020 11:14:08 PM - INFO - Ack
+12/10/2020 11:14:08 PM - INFO - [chan 0] sftp session closed.
+13/10/2020 12:09:51 AM - ERROR - Unknow error occured while conf.txt is getting decoded
+13/10/2020 12:10:33 AM - INFO - Zip extracted
+13/10/2020 12:10:34 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+13/10/2020 12:10:34 AM - INFO - Authentication (password) successful!
+13/10/2020 12:10:34 AM - INFO - [chan 0] Opened sftp connection (server version 3)
+13/10/2020 12:10:34 AM - INFO - [chan 0] sftp session closed.
+13/10/2020 12:10:34 AM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+13/10/2020 12:10:34 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+13/10/2020 12:10:35 AM - INFO - Authentication (password) successful!
+13/10/2020 12:10:35 AM - INFO - [chan 0] Opened sftp connection (server version 3)
+13/10/2020 12:10:35 AM - INFO - Ack
+13/10/2020 12:10:35 AM - INFO - [chan 0] sftp session closed.
+13/10/2020 12:15:22 AM - INFO - Zip extracted
+13/10/2020 12:15:22 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+13/10/2020 12:15:22 AM - INFO - Authentication (password) successful!
+13/10/2020 12:15:22 AM - INFO - [chan 0] Opened sftp connection (server version 3)
+13/10/2020 12:15:23 AM - INFO - [chan 0] sftp session closed.
+13/10/2020 12:15:23 AM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+13/10/2020 12:15:23 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+13/10/2020 12:15:23 AM - INFO - Authentication (password) successful!
+13/10/2020 12:15:23 AM - INFO - [chan 0] Opened sftp connection (server version 3)
+13/10/2020 12:15:23 AM - INFO - Ack
+13/10/2020 12:15:23 AM - INFO - [chan 0] sftp session closed.
+13/10/2020 12:17:16 AM - INFO - Zip extracted
+13/10/2020 12:17:16 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+13/10/2020 12:17:17 AM - INFO - Authentication (password) successful!
+13/10/2020 12:17:17 AM - INFO - [chan 0] Opened sftp connection (server version 3)
+13/10/2020 12:17:17 AM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
+13/10/2020 12:17:17 AM - INFO - [chan 0] sftp session closed.
+13/10/2020 12:17:17 AM - ERROR - Unknown error occured while sending tgz file to sftp server
+13/10/2020 12:18:50 AM - INFO - Zip extracted
+13/10/2020 12:18:50 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+13/10/2020 12:18:50 AM - INFO - Authentication (password) successful!
+13/10/2020 12:18:51 AM - INFO - [chan 0] Opened sftp connection (server version 3)
+13/10/2020 12:18:51 AM - INFO - [chan 0] sftp session closed.
+13/10/2020 12:18:51 AM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+13/10/2020 12:18:51 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+13/10/2020 12:18:51 AM - INFO - Authentication (password) successful!
+13/10/2020 12:18:51 AM - INFO - [chan 0] Opened sftp connection (server version 3)
+13/10/2020 12:18:51 AM - INFO - Ack
+13/10/2020 12:18:51 AM - INFO - [chan 0] sftp session closed.
+13/10/2020 12:20:15 AM - INFO - Zip extracted
+13/10/2020 12:20:15 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+13/10/2020 12:20:15 AM - INFO - Authentication (password) successful!
+13/10/2020 12:20:16 AM - INFO - [chan 0] Opened sftp connection (server version 3)
+13/10/2020 12:20:16 AM - INFO - [chan 0] sftp session closed.
+13/10/2020 12:20:16 AM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+13/10/2020 12:20:16 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+13/10/2020 12:20:16 AM - INFO - Authentication (password) successful!
+13/10/2020 12:20:16 AM - INFO - [chan 0] Opened sftp connection (server version 3)
+13/10/2020 12:20:16 AM - INFO - Ack
+13/10/2020 12:20:16 AM - INFO - [chan 0] sftp session closed.
+13/10/2020 12:29:05 AM - INFO - Zip extracted
+13/10/2020 12:29:05 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+13/10/2020 12:29:05 AM - INFO - Authentication (password) successful!
+13/10/2020 12:29:06 AM - INFO - [chan 0] Opened sftp connection (server version 3)
+13/10/2020 12:29:06 AM - INFO - [chan 0] sftp session closed.
+13/10/2020 12:29:06 AM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+13/10/2020 12:29:06 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+13/10/2020 12:29:06 AM - INFO - Authentication (password) successful!
+13/10/2020 12:29:06 AM - INFO - [chan 0] Opened sftp connection (server version 3)
+13/10/2020 12:29:06 AM - INFO - Ack
+13/10/2020 12:29:06 AM - INFO - [chan 0] sftp session closed.

@@ -1,0 +1,2 @@
+https://www.goanywhere.com/blog/2016/11/23/sftp-vs-ftps-the-key-differences
+|=> SFTP using Secure Shell => use just one port by request on contrary of FTPS that open one port for each request (risks)

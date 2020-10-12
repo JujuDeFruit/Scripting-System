@@ -1,2 +1,4 @@
-zip:test
-file:dumpfile
+{
+	"zip": "test",
+	"file": "dumpfile.sql"
+}
