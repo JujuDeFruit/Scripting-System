@@ -15,18 +15,15 @@ import os
 import pysftp
 import json
 
-class ScriptingSystem():
+class ScriptingSystem():   
 
     """
         Constructor : initialize all variables needed from source to destination
     """
-    def __init__(self, port_, config_, log_ , sftp_):
+    def __init__(self, port_, config_, log_ ):
         self.PORT = port_;
         self.config = config_;
         self.log = log_;
-        self.ip = sftp_['ip'];
-        self.user = sftp_['user'];
-        self.pswd = sftp_['pswd'];
         self.zipName = "";
         self.fileName = "";
         self.tgzName = datetime.datetime.now().date().strftime('%Y%d%m') + ".tgz";
@@ -43,11 +40,17 @@ class ScriptingSystem():
     def getConfig(self):
         USER_ZIP = "";
         USER_DUMP = "";
+        ip_ = "";
+        user_ = "";
+        pswd_= "";
         try:
             with open(self.config, 'r') as json_config:
                 data = json.load(json_config);
                 USER_ZIP = data['zip'];
                 USER_DUMP = data['file'];
+                ip_ = data['sftp']['ip'];
+                user_ = data['sftp']['user'];
+                pswd_ = data['sftp']['password'];
         except json.JSONDecodeError:
             logging.error("Error occured while conf.txt is getting decoded");
             raise json.JSONDecodeError();
@@ -61,6 +64,15 @@ class ScriptingSystem():
         if USER_ZIP == "":
             logging.error('Zip name must not be blank in \'conf.txt\'');
             raise Exception();
+        if ip_ == "":
+            logging.error('SFTP server ip must not be blank in \'conf.txt\'');
+            raise Exception();
+        if user_ == "":
+            logging.error('SFTP server user must not be blank in \'conf.txt\'');
+            raise Exception();
+        if pswd_ == "":
+            logging.error('SFTP server password must not be blank in \'conf.txt\'');
+            raise Exception();
             
         if USER_DUMP.find('.sql') == -1:
             USER_DUMP = USER_DUMP + '.sql';
@@ -68,7 +80,10 @@ class ScriptingSystem():
             USER_ZIP = USER_ZIP + '.zip';
             
         self.zipName = USER_ZIP;
-        self.fileName = USER_DUMP;
+        self.fileName = USER_DUMP; 
+        self.ip = ip_;
+        self.user = user_;
+        self.pswd = pswd_;
 
     """
         Make GET HTTP request to get zip file on web server
@@ -119,8 +134,7 @@ class ScriptingSystem():
     """
         Check if file zip contains file
     """
-    def zipHasFile(self):
-        
+    def zipHasFile(self):      
         for info in self.zf.infolist():
             if info.filename == self.fileName:
                 return;
@@ -177,10 +191,10 @@ class ScriptingSystem():
 """
 def main() : 
     
-    script = ScriptingSystem(8000, "conf.txt", "log.log", sftp_ = { 'ip' : '192.168.1.64', 'user' : 'guest', 'pswd' : 'root' });
-    
+    script = ScriptingSystem(8000, "conf.txt", "log.log");
+     
     script.getConfig();
-        
+    
     script.requestZip();
     
     script.extractZip();
