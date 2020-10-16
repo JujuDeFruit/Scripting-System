@@ -14,6 +14,7 @@ import logging
 import os
 import pysftp
 import json
+#import EMail
 
 class ScriptingSystem():   
 
@@ -24,9 +25,8 @@ class ScriptingSystem():
         self.PORT = port_;
         self.config = config_;
         self.log = log_;
-        self.zipName = "";
-        self.fileName = "";
         self.tgzName = datetime.datetime.now().date().strftime('%Y%d%m') + ".tgz";
+        
         """ Initialise logging """
         logging.basicConfig(filename = self.log, 
                         level = logging.INFO, 
@@ -42,7 +42,8 @@ class ScriptingSystem():
         USER_DUMP = "";
         ip_ = "";
         user_ = "";
-        pswd_= "";
+        pswd_ = "";
+        timeToSave_ = "";
         try:
             with open(self.config, 'r') as json_config:
                 data = json.load(json_config);
@@ -51,27 +52,31 @@ class ScriptingSystem():
                 ip_ = data['sftp']['ip'];
                 user_ = data['sftp']['user'];
                 pswd_ = data['sftp']['password'];
+                try:
+                    timeToSave_ = int(data['time-to-save']);
+                except ValueError:
+                    timeToSave_ = 10;
+                    logging.warning("Time to save value format is not supported. Default value is 10 days.");
         except json.JSONDecodeError:
-            logging.error("Error occured while conf.txt is getting decoded");
-            raise json.JSONDecodeError();
+            logging.warning("Error occured while conf.txt is getting decoded");
         except Exception:
             logging.error("Unknow error occured while conf.txt is getting decoded")
             raise Exception();
         
         if USER_DUMP == "": 
-            logging.error('File name must not be blank in \'conf.txt\'');
+            logging.error('File name must not be blank in \'conf.txt\'.');
             raise Exception();
         if USER_ZIP == "":
-            logging.error('Zip name must not be blank in \'conf.txt\'');
+            logging.error('Zip name must not be blank in \'conf.txt\'.');
             raise Exception();
         if ip_ == "":
-            logging.error('SFTP server ip must not be blank in \'conf.txt\'');
+            logging.error('SFTP server ip must not be blank in \'conf.txt\'.');
             raise Exception();
         if user_ == "":
-            logging.error('SFTP server user must not be blank in \'conf.txt\'');
+            logging.error('SFTP server user must not be blank in \'conf.txt\'.');
             raise Exception();
         if pswd_ == "":
-            logging.error('SFTP server password must not be blank in \'conf.txt\'');
+            logging.error('SFTP server password must not be blank in \'conf.txt\'.');
             raise Exception();
             
         if USER_DUMP.find('.sql') == -1:
@@ -79,11 +84,14 @@ class ScriptingSystem():
         if USER_ZIP.find('.zip') == -1:
             USER_ZIP = USER_ZIP + '.zip';
             
+                
+        #self.mail = EMail(data['email']);
         self.zipName = USER_ZIP;
         self.fileName = USER_DUMP; 
         self.ip = ip_;
         self.user = user_;
         self.pswd = pswd_;
+        self.timeToSave = timeToSave_;
 
     """
         Make GET HTTP request to get zip file on web server
@@ -125,11 +133,12 @@ class ScriptingSystem():
     def extractZip(self):
         try:
             self.zf.extractall();
-            self.zf.close();
             logging.info("Zip extracted");
         except Exception:
             logging.error("Error occured while zip get extracted");
             raise Exception();
+        finally:
+            self.zf.close();
         
     """
         Check if file zip contains file
@@ -154,14 +163,27 @@ class ScriptingSystem():
             logging.error("Fail to compress (.tgz) " + "\"" + self.fileName + "\" file. TGZ file not created.")
             raise Exception();
     
+    def archivalCheck(self, sftp_):
+        try:
+            files = sftp_.listdir('.');
+        except IOError:
+            logging.error("Remote path does not exist in archval function.");
+            raise IOError();
+        deadLine = (datetime.datetime.today() - datetime.timedelta(days = self.timeToSave)).date();
+        for file in files:
+            date = datetime.datetime.strptime(file.replace('.tgz', ''), '%Y%d%m').date();
+            if date < deadLine:
+                sftp_.remove(file);
+    
     """
         Initialize connection to sftp server and send tgz file 
     """
     def sendToSftpServer(self):
         try:
             with pysftp.Connection(self.ip, username = self.user, password = self.pswd) as sftp:
+                self.archivalCheck(sftp);
                 sftp.put(self.tgzName)              # upload file /data/guest/upload on remote
-            logging.info("Tar file sent to sftp server " + self.ip + " on user " + self.user);
+            logging.info("Connection established with sftp server @" + self.ip);
             os.remove(self.tgzName);
         except IOError:
             logging.error("Remote path does not exist");
@@ -181,7 +203,7 @@ class ScriptingSystem():
             files = sftp.listdir();
             for file in files:
                 if file == self.tgzName:
-                    logging.info("Ack");
+                    logging.info("Tar file sent to sftp server " + self.ip + " on user " + self.user);
                     return;
         logging.error("Error occured while getting Ack");
         raise Exception();
@@ -201,7 +223,6 @@ def main() :
 
     if script.getDate() == datetime.datetime.now().date():
         logging.warning("The file has the same date than now");
-        raise Exception();
     else:
         script.compressToTgz();
         script.sendToSftpServer();

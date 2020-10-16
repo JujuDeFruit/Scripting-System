@@ -1,958 +1,381 @@
-08/10/2020 02:28:05 PM - INFO - Config file read.
-08/10/2020 02:28:05 PM - ERROR - File and zip must not be blank
-08/10/2020 02:28:58 PM - INFO - Config file read.
-08/10/2020 02:28:58 PM - ERROR - File and zip must not be blank
-08/10/2020 02:29:29 PM - INFO - Config file read.
-08/10/2020 02:29:29 PM - ERROR - File and zip must not be blank in 'conf.txt'
-08/10/2020 02:30:35 PM - INFO - Config file read.
-08/10/2020 02:30:59 PM - INFO - Config file read.
-08/10/2020 02:30:59 PM - INFO - Done
-08/10/2020 02:33:01 PM - INFO - Config file read.
-08/10/2020 02:33:01 PM - INFO - Done
-08/10/2020 02:33:18 PM - INFO - Config file read.
-08/10/2020 02:33:22 PM - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023373CA20A0>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /test.zip
-08/10/2020 02:33:26 PM - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023373CA21F0>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /test.zip
-08/10/2020 02:33:30 PM - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000023373CA2340>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /test.zip
-08/10/2020 02:34:22 PM - INFO - Config file read.
-08/10/2020 02:34:22 PM - INFO - Done
-08/10/2020 02:38:31 PM - INFO - Config file read.
-08/10/2020 02:38:44 PM - INFO - Config file read.
-08/10/2020 02:38:44 PM - ERROR - test.zipdoes not contain dumpfil.sql
-08/10/2020 02:39:09 PM - INFO - Config file read.
-08/10/2020 02:39:09 PM - ERROR - test.zip does not contain dumpfil.sql
-09/10/2020 05:43:38 PM - INFO - Config file read.
-09/10/2020 05:43:38 PM - ERROR - test.zip does not contain dumpfil.sql
-09/10/2020 05:43:56 PM - INFO - Config file read.
-09/10/2020 05:43:56 PM - INFO - Zip extracted
-09/10/2020 05:44:07 PM - INFO - Config file read.
-09/10/2020 05:44:07 PM - INFO - Zip extracted
-09/10/2020 05:44:07 PM - INFO - Done
-09/10/2020 05:46:39 PM - INFO - Config file read.
-09/10/2020 05:46:39 PM - INFO - Zip extracted
-09/10/2020 05:46:43 PM - INFO - Config file read.
-09/10/2020 05:46:43 PM - INFO - Zip extracted
-09/10/2020 05:46:43 PM - INFO - Done
-09/10/2020 05:52:07 PM - INFO - Config file read.
-09/10/2020 05:52:07 PM - INFO - Zip extracted
-09/10/2020 05:52:22 PM - INFO - Config file read.
-09/10/2020 05:52:23 PM - INFO - Zip extracted
-09/10/2020 05:52:23 PM - INFO - Done
-09/10/2020 05:52:57 PM - INFO - Config file read.
-09/10/2020 05:52:57 PM - INFO - Zip extracted
-09/10/2020 05:52:57 PM - INFO - Done
-09/10/2020 05:54:23 PM - INFO - Config file read.
-09/10/2020 05:54:23 PM - INFO - Zip extracted
-09/10/2020 05:54:23 PM - INFO - Done
-09/10/2020 05:54:54 PM - INFO - Config file read.
-09/10/2020 05:54:54 PM - INFO - Zip extracted
-09/10/2020 05:54:54 PM - INFO - Done
-09/10/2020 05:55:02 PM - INFO - Config file read.
-09/10/2020 05:55:02 PM - INFO - Zip extracted
-09/10/2020 05:58:13 PM - INFO - Config file read.
-09/10/2020 05:58:13 PM - INFO - Zip extracted
-09/10/2020 05:58:13 PM - INFO - Done
-09/10/2020 05:58:16 PM - INFO - Config file read.
-09/10/2020 05:58:16 PM - INFO - Zip extracted
-09/10/2020 05:58:16 PM - INFO - Done
-09/10/2020 05:58:18 PM - INFO - Config file read.
-09/10/2020 05:58:18 PM - INFO - Zip extracted
-09/10/2020 05:58:18 PM - INFO - Done
-09/10/2020 05:58:20 PM - INFO - Config file read.
-09/10/2020 05:58:20 PM - INFO - Zip extracted
-09/10/2020 05:58:20 PM - INFO - Done
-09/10/2020 06:12:39 PM - INFO - Config file read.
-09/10/2020 06:12:39 PM - INFO - Zip extracted
-09/10/2020 06:12:54 PM - INFO - Config file read.
-09/10/2020 06:12:54 PM - INFO - Zip extracted
-09/10/2020 06:13:27 PM - INFO - Config file read.
-09/10/2020 06:13:27 PM - INFO - Zip extracted
-09/10/2020 06:13:34 PM - INFO - Config file read.
-09/10/2020 06:13:34 PM - INFO - Zip extracted
-09/10/2020 06:13:43 PM - INFO - Config file read.
-09/10/2020 06:13:43 PM - INFO - Zip extracted
-09/10/2020 06:13:43 PM - INFO - Done
-09/10/2020 06:13:56 PM - INFO - Config file read.
-09/10/2020 06:13:56 PM - INFO - Zip extracted
-09/10/2020 06:15:33 PM - INFO - Config file read.
-09/10/2020 06:15:33 PM - INFO - Zip extracted
-09/10/2020 06:15:33 PM - INFO - Done
-09/10/2020 06:16:08 PM - INFO - Config file read.
-09/10/2020 06:16:08 PM - INFO - Zip extracted
-09/10/2020 06:16:08 PM - INFO - Done
-09/10/2020 06:16:48 PM - INFO - Config file read.
-09/10/2020 06:16:48 PM - INFO - Zip extracted
-09/10/2020 06:16:53 PM - INFO - Config file read.
-09/10/2020 06:16:53 PM - INFO - Zip extracted
-09/10/2020 06:17:32 PM - INFO - Config file read.
-09/10/2020 06:17:32 PM - INFO - Zip extracted
-09/10/2020 06:17:32 PM - INFO - Done
-09/10/2020 06:17:52 PM - INFO - Config file read.
-09/10/2020 06:17:52 PM - INFO - Zip extracted
-09/10/2020 06:17:52 PM - INFO - Done
-09/10/2020 06:18:05 PM - INFO - Config file read.
-09/10/2020 06:18:05 PM - INFO - Zip extracted
-09/10/2020 06:18:05 PM - INFO - Done
-09/10/2020 06:18:20 PM - INFO - Config file read.
-09/10/2020 06:18:20 PM - INFO - Zip extracted
-09/10/2020 06:18:28 PM - INFO - Config file read.
-09/10/2020 06:18:28 PM - INFO - Zip extracted
-09/10/2020 06:18:28 PM - INFO - Done
-10/10/2020 02:08:23 PM - INFO - Config file read.
-10/10/2020 02:08:23 PM - INFO - Zip extracted
-10/10/2020 02:08:23 PM - INFO - Done
-10/10/2020 02:11:32 PM - INFO - Config file read.
-10/10/2020 02:11:33 PM - INFO - Zip extracted
-10/10/2020 02:11:33 PM - ERROR - Unknown error
-10/10/2020 02:13:12 PM - INFO - Config file read.
-10/10/2020 02:13:12 PM - INFO - Zip extracted
-10/10/2020 02:13:12 PM - ERROR - Unknown error
-10/10/2020 02:13:27 PM - INFO - Config file read.
-10/10/2020 02:13:27 PM - INFO - Zip extracted
-10/10/2020 02:13:27 PM - ERROR - Unknown error
-10/10/2020 02:15:10 PM - INFO - Config file read.
-10/10/2020 02:15:10 PM - INFO - Zip extracted
-10/10/2020 02:15:10 PM - ERROR - Unknown error
-10/10/2020 02:21:52 PM - INFO - Config file read.
-10/10/2020 02:21:52 PM - INFO - Zip extracted
-10/10/2020 02:21:52 PM - ERROR - Unknown error
-10/10/2020 02:22:16 PM - INFO - Config file read.
-10/10/2020 02:22:16 PM - INFO - Zip extracted
-10/10/2020 02:22:16 PM - ERROR - Unknown error
-10/10/2020 02:22:39 PM - INFO - Config file read.
-10/10/2020 02:22:39 PM - INFO - Zip extracted
-10/10/2020 02:22:39 PM - ERROR - Unknown error
-10/10/2020 02:22:57 PM - INFO - Config file read.
-10/10/2020 02:22:57 PM - INFO - Zip extracted
-10/10/2020 02:22:57 PM - ERROR - Unknown error
-10/10/2020 02:23:01 PM - INFO - Config file read.
-10/10/2020 02:23:01 PM - INFO - Zip extracted
-10/10/2020 02:23:01 PM - ERROR - Unknown error
-10/10/2020 02:24:03 PM - INFO - Config file read.
-10/10/2020 02:24:03 PM - INFO - Zip extracted
-10/10/2020 02:24:03 PM - ERROR - Unknown error
-10/10/2020 02:24:41 PM - INFO - Config file read.
-10/10/2020 02:24:41 PM - INFO - Zip extracted
-10/10/2020 02:24:41 PM - ERROR - Unknown error
-10/10/2020 02:24:53 PM - INFO - Config file read.
-10/10/2020 02:24:53 PM - INFO - Zip extracted
-10/10/2020 02:24:53 PM - ERROR - Unknown error
-10/10/2020 02:28:08 PM - INFO - Config file read.
-10/10/2020 02:28:08 PM - INFO - Zip extracted
-10/10/2020 02:28:08 PM - ERROR - Unknown error
-10/10/2020 02:29:34 PM - INFO - Config file read.
-10/10/2020 02:29:34 PM - INFO - Zip extracted
-10/10/2020 02:29:34 PM - ERROR - Unknown error
-10/10/2020 02:29:58 PM - INFO - Config file read.
-10/10/2020 02:29:58 PM - INFO - Zip extracted
-10/10/2020 02:29:58 PM - ERROR - Unknown error
-10/10/2020 02:31:04 PM - INFO - Config file read.
-10/10/2020 02:31:04 PM - INFO - Zip extracted
-10/10/2020 02:31:04 PM - ERROR - Unknown error
-10/10/2020 02:33:15 PM - INFO - Config file read.
-10/10/2020 02:33:16 PM - INFO - Zip extracted
-10/10/2020 02:33:16 PM - ERROR - Unknown error
-10/10/2020 02:33:37 PM - INFO - Config file read.
-10/10/2020 02:33:37 PM - INFO - Zip extracted
-10/10/2020 02:33:37 PM - ERROR - Unknown error
-10/10/2020 02:36:43 PM - INFO - Config file read.
-10/10/2020 02:36:43 PM - INFO - Zip extracted
-10/10/2020 02:36:43 PM - ERROR - Unknown error
-10/10/2020 02:37:14 PM - INFO - Config file read.
-10/10/2020 02:37:14 PM - INFO - Zip extracted
-10/10/2020 02:37:14 PM - ERROR - Unknown error
-10/10/2020 02:37:22 PM - INFO - Config file read.
-10/10/2020 02:37:22 PM - INFO - Zip extracted
-10/10/2020 02:37:22 PM - ERROR - Unknown error
-10/10/2020 02:37:51 PM - INFO - Config file read.
-10/10/2020 02:37:51 PM - INFO - Zip extracted
-10/10/2020 02:37:51 PM - ERROR - Unknown error
-10/10/2020 02:38:21 PM - INFO - Config file read.
-10/10/2020 02:38:21 PM - INFO - Zip extracted
-10/10/2020 02:38:21 PM - ERROR - Unknown error
-10/10/2020 02:38:29 PM - INFO - Config file read.
-10/10/2020 02:38:29 PM - INFO - Zip extracted
-10/10/2020 02:38:29 PM - ERROR - Unknown error
-10/10/2020 02:39:39 PM - INFO - Config file read.
-10/10/2020 02:39:39 PM - INFO - Zip extracted
-10/10/2020 02:39:39 PM - ERROR - Unknown error
-10/10/2020 02:39:46 PM - INFO - Config file read.
-10/10/2020 02:39:46 PM - INFO - Zip extracted
-10/10/2020 02:39:46 PM - ERROR - Unknown error
-10/10/2020 02:39:54 PM - INFO - Config file read.
-10/10/2020 02:39:54 PM - INFO - Zip extracted
-10/10/2020 02:39:54 PM - ERROR - Unknown error
-10/10/2020 02:40:47 PM - INFO - Config file read.
-10/10/2020 02:40:47 PM - INFO - Zip extracted
-10/10/2020 02:40:47 PM - ERROR - Unknown error
-10/10/2020 02:41:01 PM - INFO - Config file read.
-10/10/2020 02:41:01 PM - INFO - Zip extracted
-10/10/2020 02:41:01 PM - ERROR - Unknown error
-10/10/2020 02:41:10 PM - INFO - Config file read.
-10/10/2020 02:41:10 PM - INFO - Zip extracted
-10/10/2020 02:41:10 PM - ERROR - Unknown error
-10/10/2020 02:41:29 PM - INFO - Config file read.
-10/10/2020 02:41:29 PM - INFO - Zip extracted
-10/10/2020 02:41:29 PM - ERROR - Unknown error
-10/10/2020 02:42:22 PM - INFO - Config file read.
-10/10/2020 02:42:22 PM - INFO - Zip extracted
-10/10/2020 02:42:22 PM - ERROR - Unknown error
-10/10/2020 04:34:49 PM - INFO - Config file read.
-10/10/2020 04:34:49 PM - INFO - Zip extracted
-10/10/2020 04:34:49 PM - ERROR - IO Error creating .tgz file
-10/10/2020 04:34:49 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 04:35:06 PM - INFO - Config file read.
-10/10/2020 04:35:06 PM - INFO - Zip extracted
-10/10/2020 04:35:06 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 04:35:51 PM - INFO - Config file read.
-10/10/2020 04:35:51 PM - INFO - Zip extracted
-10/10/2020 04:35:51 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 04:49:42 PM - INFO - Config file read.
-10/10/2020 04:49:42 PM - INFO - Zip extracted
-10/10/2020 04:50:34 PM - INFO - Config file read.
-10/10/2020 04:50:34 PM - INFO - Zip extracted
-10/10/2020 04:50:34 PM - INFO - Done
-10/10/2020 04:51:55 PM - INFO - Config file read.
-10/10/2020 04:51:55 PM - INFO - Zip extracted
-10/10/2020 04:51:55 PM - INFO - Done
-10/10/2020 04:52:52 PM - INFO - Config file read.
-10/10/2020 04:52:52 PM - INFO - Zip extracted
-10/10/2020 04:52:53 PM - INFO - Done
-10/10/2020 04:53:05 PM - INFO - Config file read.
-10/10/2020 04:53:05 PM - INFO - Zip extracted
-10/10/2020 04:53:05 PM - INFO - Done
-10/10/2020 04:54:16 PM - INFO - Config file read.
-10/10/2020 04:54:16 PM - INFO - Zip extracted
-10/10/2020 04:54:16 PM - INFO - Done
-10/10/2020 04:54:44 PM - INFO - Config file read.
-10/10/2020 04:54:44 PM - INFO - Zip extracted
-10/10/2020 04:54:44 PM - INFO - Done
-10/10/2020 04:55:05 PM - INFO - Config file read.
-10/10/2020 04:55:05 PM - INFO - Zip extracted
-10/10/2020 04:55:06 PM - INFO - Done
-10/10/2020 05:08:08 PM - INFO - Config file read.
-10/10/2020 05:08:08 PM - INFO - Zip extracted
-10/10/2020 05:08:09 PM - INFO - Done
-10/10/2020 05:09:06 PM - INFO - Config file read.
-10/10/2020 05:09:06 PM - INFO - Zip extracted
-10/10/2020 05:09:18 PM - INFO - Config file read.
-10/10/2020 05:09:18 PM - INFO - Zip extracted
-10/10/2020 05:09:18 PM - INFO - Done
-10/10/2020 05:09:25 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:10:04 PM - INFO - Config file read.
-10/10/2020 05:10:04 PM - INFO - Zip extracted
-10/10/2020 05:10:04 PM - INFO - Done
-10/10/2020 05:10:26 PM - INFO - Config file read.
-10/10/2020 05:10:26 PM - INFO - Zip extracted
-10/10/2020 05:10:26 PM - INFO - Done
-10/10/2020 05:10:42 PM - INFO - Config file read.
-10/10/2020 05:10:42 PM - INFO - Zip extracted
-10/10/2020 05:10:43 PM - INFO - Done
-10/10/2020 05:12:33 PM - INFO - Config file read.
-10/10/2020 05:12:33 PM - INFO - Zip extracted
-10/10/2020 05:12:33 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:12:54 PM - INFO - Config file read.
-10/10/2020 05:12:54 PM - INFO - Zip extracted
-10/10/2020 05:12:54 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:13:06 PM - INFO - Config file read.
-10/10/2020 05:13:06 PM - INFO - Zip extracted
-10/10/2020 05:13:06 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:13:23 PM - INFO - Config file read.
-10/10/2020 05:13:23 PM - INFO - Zip extracted
-10/10/2020 05:13:23 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:13:48 PM - INFO - Config file read.
-10/10/2020 05:13:48 PM - INFO - Zip extracted
-10/10/2020 05:13:48 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:13:55 PM - INFO - Config file read.
-10/10/2020 05:13:55 PM - INFO - Zip extracted
-10/10/2020 05:13:55 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:15:10 PM - INFO - Config file read.
-10/10/2020 05:15:10 PM - INFO - Zip extracted
-10/10/2020 05:15:10 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:16:33 PM - INFO - Config file read.
-10/10/2020 05:16:33 PM - INFO - Zip extracted
-10/10/2020 05:16:33 PM - INFO - Done
-10/10/2020 05:17:03 PM - INFO - Config file read.
-10/10/2020 05:17:03 PM - INFO - Zip extracted
-10/10/2020 05:17:03 PM - INFO - Done
-10/10/2020 05:17:55 PM - INFO - Config file read.
-10/10/2020 05:17:55 PM - INFO - Zip extracted
-10/10/2020 05:17:56 PM - INFO - Done
-10/10/2020 05:18:27 PM - INFO - Config file read.
-10/10/2020 05:18:27 PM - INFO - Zip extracted
-10/10/2020 05:18:27 PM - INFO - Done
-10/10/2020 05:22:55 PM - INFO - Config file read.
-10/10/2020 05:22:55 PM - INFO - Zip extracted
-10/10/2020 05:22:55 PM - INFO - Done
-10/10/2020 05:27:48 PM - INFO - Config file read.
-10/10/2020 05:27:48 PM - INFO - Zip extracted
-10/10/2020 05:27:48 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:29:21 PM - INFO - Config file read.
-10/10/2020 05:29:21 PM - INFO - Zip extracted
-10/10/2020 05:29:21 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:30:14 PM - INFO - Config file read.
-10/10/2020 05:30:14 PM - INFO - Zip extracted
-10/10/2020 05:30:14 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:30:36 PM - INFO - Config file read.
-10/10/2020 05:30:36 PM - INFO - Zip extracted
-10/10/2020 05:30:36 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:31:16 PM - INFO - Config file read.
-10/10/2020 05:31:16 PM - INFO - Zip extracted
-10/10/2020 05:31:16 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:31:26 PM - INFO - Config file read.
-10/10/2020 05:31:26 PM - INFO - Zip extracted
-10/10/2020 05:31:26 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:31:46 PM - INFO - Config file read.
-10/10/2020 05:31:46 PM - INFO - Zip extracted
-10/10/2020 05:31:46 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:32:59 PM - INFO - Config file read.
-10/10/2020 05:32:59 PM - INFO - Zip extracted
-10/10/2020 05:32:59 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:33:53 PM - INFO - Config file read.
-10/10/2020 05:33:53 PM - INFO - Zip extracted
-10/10/2020 05:33:53 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:34:15 PM - INFO - Config file read.
-10/10/2020 05:34:15 PM - INFO - Zip extracted
-10/10/2020 05:34:15 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:34:27 PM - INFO - Config file read.
-10/10/2020 05:34:27 PM - INFO - Zip extracted
-10/10/2020 05:34:27 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:36:43 PM - INFO - Config file read.
-10/10/2020 05:36:43 PM - INFO - Zip extracted
-10/10/2020 05:36:43 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:38:30 PM - INFO - Config file read.
-10/10/2020 05:38:30 PM - INFO - Zip extracted
-10/10/2020 05:38:30 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:39:37 PM - INFO - Config file read.
-10/10/2020 05:39:37 PM - INFO - Zip extracted
-10/10/2020 05:39:37 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:39:47 PM - INFO - Config file read.
-10/10/2020 05:39:47 PM - INFO - Zip extracted
-10/10/2020 05:39:47 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:40:01 PM - INFO - Config file read.
-10/10/2020 05:40:01 PM - INFO - Zip extracted
-10/10/2020 05:40:01 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:40:33 PM - INFO - Config file read.
-10/10/2020 05:40:33 PM - INFO - Zip extracted
-10/10/2020 05:40:33 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:41:46 PM - INFO - Config file read.
-10/10/2020 05:41:46 PM - INFO - Zip extracted
-10/10/2020 05:41:46 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:45:16 PM - INFO - Config file read.
-10/10/2020 05:45:16 PM - INFO - Zip extracted
-10/10/2020 05:45:16 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:45:46 PM - INFO - Config file read.
-10/10/2020 05:45:46 PM - INFO - Zip extracted
-10/10/2020 05:45:46 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:46:43 PM - INFO - Config file read.
-10/10/2020 05:46:43 PM - INFO - Zip extracted
-10/10/2020 05:46:43 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:47:03 PM - INFO - Config file read.
-10/10/2020 05:47:03 PM - INFO - Zip extracted
-10/10/2020 05:47:03 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:47:04 PM - INFO - Config file read.
-10/10/2020 05:47:04 PM - INFO - Zip extracted
-10/10/2020 05:47:17 PM - INFO - Config file read.
-10/10/2020 05:47:17 PM - INFO - Zip extracted
-10/10/2020 05:47:17 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:49:41 PM - INFO - Config file read.
-10/10/2020 05:49:41 PM - INFO - Zip extracted
-10/10/2020 05:49:41 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:50:01 PM - INFO - Config file read.
-10/10/2020 05:50:01 PM - INFO - Zip extracted
-10/10/2020 05:50:01 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:50:08 PM - INFO - Config file read.
-10/10/2020 05:50:08 PM - INFO - Zip extracted
-10/10/2020 05:50:08 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:50:24 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:50:25 PM - INFO - Config file read.
-10/10/2020 05:50:25 PM - INFO - Zip extracted
-10/10/2020 05:50:25 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:53:48 PM - INFO - Config file read.
-10/10/2020 05:53:48 PM - INFO - Zip extracted
-10/10/2020 05:53:48 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:54:14 PM - INFO - Config file read.
-10/10/2020 05:54:14 PM - INFO - Zip extracted
-10/10/2020 05:54:14 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:54:20 PM - INFO - Config file read.
-10/10/2020 05:54:20 PM - INFO - Zip extracted
-10/10/2020 05:54:20 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:54:41 PM - INFO - Config file read.
-10/10/2020 05:54:41 PM - INFO - Zip extracted
-10/10/2020 05:54:41 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:54:51 PM - INFO - Config file read.
-10/10/2020 05:54:51 PM - INFO - Zip extracted
-10/10/2020 05:54:51 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:55:06 PM - INFO - Config file read.
-10/10/2020 05:55:06 PM - INFO - Zip extracted
-10/10/2020 05:55:06 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:56:24 PM - INFO - Config file read.
-10/10/2020 05:56:24 PM - INFO - Zip extracted
-10/10/2020 05:56:24 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:56:38 PM - INFO - Config file read.
-10/10/2020 05:56:38 PM - INFO - Zip extracted
-10/10/2020 05:58:15 PM - INFO - Config file read.
-10/10/2020 05:58:15 PM - INFO - Zip extracted
-10/10/2020 05:58:15 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:58:26 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:58:27 PM - INFO - Config file read.
-10/10/2020 05:58:27 PM - INFO - Zip extracted
-10/10/2020 05:58:27 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:59:02 PM - INFO - Config file read.
-10/10/2020 05:59:02 PM - INFO - Zip extracted
-10/10/2020 05:59:02 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:59:12 PM - INFO - Config file read.
-10/10/2020 05:59:12 PM - INFO - Zip extracted
-10/10/2020 05:59:12 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:59:18 PM - INFO - Config file read.
-10/10/2020 05:59:18 PM - INFO - Zip extracted
-10/10/2020 05:59:18 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 05:59:32 PM - INFO - Config file read.
-10/10/2020 05:59:32 PM - INFO - Zip extracted
-10/10/2020 06:00:26 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:00:27 PM - INFO - Config file read.
-10/10/2020 06:00:27 PM - INFO - Zip extracted
-10/10/2020 06:00:27 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:01:54 PM - INFO - Config file read.
-10/10/2020 06:01:54 PM - INFO - Zip extracted
-10/10/2020 06:01:54 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:03:02 PM - INFO - Config file read.
-10/10/2020 06:03:02 PM - INFO - Zip extracted
-10/10/2020 06:03:02 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:03:56 PM - INFO - Config file read.
-10/10/2020 06:03:56 PM - INFO - Zip extracted
-10/10/2020 06:03:56 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:04:09 PM - INFO - Config file read.
-10/10/2020 06:04:09 PM - INFO - Zip extracted
-10/10/2020 06:04:09 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:05:40 PM - INFO - Config file read.
-10/10/2020 06:05:40 PM - INFO - Zip extracted
-10/10/2020 06:05:40 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:06:25 PM - INFO - Config file read.
-10/10/2020 06:06:25 PM - INFO - Zip extracted
-10/10/2020 06:06:25 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:06:47 PM - INFO - Config file read.
-10/10/2020 06:06:47 PM - INFO - Zip extracted
-10/10/2020 06:06:47 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:09:13 PM - INFO - Config file read.
-10/10/2020 06:09:13 PM - INFO - Zip extracted
-10/10/2020 06:09:13 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:09:28 PM - INFO - Config file read.
-10/10/2020 06:09:28 PM - INFO - Zip extracted
-10/10/2020 06:09:28 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:09:40 PM - INFO - Config file read.
-10/10/2020 06:09:40 PM - INFO - Zip extracted
-10/10/2020 06:09:40 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:09:50 PM - INFO - Config file read.
-10/10/2020 06:09:50 PM - INFO - Zip extracted
-10/10/2020 06:09:50 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:09:54 PM - INFO - Config file read.
-10/10/2020 06:09:54 PM - INFO - Zip extracted
-10/10/2020 06:10:32 PM - INFO - Config file read.
-10/10/2020 06:10:32 PM - INFO - Zip extracted
-10/10/2020 06:10:32 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:11:15 PM - INFO - Config file read.
-10/10/2020 06:11:15 PM - INFO - Zip extracted
-10/10/2020 06:11:15 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:11:18 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:11:20 PM - INFO - Config file read.
-10/10/2020 06:11:20 PM - INFO - Zip extracted
-10/10/2020 06:12:47 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:13:04 PM - INFO - Config file read.
-10/10/2020 06:13:04 PM - INFO - Zip extracted
-10/10/2020 06:13:04 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:13:42 PM - INFO - Config file read.
-10/10/2020 06:13:42 PM - INFO - Zip extracted
-10/10/2020 06:13:42 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:13:50 PM - INFO - Config file read.
-10/10/2020 06:13:50 PM - INFO - Zip extracted
-10/10/2020 06:15:14 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:15:22 PM - INFO - Config file read.
-10/10/2020 06:15:22 PM - INFO - Zip extracted
-10/10/2020 06:16:49 PM - INFO - Config file read.
-10/10/2020 06:16:49 PM - INFO - Zip extracted
-10/10/2020 06:16:49 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:17:23 PM - INFO - Config file read.
-10/10/2020 06:17:23 PM - INFO - Zip extracted
-10/10/2020 06:17:23 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:18:14 PM - INFO - Config file read.
-10/10/2020 06:18:14 PM - INFO - Zip extracted
-10/10/2020 06:18:14 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:18:34 PM - INFO - Config file read.
-10/10/2020 06:18:34 PM - INFO - Zip extracted
-10/10/2020 06:18:34 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:19:25 PM - INFO - Config file read.
-10/10/2020 06:19:25 PM - INFO - Zip extracted
-10/10/2020 06:19:25 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:19:34 PM - INFO - Config file read.
-10/10/2020 06:19:34 PM - INFO - Zip extracted
-10/10/2020 06:19:34 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:19:51 PM - INFO - Config file read.
-10/10/2020 06:19:51 PM - INFO - Zip extracted
-10/10/2020 06:19:51 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:21:02 PM - INFO - Config file read.
-10/10/2020 06:21:02 PM - INFO - Zip extracted
-10/10/2020 06:21:02 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:22:54 PM - INFO - Config file read.
-10/10/2020 06:22:54 PM - INFO - Zip extracted
-10/10/2020 06:22:54 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:23:03 PM - INFO - Config file read.
-10/10/2020 06:23:03 PM - INFO - Zip extracted
-10/10/2020 06:23:03 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:23:06 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:23:08 PM - INFO - Config file read.
-10/10/2020 06:23:08 PM - INFO - Zip extracted
-10/10/2020 06:24:31 PM - INFO - Config file read.
-10/10/2020 06:24:31 PM - INFO - Zip extracted
-10/10/2020 06:24:31 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:25:54 PM - INFO - Config file read.
-10/10/2020 06:25:54 PM - INFO - Zip extracted
-10/10/2020 06:25:54 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:26:17 PM - INFO - Config file read.
-10/10/2020 06:26:17 PM - INFO - Zip extracted
-10/10/2020 06:26:17 PM - INFO - Done
-10/10/2020 06:26:21 PM - INFO - Config file read.
-10/10/2020 06:26:21 PM - INFO - Zip extracted
-10/10/2020 06:26:21 PM - INFO - Done
-10/10/2020 06:26:24 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:26:25 PM - INFO - Config file read.
-10/10/2020 06:26:25 PM - INFO - Zip extracted
-10/10/2020 06:26:25 PM - INFO - Done
-10/10/2020 06:26:56 PM - INFO - Config file read.
-10/10/2020 06:26:56 PM - INFO - Zip extracted
-10/10/2020 06:26:56 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:27:04 PM - INFO - Config file read.
-10/10/2020 06:27:04 PM - INFO - Zip extracted
-10/10/2020 06:27:04 PM - INFO - Done
-10/10/2020 06:27:10 PM - INFO - Config file read.
-10/10/2020 06:27:10 PM - INFO - Zip extracted
-10/10/2020 06:27:10 PM - INFO - Done
-10/10/2020 06:29:06 PM - INFO - Config file read.
-10/10/2020 06:29:06 PM - INFO - Zip extracted
-10/10/2020 06:29:06 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:29:25 PM - INFO - Config file read.
-10/10/2020 06:29:25 PM - INFO - Zip extracted
-10/10/2020 06:29:25 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:30:00 PM - INFO - Config file read.
-10/10/2020 06:30:00 PM - INFO - Zip extracted
-10/10/2020 06:30:00 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:30:15 PM - INFO - Config file read.
-10/10/2020 06:30:15 PM - INFO - Zip extracted
-10/10/2020 06:30:15 PM - INFO - Done
-10/10/2020 06:30:45 PM - INFO - Config file read.
-10/10/2020 06:30:45 PM - INFO - Zip extracted
-10/10/2020 06:30:45 PM - INFO - Done
-10/10/2020 06:31:40 PM - INFO - Config file read.
-10/10/2020 06:31:40 PM - INFO - Zip extracted
-10/10/2020 06:31:40 PM - INFO - Done
-10/10/2020 06:31:56 PM - INFO - Config file read.
-10/10/2020 06:31:56 PM - INFO - Zip extracted
-10/10/2020 06:31:56 PM - INFO - Done
-10/10/2020 06:36:24 PM - INFO - Config file read.
-10/10/2020 06:36:24 PM - INFO - Zip extracted
-10/10/2020 06:36:24 PM - INFO - Done
-10/10/2020 06:36:48 PM - INFO - Config file read.
-10/10/2020 06:36:48 PM - INFO - Zip extracted
-10/10/2020 06:36:48 PM - INFO - Done
-10/10/2020 06:41:36 PM - INFO - Config file read.
-10/10/2020 06:41:36 PM - INFO - Zip extracted
-10/10/2020 06:41:36 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:41:46 PM - INFO - Config file read.
-10/10/2020 06:41:46 PM - INFO - Zip extracted
-10/10/2020 06:41:46 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:43:07 PM - INFO - Config file read.
-10/10/2020 06:43:07 PM - INFO - Zip extracted
-10/10/2020 06:43:07 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:43:18 PM - INFO - Config file read.
-10/10/2020 06:43:18 PM - INFO - Zip extracted
-10/10/2020 06:43:18 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:43:21 PM - INFO - Config file read.
-10/10/2020 06:43:21 PM - INFO - Zip extracted
-10/10/2020 06:43:21 PM - ERROR - Unknown error while compressing to .tgz
-10/10/2020 06:44:01 PM - INFO - Config file read.
-10/10/2020 06:44:02 PM - INFO - Zip extracted
-10/10/2020 06:44:20 PM - INFO - Config file read.
-10/10/2020 06:44:20 PM - INFO - Zip extracted
-10/10/2020 06:44:39 PM - INFO - Config file read.
-10/10/2020 06:44:39 PM - INFO - Zip extracted
-10/10/2020 06:44:56 PM - INFO - Config file read.
-10/10/2020 06:44:56 PM - INFO - Zip extracted
-10/10/2020 06:45:08 PM - INFO - Config file read.
-10/10/2020 06:45:08 PM - INFO - Zip extracted
-10/10/2020 06:45:20 PM - INFO - Config file read.
-10/10/2020 06:45:20 PM - INFO - Zip extracted
-10/10/2020 06:45:29 PM - INFO - Config file read.
-10/10/2020 06:45:30 PM - INFO - Zip extracted
-10/10/2020 06:46:33 PM - INFO - Config file read.
-10/10/2020 06:46:33 PM - INFO - Zip extracted
-10/10/2020 06:46:45 PM - INFO - Config file read.
-10/10/2020 06:46:45 PM - INFO - Zip extracted
-10/10/2020 06:49:27 PM - INFO - Config file read.
-10/10/2020 06:49:27 PM - INFO - Zip extracted
-10/10/2020 06:50:46 PM - INFO - Config file read.
-10/10/2020 06:50:46 PM - INFO - Zip extracted
-10/10/2020 06:54:28 PM - INFO - Config file read.
-10/10/2020 06:54:28 PM - INFO - Zip extracted
-11/10/2020 11:59:16 AM - INFO - Config file read.
-11/10/2020 11:59:20 AM - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000143F73B3940>: Failed to establish a new connection: [WinError 10061] Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée')': /test.zip
-11/10/2020 11:59:39 AM - INFO - Config file read.
-11/10/2020 11:59:39 AM - INFO - Zip extracted
-11/10/2020 11:59:39 AM - INFO - Done
-11/10/2020 12:01:54 PM - INFO - Config file read.
-11/10/2020 12:01:54 PM - INFO - Zip extracted
-11/10/2020 12:01:54 PM - INFO - Done
-11/10/2020 12:04:26 PM - INFO - Config file read.
-11/10/2020 12:04:26 PM - INFO - Zip extracted
-11/10/2020 12:04:38 PM - INFO - Config file read.
-11/10/2020 12:04:38 PM - INFO - Zip extracted
-11/10/2020 12:04:38 PM - ERROR - Unknown error while compressing to .tgz
-11/10/2020 12:04:51 PM - INFO - Config file read.
-11/10/2020 12:04:51 PM - INFO - Zip extracted
-11/10/2020 12:05:41 PM - INFO - Config file read.
-11/10/2020 12:05:41 PM - INFO - Zip extracted
-11/10/2020 12:06:35 PM - INFO - Config file read.
-11/10/2020 12:06:35 PM - INFO - Zip extracted
-11/10/2020 12:07:26 PM - INFO - Config file read.
-11/10/2020 12:07:26 PM - INFO - Zip extracted
-11/10/2020 12:08:25 PM - INFO - Config file read.
-11/10/2020 12:08:25 PM - INFO - Zip extracted
-11/10/2020 12:08:51 PM - INFO - Config file read.
-11/10/2020 12:08:51 PM - INFO - Zip extracted
-11/10/2020 12:09:18 PM - INFO - Config file read.
-11/10/2020 12:09:18 PM - INFO - Zip extracted
-11/10/2020 12:10:00 PM - INFO - Config file read.
-11/10/2020 12:10:00 PM - INFO - Zip extracted
-11/10/2020 12:12:45 PM - INFO - Config file read.
-11/10/2020 12:12:45 PM - INFO - Zip extracted
-11/10/2020 12:12:45 PM - INFO - Done
-11/10/2020 12:13:07 PM - INFO - Config file read.
-11/10/2020 12:13:07 PM - INFO - Zip extracted
-11/10/2020 12:13:07 PM - INFO - Done
-11/10/2020 12:16:41 PM - INFO - Config file read.
-11/10/2020 12:16:41 PM - INFO - Zip extracted
-11/10/2020 12:16:41 PM - INFO - Done
-11/10/2020 12:24:31 PM - INFO - Config file read.
-11/10/2020 12:24:31 PM - INFO - Zip extracted
-11/10/2020 12:24:31 PM - INFO - Done
-11/10/2020 12:25:34 PM - INFO - Config file read.
-11/10/2020 12:25:34 PM - INFO - Zip extracted
-11/10/2020 12:25:34 PM - INFO - Done
-11/10/2020 12:25:52 PM - INFO - Config file read.
-11/10/2020 12:25:52 PM - INFO - Zip extracted
-11/10/2020 12:25:52 PM - INFO - Done
-11/10/2020 12:26:15 PM - INFO - Config file read.
-11/10/2020 12:26:15 PM - INFO - Zip extracted
-11/10/2020 12:26:15 PM - INFO - Done
-11/10/2020 12:37:56 PM - INFO - Config file read.
-11/10/2020 12:37:56 PM - INFO - Zip extracted
-11/10/2020 12:37:56 PM - INFO - Done
-11/10/2020 12:38:48 PM - INFO - Config file read.
-11/10/2020 12:38:48 PM - INFO - Zip extracted
-11/10/2020 12:38:48 PM - INFO - Done
-11/10/2020 12:39:18 PM - INFO - Config file read.
-11/10/2020 12:39:18 PM - INFO - Zip extracted
-11/10/2020 12:39:18 PM - INFO - Done
-11/10/2020 12:40:37 PM - INFO - Config file read.
-11/10/2020 12:40:37 PM - INFO - Zip extracted
-11/10/2020 12:40:37 PM - INFO - Done
-11/10/2020 12:40:46 PM - INFO - Config file read.
-11/10/2020 12:40:46 PM - INFO - Zip extracted
-11/10/2020 12:40:46 PM - INFO - Done
-11/10/2020 12:41:05 PM - INFO - Config file read.
-11/10/2020 12:41:05 PM - INFO - Zip extracted
-11/10/2020 12:41:05 PM - INFO - Done
-11/10/2020 12:42:26 PM - INFO - Config file read.
-11/10/2020 12:42:26 PM - INFO - Zip extracted
-11/10/2020 12:42:26 PM - INFO - Done
-11/10/2020 12:42:44 PM - INFO - Config file read.
-11/10/2020 12:42:44 PM - INFO - Zip extracted
-11/10/2020 12:42:44 PM - INFO - Done
-11/10/2020 12:42:53 PM - INFO - Config file read.
-11/10/2020 12:42:53 PM - INFO - Zip extracted
-11/10/2020 12:42:54 PM - INFO - Done
-11/10/2020 12:43:24 PM - INFO - Config file read.
-11/10/2020 12:43:24 PM - INFO - Zip extracted
-11/10/2020 12:43:25 PM - INFO - Done
-11/10/2020 12:47:26 PM - INFO - Config file read.
-11/10/2020 12:47:26 PM - INFO - Zip extracted
-11/10/2020 12:47:26 PM - ERROR - Fail to compress (.tgz) "dumpfile.sql" file.
-11/10/2020 12:47:55 PM - INFO - Config file read.
-11/10/2020 12:47:55 PM - INFO - Zip extracted
-11/10/2020 12:47:55 PM - INFO - Done
-11/10/2020 12:48:15 PM - INFO - Config file read.
-11/10/2020 12:48:15 PM - INFO - Zip extracted
-11/10/2020 12:48:15 PM - ERROR - Fail to compress (.tgz) "dumpfile.sql" file.
-11/10/2020 12:49:44 PM - INFO - Config file read.
-11/10/2020 12:49:44 PM - INFO - Zip extracted
-11/10/2020 12:49:44 PM - ERROR - Fail to compress (.tgz) "dumpfile.sql" file. TGZ file not created.
-11/10/2020 12:49:49 PM - INFO - Config file read.
-11/10/2020 12:49:49 PM - INFO - Zip extracted
-11/10/2020 12:49:49 PM - INFO - Done
-11/10/2020 12:50:18 PM - INFO - Config file read.
-11/10/2020 12:50:18 PM - INFO - Zip extracted
-11/10/2020 12:50:18 PM - INFO - Done
-11/10/2020 12:50:25 PM - INFO - Config file read.
-11/10/2020 12:50:25 PM - INFO - Zip extracted
-11/10/2020 12:50:32 PM - INFO - Config file read.
-11/10/2020 12:50:32 PM - INFO - Zip extracted
-11/10/2020 12:50:32 PM - INFO - Done
-11/10/2020 12:50:36 PM - INFO - Config file read.
-11/10/2020 12:50:36 PM - INFO - Zip extracted
-11/10/2020 12:50:37 PM - INFO - Done
-11/10/2020 12:51:05 PM - ERROR - Fail to compress (.tgz) "dumpfile.sql" file. TGZ file not created.
-11/10/2020 12:51:45 PM - INFO - Config file read.
-11/10/2020 12:51:45 PM - INFO - Zip extracted
-11/10/2020 12:52:17 PM - INFO - Config file read.
-11/10/2020 12:52:17 PM - INFO - Zip extracted
-11/10/2020 12:52:17 PM - INFO - Done
-11/10/2020 12:53:14 PM - INFO - Config file read.
-11/10/2020 12:53:15 PM - INFO - Zip extracted
-11/10/2020 12:53:15 PM - INFO - Done
-11/10/2020 01:02:01 PM - INFO - Config file read.
-11/10/2020 01:02:01 PM - INFO - Zip extracted
-11/10/2020 01:02:01 PM - INFO - Done
-11/10/2020 01:05:00 PM - INFO - Config file read.
-11/10/2020 01:05:00 PM - INFO - Zip extracted
-11/10/2020 01:05:00 PM - INFO - Done
-11/10/2020 01:05:20 PM - INFO - Config file read.
-11/10/2020 01:05:20 PM - INFO - Zip extracted
-11/10/2020 01:05:20 PM - INFO - Done
-11/10/2020 01:05:43 PM - INFO - Config file read.
-11/10/2020 01:05:43 PM - INFO - Zip extracted
-11/10/2020 01:05:43 PM - INFO - Done
-11/10/2020 01:06:20 PM - INFO - Config file read.
-11/10/2020 01:06:20 PM - INFO - Zip extracted
-11/10/2020 01:06:20 PM - INFO - Done
-11/10/2020 01:06:26 PM - INFO - Config file read.
-11/10/2020 01:06:26 PM - INFO - Zip extracted
-11/10/2020 01:06:26 PM - INFO - Done
-11/10/2020 01:06:41 PM - INFO - Config file read.
-11/10/2020 01:06:41 PM - INFO - Zip extracted
-11/10/2020 01:06:42 PM - INFO - Done
-11/10/2020 01:07:05 PM - INFO - Config file read.
-11/10/2020 01:07:05 PM - INFO - Zip extracted
-11/10/2020 01:07:05 PM - INFO - Done
-11/10/2020 01:07:12 PM - INFO - Config file read.
-11/10/2020 01:07:12 PM - INFO - Zip extracted
-11/10/2020 01:07:12 PM - INFO - Done
-11/10/2020 01:07:31 PM - INFO - Config file read.
-11/10/2020 01:07:31 PM - INFO - Zip extracted
-11/10/2020 01:07:31 PM - INFO - Done
-11/10/2020 01:08:47 PM - INFO - Config file read.
-11/10/2020 01:08:47 PM - INFO - Zip extracted
-11/10/2020 01:08:47 PM - INFO - Done
-11/10/2020 01:08:53 PM - INFO - Config file read.
-11/10/2020 01:08:53 PM - INFO - Zip extracted
-11/10/2020 01:08:53 PM - INFO - Done
-11/10/2020 01:09:21 PM - INFO - Config file read.
-11/10/2020 01:09:21 PM - INFO - Zip extracted
-11/10/2020 01:09:21 PM - INFO - Done
-11/10/2020 01:09:45 PM - INFO - Config file read.
-11/10/2020 01:09:45 PM - INFO - Zip extracted
-11/10/2020 01:09:45 PM - INFO - Done
-11/10/2020 01:41:55 PM - INFO - Config file read.
-11/10/2020 01:41:55 PM - INFO - Zip extracted
-11/10/2020 01:41:56 PM - INFO - Done
-11/10/2020 01:42:11 PM - INFO - Config file read.
-11/10/2020 01:42:11 PM - INFO - Zip extracted
-11/10/2020 01:42:11 PM - INFO - Done
-11/10/2020 01:42:21 PM - INFO - Config file read.
-11/10/2020 01:42:21 PM - INFO - Zip extracted
-12/10/2020 09:49:38 PM - INFO - Config file read.
-12/10/2020 09:49:38 PM - INFO - Zip extracted
-12/10/2020 09:49:39 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 09:49:39 PM - INFO - Authentication (password) successful!
-12/10/2020 09:49:39 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 09:49:39 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 09:49:39 PM - INFO - Done
-12/10/2020 10:00:27 PM - INFO - Config file read.
-12/10/2020 10:00:27 PM - INFO - Zip extracted
-12/10/2020 10:00:27 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 10:00:27 PM - INFO - Authentication (password) successful!
-12/10/2020 10:00:28 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 10:00:28 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 10:00:28 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-12/10/2020 10:00:28 PM - INFO - Done
-12/10/2020 10:01:17 PM - INFO - Config file read.
-12/10/2020 10:01:17 PM - INFO - Zip extracted
-12/10/2020 10:01:18 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 10:01:18 PM - INFO - Authentication (password) successful!
-12/10/2020 10:01:18 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 10:01:18 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 10:01:18 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-12/10/2020 10:01:18 PM - INFO - Done
-12/10/2020 10:02:04 PM - INFO - Config file read.
-12/10/2020 10:02:04 PM - INFO - Zip extracted
-12/10/2020 10:02:04 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 10:02:04 PM - INFO - Authentication (password) successful!
-12/10/2020 10:02:05 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 10:02:05 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 10:02:05 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-12/10/2020 10:02:05 PM - INFO - Done
-12/10/2020 10:33:40 PM - INFO - Config file read.
-12/10/2020 10:33:40 PM - INFO - Zip extracted
-12/10/2020 10:33:40 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 10:33:41 PM - INFO - Authentication (password) successful!
-12/10/2020 10:33:41 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 10:33:41 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-12/10/2020 10:33:41 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 10:33:41 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 10:33:41 PM - INFO - Authentication (password) successful!
-12/10/2020 10:33:42 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 10:33:42 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 10:37:46 PM - INFO - Config file read.
-12/10/2020 10:37:46 PM - INFO - Zip extracted
-12/10/2020 10:37:46 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 10:37:46 PM - INFO - Authentication (password) successful!
-12/10/2020 10:37:47 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 10:37:47 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-12/10/2020 10:37:47 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 10:37:47 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 10:37:47 PM - INFO - Authentication (password) successful!
-12/10/2020 10:37:47 PM - ERROR - Unknown error occured while getting Ack
-12/10/2020 10:38:57 PM - INFO - Config file read.
-12/10/2020 10:38:57 PM - INFO - Zip extracted
-12/10/2020 10:38:57 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 10:38:57 PM - INFO - Authentication (password) successful!
-12/10/2020 10:38:58 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 10:38:58 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-12/10/2020 10:38:58 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 10:38:58 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 10:38:58 PM - INFO - Authentication (password) successful!
-12/10/2020 10:39:06 PM - INFO - Config file read.
-12/10/2020 10:39:06 PM - INFO - Zip extracted
-12/10/2020 10:39:06 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 10:39:06 PM - INFO - Authentication (password) successful!
-12/10/2020 10:39:06 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 10:39:06 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-12/10/2020 10:39:06 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 10:39:06 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 10:39:06 PM - INFO - Authentication (password) successful!
-12/10/2020 10:39:07 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 10:39:07 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 10:39:38 PM - INFO - Config file read.
-12/10/2020 10:39:38 PM - INFO - Zip extracted
-12/10/2020 10:39:38 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 10:39:38 PM - INFO - Authentication (password) successful!
-12/10/2020 10:39:38 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 10:39:38 PM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
-12/10/2020 10:39:38 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 10:39:38 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-12/10/2020 10:40:11 PM - INFO - Config file read.
-12/10/2020 10:40:11 PM - INFO - Zip extracted
-12/10/2020 10:40:11 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 10:40:11 PM - INFO - Authentication (password) successful!
-12/10/2020 10:40:12 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 10:40:12 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-12/10/2020 10:40:12 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 10:40:12 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 10:40:12 PM - INFO - Authentication (password) successful!
-12/10/2020 10:40:12 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 10:40:12 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 10:42:56 PM - INFO - Config file read.
-12/10/2020 10:42:56 PM - INFO - Zip extracted
-12/10/2020 10:42:56 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 10:42:56 PM - INFO - Authentication (password) successful!
-12/10/2020 10:42:57 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 10:42:57 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-12/10/2020 10:42:57 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 10:42:57 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 10:42:57 PM - INFO - Authentication (password) successful!
-12/10/2020 10:42:57 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 10:42:57 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 10:52:27 PM - INFO - Config file read.
-12/10/2020 10:52:28 PM - INFO - Zip extracted
-12/10/2020 10:52:28 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 10:52:28 PM - INFO - Authentication (password) successful!
-12/10/2020 10:52:29 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 10:52:29 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-12/10/2020 10:52:29 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 10:52:29 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 10:52:29 PM - INFO - Authentication (password) successful!
-12/10/2020 10:52:29 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 10:52:29 PM - INFO - Ack
-12/10/2020 10:52:29 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 11:13:51 PM - INFO - Zip extracted
-12/10/2020 11:13:51 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 11:13:51 PM - INFO - Authentication (password) successful!
-12/10/2020 11:13:52 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 11:13:52 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 11:13:52 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-12/10/2020 11:13:52 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 11:13:52 PM - INFO - Authentication (password) successful!
-12/10/2020 11:13:52 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 11:13:52 PM - INFO - Ack
-12/10/2020 11:13:52 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 11:14:07 PM - INFO - Zip extracted
-12/10/2020 11:14:07 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 11:14:07 PM - INFO - Authentication (password) successful!
-12/10/2020 11:14:07 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 11:14:07 PM - INFO - [chan 0] sftp session closed.
-12/10/2020 11:14:07 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-12/10/2020 11:14:08 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-12/10/2020 11:14:08 PM - INFO - Authentication (password) successful!
-12/10/2020 11:14:08 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-12/10/2020 11:14:08 PM - INFO - Ack
-12/10/2020 11:14:08 PM - INFO - [chan 0] sftp session closed.
-13/10/2020 12:09:51 AM - ERROR - Unknow error occured while conf.txt is getting decoded
-13/10/2020 12:10:33 AM - INFO - Zip extracted
-13/10/2020 12:10:34 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-13/10/2020 12:10:34 AM - INFO - Authentication (password) successful!
-13/10/2020 12:10:34 AM - INFO - [chan 0] Opened sftp connection (server version 3)
-13/10/2020 12:10:34 AM - INFO - [chan 0] sftp session closed.
-13/10/2020 12:10:34 AM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-13/10/2020 12:10:34 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-13/10/2020 12:10:35 AM - INFO - Authentication (password) successful!
-13/10/2020 12:10:35 AM - INFO - [chan 0] Opened sftp connection (server version 3)
-13/10/2020 12:10:35 AM - INFO - Ack
-13/10/2020 12:10:35 AM - INFO - [chan 0] sftp session closed.
-13/10/2020 12:15:22 AM - INFO - Zip extracted
-13/10/2020 12:15:22 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-13/10/2020 12:15:22 AM - INFO - Authentication (password) successful!
-13/10/2020 12:15:22 AM - INFO - [chan 0] Opened sftp connection (server version 3)
-13/10/2020 12:15:23 AM - INFO - [chan 0] sftp session closed.
-13/10/2020 12:15:23 AM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-13/10/2020 12:15:23 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-13/10/2020 12:15:23 AM - INFO - Authentication (password) successful!
-13/10/2020 12:15:23 AM - INFO - [chan 0] Opened sftp connection (server version 3)
-13/10/2020 12:15:23 AM - INFO - Ack
-13/10/2020 12:15:23 AM - INFO - [chan 0] sftp session closed.
-13/10/2020 12:17:16 AM - INFO - Zip extracted
-13/10/2020 12:17:16 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-13/10/2020 12:17:17 AM - INFO - Authentication (password) successful!
-13/10/2020 12:17:17 AM - INFO - [chan 0] Opened sftp connection (server version 3)
-13/10/2020 12:17:17 AM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
-13/10/2020 12:17:17 AM - INFO - [chan 0] sftp session closed.
-13/10/2020 12:17:17 AM - ERROR - Unknown error occured while sending tgz file to sftp server
-13/10/2020 12:18:50 AM - INFO - Zip extracted
-13/10/2020 12:18:50 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-13/10/2020 12:18:50 AM - INFO - Authentication (password) successful!
-13/10/2020 12:18:51 AM - INFO - [chan 0] Opened sftp connection (server version 3)
-13/10/2020 12:18:51 AM - INFO - [chan 0] sftp session closed.
-13/10/2020 12:18:51 AM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-13/10/2020 12:18:51 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-13/10/2020 12:18:51 AM - INFO - Authentication (password) successful!
-13/10/2020 12:18:51 AM - INFO - [chan 0] Opened sftp connection (server version 3)
-13/10/2020 12:18:51 AM - INFO - Ack
-13/10/2020 12:18:51 AM - INFO - [chan 0] sftp session closed.
-13/10/2020 12:20:15 AM - INFO - Zip extracted
-13/10/2020 12:20:15 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-13/10/2020 12:20:15 AM - INFO - Authentication (password) successful!
-13/10/2020 12:20:16 AM - INFO - [chan 0] Opened sftp connection (server version 3)
-13/10/2020 12:20:16 AM - INFO - [chan 0] sftp session closed.
-13/10/2020 12:20:16 AM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-13/10/2020 12:20:16 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-13/10/2020 12:20:16 AM - INFO - Authentication (password) successful!
-13/10/2020 12:20:16 AM - INFO - [chan 0] Opened sftp connection (server version 3)
-13/10/2020 12:20:16 AM - INFO - Ack
-13/10/2020 12:20:16 AM - INFO - [chan 0] sftp session closed.
-13/10/2020 12:29:05 AM - INFO - Zip extracted
-13/10/2020 12:29:05 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-13/10/2020 12:29:05 AM - INFO - Authentication (password) successful!
-13/10/2020 12:29:06 AM - INFO - [chan 0] Opened sftp connection (server version 3)
-13/10/2020 12:29:06 AM - INFO - [chan 0] sftp session closed.
-13/10/2020 12:29:06 AM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-13/10/2020 12:29:06 AM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-13/10/2020 12:29:06 AM - INFO - Authentication (password) successful!
-13/10/2020 12:29:06 AM - INFO - [chan 0] Opened sftp connection (server version 3)
-13/10/2020 12:29:06 AM - INFO - Ack
-13/10/2020 12:29:06 AM - INFO - [chan 0] sftp session closed.
+16/10/2020 01:11:20 PM - WARNING - Error occured while logging-in to your mail account. Email(s) not sent.
+16/10/2020 01:11:59 PM - WARNING - Unknown error occured while connecting to mail server. Email(s) not sent.
+16/10/2020 01:12:33 PM - WARNING - Error occured while logging-in to your mail account. Email(s) not sent.
+16/10/2020 01:13:56 PM - WARNING - Email server not supported. Try a domain name in the following list : { yahoo, gmail, neuf, bbox, bouygtel, free, live, laposte, orange, sfr, wanadoo, outlook }
+16/10/2020 01:14:33 PM - WARNING - Error occured while logging-in to your mail account. Email(s) not sent.
+16/10/2020 01:59:54 PM - WARNING - Error occured while logging-in to your mail account. Email(s) not sent.
+16/10/2020 02:01:23 PM - WARNING - Mail server unexpectly disconnected. Email(s) not sent.
+16/10/2020 02:02:13 PM - WARNING - Error occured while logging-in to your mail account. Email(s) not sent.
+16/10/2020 02:02:45 PM - WARNING - Error occured while logging-in to your mail account. Email(s) not sent.
+16/10/2020 05:25:19 PM - INFO - Zip extracted
+16/10/2020 05:25:20 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:25:20 PM - INFO - Authentication (password) successful!
+16/10/2020 05:25:20 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:25:21 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:25:21 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+16/10/2020 05:25:21 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:25:21 PM - INFO - Authentication (password) successful!
+16/10/2020 05:25:21 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:25:21 PM - INFO - Ack
+16/10/2020 05:25:21 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:45:33 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:45:33 PM - INFO - Zip extracted
+16/10/2020 05:45:33 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:45:33 PM - INFO - Authentication (password) successful!
+16/10/2020 05:45:33 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+16/10/2020 05:45:51 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:45:51 PM - INFO - Zip extracted
+16/10/2020 05:45:51 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:45:51 PM - INFO - Authentication (password) successful!
+16/10/2020 05:45:51 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+16/10/2020 05:46:17 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:46:17 PM - INFO - Zip extracted
+16/10/2020 05:46:22 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:46:23 PM - INFO - Authentication (password) successful!
+16/10/2020 05:46:42 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+16/10/2020 05:46:48 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:46:48 PM - INFO - Zip extracted
+16/10/2020 05:46:48 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:46:48 PM - INFO - Authentication (password) successful!
+16/10/2020 05:46:48 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:46:48 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:46:48 PM - ERROR - Remote path does not exist
+16/10/2020 05:48:39 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:48:39 PM - INFO - Zip extracted
+16/10/2020 05:48:45 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:48:45 PM - INFO - Authentication (password) successful!
+16/10/2020 05:48:48 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:49:12 PM - ERROR - Remote path does not exist in archval function.
+16/10/2020 05:49:17 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:49:17 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+16/10/2020 05:49:27 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:49:27 PM - INFO - Zip extracted
+16/10/2020 05:49:27 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:49:27 PM - INFO - Authentication (password) successful!
+16/10/2020 05:49:30 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:50:12 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:50:12 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+16/10/2020 05:50:14 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:50:14 PM - INFO - Zip extracted
+16/10/2020 05:50:14 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:50:14 PM - INFO - Authentication (password) successful!
+16/10/2020 05:50:16 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:50:22 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:50:22 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+16/10/2020 05:50:31 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:50:32 PM - INFO - Zip extracted
+16/10/2020 05:50:32 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:50:32 PM - INFO - Authentication (password) successful!
+16/10/2020 05:50:35 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:50:43 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:50:43 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+16/10/2020 05:50:54 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:50:54 PM - INFO - Zip extracted
+16/10/2020 05:50:55 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:50:55 PM - INFO - Authentication (password) successful!
+16/10/2020 05:50:57 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:51:42 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:51:42 PM - INFO - Zip extracted
+16/10/2020 05:51:42 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:51:42 PM - INFO - Authentication (password) successful!
+16/10/2020 05:51:42 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:51:42 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:51:42 PM - INFO - Connection established with sftp server @192.168.1.64
+16/10/2020 05:51:42 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+16/10/2020 05:51:42 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:51:42 PM - INFO - Authentication (password) successful!
+16/10/2020 05:51:43 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:51:43 PM - INFO - Ack
+16/10/2020 05:51:43 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:51:53 PM - ERROR - Remote path does not exist in archval function.
+16/10/2020 05:51:53 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:51:53 PM - ERROR - Remote path does not exist
+16/10/2020 05:52:05 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:52:05 PM - INFO - Zip extracted
+16/10/2020 05:52:05 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:52:05 PM - INFO - Authentication (password) successful!
+16/10/2020 05:53:55 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:53:55 PM - INFO - Zip extracted
+16/10/2020 05:53:55 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:53:55 PM - INFO - Authentication (password) successful!
+16/10/2020 05:53:56 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:53:56 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:53:56 PM - INFO - Connection established with sftp server @192.168.1.64
+16/10/2020 05:53:56 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+16/10/2020 05:53:56 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:53:56 PM - INFO - Authentication (password) successful!
+16/10/2020 05:53:56 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:53:56 PM - INFO - Ack
+16/10/2020 05:53:56 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:54:01 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:54:01 PM - INFO - Zip extracted
+16/10/2020 05:54:01 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:54:01 PM - INFO - Authentication (password) successful!
+16/10/2020 05:54:01 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:54:01 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:54:01 PM - INFO - Connection established with sftp server @192.168.1.64
+16/10/2020 05:54:01 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+16/10/2020 05:54:01 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:54:02 PM - INFO - Authentication (password) successful!
+16/10/2020 05:54:02 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:54:02 PM - INFO - Ack
+16/10/2020 05:54:02 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:54:04 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:54:04 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:54:04 PM - ERROR - Remote path does not exist
+16/10/2020 05:54:22 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:54:23 PM - INFO - Zip extracted
+16/10/2020 05:54:23 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:54:23 PM - INFO - Authentication (password) successful!
+16/10/2020 05:54:23 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:54:23 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:54:23 PM - INFO - Connection established with sftp server @192.168.1.64
+16/10/2020 05:54:23 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+16/10/2020 05:54:23 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:54:24 PM - INFO - Authentication (password) successful!
+16/10/2020 05:54:24 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:54:24 PM - INFO - Ack
+16/10/2020 05:54:24 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:54:57 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:54:57 PM - INFO - Zip extracted
+16/10/2020 05:54:58 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:54:58 PM - INFO - Authentication (password) successful!
+16/10/2020 05:54:58 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:54:59 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:54:59 PM - INFO - Connection established with sftp server @192.168.1.64
+16/10/2020 05:54:59 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+16/10/2020 05:54:59 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:54:59 PM - INFO - Authentication (password) successful!
+16/10/2020 05:54:59 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:54:59 PM - INFO - Ack
+16/10/2020 05:54:59 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:55:06 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:55:06 PM - INFO - Zip extracted
+16/10/2020 05:55:06 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:55:06 PM - INFO - Authentication (password) successful!
+16/10/2020 05:55:07 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:55:07 PM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
+16/10/2020 05:55:07 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:55:07 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+16/10/2020 05:55:21 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:55:21 PM - INFO - Zip extracted
+16/10/2020 05:55:21 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:55:21 PM - INFO - Authentication (password) successful!
+16/10/2020 05:55:22 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:55:22 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:55:22 PM - INFO - Connection established with sftp server @192.168.1.64
+16/10/2020 05:55:22 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+16/10/2020 05:55:22 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:55:22 PM - INFO - Authentication (password) successful!
+16/10/2020 05:55:22 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:55:22 PM - INFO - Ack
+16/10/2020 05:55:22 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:57:16 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:57:16 PM - INFO - Zip extracted
+16/10/2020 05:57:17 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:57:17 PM - INFO - Authentication (password) successful!
+16/10/2020 05:57:17 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:57:17 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:57:17 PM - INFO - Connection established with sftp server @192.168.1.64
+16/10/2020 05:57:17 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+16/10/2020 05:57:18 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:57:18 PM - INFO - Authentication (password) successful!
+16/10/2020 05:57:18 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:57:18 PM - INFO - Ack
+16/10/2020 05:57:18 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:57:45 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:57:45 PM - INFO - Zip extracted
+16/10/2020 05:57:45 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:57:45 PM - INFO - Authentication (password) successful!
+16/10/2020 05:57:46 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:57:46 PM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
+16/10/2020 05:57:46 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:57:46 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+16/10/2020 05:57:55 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:57:55 PM - INFO - Zip extracted
+16/10/2020 05:57:55 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:57:55 PM - INFO - Authentication (password) successful!
+16/10/2020 05:57:55 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 05:57:55 PM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
+16/10/2020 05:57:55 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 05:57:55 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+16/10/2020 05:59:58 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 05:59:58 PM - INFO - Zip extracted
+16/10/2020 05:59:59 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 05:59:59 PM - INFO - Authentication (password) successful!
+16/10/2020 05:59:59 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:00:00 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:00:00 PM - INFO - Connection established with sftp server @192.168.1.64
+16/10/2020 06:00:00 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+16/10/2020 06:00:00 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:00:00 PM - INFO - Authentication (password) successful!
+16/10/2020 06:00:00 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:00:00 PM - INFO - Ack
+16/10/2020 06:00:00 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:04:29 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 06:04:29 PM - INFO - Zip extracted
+16/10/2020 06:04:30 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:04:30 PM - INFO - Authentication (password) successful!
+16/10/2020 06:04:30 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:04:30 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:04:30 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+16/10/2020 06:04:50 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 06:04:50 PM - INFO - Zip extracted
+16/10/2020 06:04:50 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:04:50 PM - INFO - Authentication (password) successful!
+16/10/2020 06:04:51 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:04:51 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:04:51 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+16/10/2020 06:05:17 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 06:05:17 PM - INFO - Zip extracted
+16/10/2020 06:05:17 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:05:17 PM - INFO - Authentication (password) successful!
+16/10/2020 06:05:18 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:05:18 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:05:18 PM - INFO - Connection established with sftp server @192.168.1.64
+16/10/2020 06:05:18 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+16/10/2020 06:05:18 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:05:18 PM - INFO - Authentication (password) successful!
+16/10/2020 06:05:18 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:05:18 PM - INFO - Ack
+16/10/2020 06:05:18 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:05:29 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 06:05:29 PM - INFO - Zip extracted
+16/10/2020 06:05:30 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:05:30 PM - INFO - Authentication (password) successful!
+16/10/2020 06:05:31 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:05:31 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:05:31 PM - INFO - Connection established with sftp server @192.168.1.64
+16/10/2020 06:05:31 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+16/10/2020 06:05:31 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:05:31 PM - INFO - Authentication (password) successful!
+16/10/2020 06:05:31 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:05:31 PM - INFO - Ack
+16/10/2020 06:05:31 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:08:15 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 06:08:15 PM - INFO - Zip extracted
+16/10/2020 06:08:15 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:08:15 PM - INFO - Authentication (password) successful!
+16/10/2020 06:08:16 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:08:16 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:08:16 PM - INFO - Connection established with sftp server @192.168.1.64
+16/10/2020 06:08:16 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+16/10/2020 06:08:16 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:08:16 PM - INFO - Authentication (password) successful!
+16/10/2020 06:08:16 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:08:16 PM - INFO - Ack
+16/10/2020 06:08:16 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:08:32 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 06:08:32 PM - INFO - Zip extracted
+16/10/2020 06:08:32 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:08:32 PM - INFO - Authentication (password) successful!
+16/10/2020 06:08:33 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:08:33 PM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
+16/10/2020 06:08:33 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:08:33 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+16/10/2020 06:08:47 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 06:08:47 PM - INFO - Zip extracted
+16/10/2020 06:08:47 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:08:47 PM - INFO - Authentication (password) successful!
+16/10/2020 06:08:48 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:08:48 PM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
+16/10/2020 06:08:48 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:08:48 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+16/10/2020 06:08:57 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 06:08:57 PM - INFO - Zip extracted
+16/10/2020 06:08:57 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:08:57 PM - INFO - Authentication (password) successful!
+16/10/2020 06:08:58 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:08:58 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:08:58 PM - INFO - Connection established with sftp server @192.168.1.64
+16/10/2020 06:08:58 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+16/10/2020 06:08:58 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:08:58 PM - INFO - Authentication (password) successful!
+16/10/2020 06:08:58 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:08:58 PM - INFO - Ack
+16/10/2020 06:08:58 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:09:12 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 06:09:13 PM - INFO - Zip extracted
+16/10/2020 06:09:13 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:09:13 PM - INFO - Authentication (password) successful!
+16/10/2020 06:09:13 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:09:13 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:09:13 PM - INFO - Connection established with sftp server @192.168.1.64
+16/10/2020 06:09:13 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+16/10/2020 06:09:13 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:09:14 PM - INFO - Authentication (password) successful!
+16/10/2020 06:09:14 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:09:14 PM - INFO - Ack
+16/10/2020 06:09:14 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:10:13 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 06:10:13 PM - INFO - Zip extracted
+16/10/2020 06:10:14 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:10:14 PM - INFO - Authentication (password) successful!
+16/10/2020 06:10:14 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:10:14 PM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
+16/10/2020 06:10:14 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:10:14 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+16/10/2020 06:10:40 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 06:10:40 PM - INFO - Zip extracted
+16/10/2020 06:10:40 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:10:40 PM - INFO - Authentication (password) successful!
+16/10/2020 06:10:40 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:10:40 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:10:40 PM - INFO - Connection established with sftp server @192.168.1.64
+16/10/2020 06:10:40 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+16/10/2020 06:10:41 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:10:41 PM - INFO - Authentication (password) successful!
+16/10/2020 06:10:41 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:10:41 PM - INFO - Ack
+16/10/2020 06:10:41 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:10:58 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 06:10:59 PM - INFO - Zip extracted
+16/10/2020 06:10:59 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:10:59 PM - INFO - Authentication (password) successful!
+16/10/2020 06:10:59 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:10:59 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:10:59 PM - INFO - Connection established with sftp server @192.168.1.64
+16/10/2020 06:10:59 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+16/10/2020 06:10:59 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:11:00 PM - INFO - Authentication (password) successful!
+16/10/2020 06:11:00 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:11:00 PM - INFO - Ack
+16/10/2020 06:11:00 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:12:07 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 06:12:07 PM - INFO - Zip extracted
+16/10/2020 06:12:07 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:12:07 PM - INFO - Authentication (password) successful!
+16/10/2020 06:12:08 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:12:08 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:12:08 PM - INFO - Connection established with sftp server @192.168.1.64
+16/10/2020 06:12:08 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+16/10/2020 06:12:08 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:12:08 PM - INFO - Authentication (password) successful!
+16/10/2020 06:12:09 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:12:09 PM - INFO - Ack
+16/10/2020 06:12:09 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:17:06 PM - INFO - Zip extracted
+16/10/2020 06:17:06 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:17:06 PM - INFO - Authentication (password) successful!
+16/10/2020 06:17:07 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:17:07 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:17:07 PM - INFO - Connection established with sftp server @192.168.1.64
+16/10/2020 06:17:07 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:17:07 PM - INFO - Authentication (password) successful!
+16/10/2020 06:17:07 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:17:07 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+16/10/2020 06:17:07 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:18:09 PM - ERROR - Unknow error occured while conf.txt is getting decoded
+16/10/2020 06:19:27 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+16/10/2020 06:23:09 PM - INFO - Zip extracted
+16/10/2020 06:23:09 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:23:09 PM - INFO - Authentication (password) successful!
+16/10/2020 06:23:10 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:23:10 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:23:10 PM - INFO - Connection established with sftp server @192.168.1.64
+16/10/2020 06:23:10 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+16/10/2020 06:23:10 PM - INFO - Authentication (password) successful!
+16/10/2020 06:23:10 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+16/10/2020 06:23:10 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
+16/10/2020 06:23:10 PM - INFO - [chan 0] sftp session closed.
+16/10/2020 06:25:01 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
