@@ -1,11 +1,11 @@
 {
 	"zip": "test",
 	"file": "dumpfile.sql",
-	"time-to-save": "fghj",
+	"time-to-save": "1",
 	"sftp" :
 		{ 
 			"ip": "192.168.1.64",
-			"user": "guest",
+			"user": "gest",
 			"password": "root"
 		},
 	"send-emails": "yes",
@@ -16,10 +16,16 @@
 					"email": "julien.raynal@yahoo.fr",
 					"password": "kTM8g8f8"
 				},
+			"server": 
+				{
+					"ip": "smtp.mail.yahoo.com",
+					"port": "465"
+				},
 			"log-file-attached": "yes",
 			"title": "My email title",
 			"dest": [
 					"raynaljulien70@gmail.com"
 				]
-		}
+		},
+	"notification": "always"
 }
