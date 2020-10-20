@@ -4,6 +4,7 @@
 
     @author: Julien Raynal 
 """
+
 import logging
 from email_validator import validate_email
 import json
@@ -24,7 +25,14 @@ class EMail():
         logFileAttached_ = json['log-file-attached'].lower(); 
         title_ = json['title'];
         dest_ = json['dest'];
+        self.ip = json['server']['ip'];
         
+        try:
+            self.port = int(json['server']['port']);
+        except ValueError:
+            self.port = 465;
+            logging.warning("Email server port format not supported. Default value is 465.");
+            
         if auth_['email'] == "":
             logging.warning("Blank at the sending email identifier in the conf file : example@ex.com. Email(s) not sent.");   
             return;
@@ -87,11 +95,10 @@ class EMail():
             self.server.login(self.auth['email'], self.auth['password']);     
                     
             msg = MIMEMultipart();
-            msg['Subject'] = self.title;
-            
+            msg['Subject'] = self.title;          
             msg = self.attachment(msg);
-  
             self.server.sendmail(self.auth['email'], self.dest, msg.as_string());
+            self.server.quit();
             logging.info("Emails send.");
             
         except smtplib.SMTPAuthenticationError:
@@ -103,54 +110,26 @@ class EMail():
         except Exception:
             logging.warning("Unknown error occured while logging-in to your mail account. Email(s) not sent.");
 
-    def emailServer(self, email_server_):
+    def emailServerSMTP(self):
         # Create a secure SSL context
-            context = ssl.create_default_context();
-            try: 
-                self.server = smtplib.SMTP_SSL(email_server_, context = context)                
-                self.loginAndSend();
-            except smtplib.SMTPServerDisconnected:
-                logging.warning("Mail server unexpectly disconnected. Email(s) not sent.");
-            except smtplib.SMTPResponseException as err:
-                logging.warning("Mail server returned unknown error code " + str(err.smtp_code) + " : " + err.smtp_error + ". Email(s) not sent.");
-            except smtplib.SMTPRecipientsRefused as err:
-                logging.warning("Some recipient adresses are not accepted by mail server. Email(s) not sent.");
-                for rec in err.recipients:
-                    logging.warning(rec + " not accepted by mail server, error code " + rec.smtp_code + " : " + rec.smtp_error + ".");
-            #except Exception:
-             #   logging.warning("Unknown error occured while connecting to mail server. Email(s) not sent."); 
-
-def getEmailServer(domain_):
-    email_server_ = "";
-    if domain_ == 'yahoo':
-        email_server_ = "smtp.mail.yahoo.com";
-    elif domain_ == "gmail":
-        email_server_ = "smtp.gmail.com";
-    elif domain_ == "neuf":
-        email_server_ = "smtp.neuf.fr";
-    elif domain_ == "bbox":
-        email_server_ = "smtp.bbox.fr";
-    elif domain_ == "bouygtel":
-        email_server_ = "smtp.bouygtel.fr";
-    elif domain_ == "free":
-        email_server_ = "smtp.free.fr";
-    elif domain_ == "live":
-        email_server_ = "smtp.live.com";
-    elif domain_ == "laposte":
-        email_server_ = "smtp.laposte.net";
-    elif domain_ == "orange":
-        email_server_ = "smtp-msa.orange.fr";
-    elif domain_ == "sfr":
-        email_server_ = "smtp.sfr.fr";
-    elif domain_ == "wanadoo":
-        email_server_ = "smtp.wanadoo.fr";
-    elif domain_ == "outlook":
-        email_server_ = "smtp.office365.com";
-    else:
-        listEmails = ['yahoo', "gmail", "neuf", "bbox", "bouygtel", "free", "live", "laposte", "orange", "sfr", "wanadoo", "outlook"];
-        names = "{ " + ', '.join(listEmails) + " }";
-        logging.warning("Email server not supported. Try a domain name in the following list : " + names);  
-    return email_server_;
+        context = ssl.create_default_context();
+        try: 
+            self.server = smtplib.SMTP_SSL(self.ip, port = self.port, context = context)                 
+            self.loginAndSend();
+        except smtplib.SMTPServerDisconnected:
+            logging.warning("Mail server unexpectly disconnected. Email(s) not sent.");
+        except smtplib.SMTPResponseException as err:
+            logging.warning("Mail server returned unknown error code " + str(err.smtp_code) + " : " + err.smtp_error + ". Email(s) not sent.");
+        except smtplib.SMTPRecipientsRefused as err:
+            logging.warning("Some recipient adresses are not accepted by mail server. Email(s) not sent.");
+            for rec in err.recipients:
+                logging.warning(rec + " not accepted by mail server, error code " + rec.smtp_code + " : " + rec.smtp_error + ".");
+        except Exception:
+            logging.warning("Unknown error occured while connecting to mail server. Email(s) not sent."); 
+    
+    #TODO
+    def internalServer(self):
+        pass;
     
 def sendEmails(conf_):     
     with open(conf_, 'r') as json_config:
@@ -164,12 +143,11 @@ def sendEmails(conf_):
         
         if email.auth['email'] == "" or email.auth['password'] == "":
             return;
-    
-        domain = email.getDomainName();
-        email_server = getEmailServer(domain);
         
-        if email_server != "":
-            email.emailServer(email_server);
+        if email.ip != "":
+            email.emailServerSMTP();
+        else:
+            email.internalServer();
                 
 if __name__ == "__main__":
     sendEmails("conf.txt");

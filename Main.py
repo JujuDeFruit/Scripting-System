@@ -11,10 +11,12 @@ from urllib3 import exceptions as e
 import io
 import datetime
 import logging
-import os
-import pysftp
+import os, sys
 import json
 #import EMail
+import Mattermost
+import SFTPServer
+import traceback
 
 class ScriptingSystem():   
 
@@ -26,6 +28,7 @@ class ScriptingSystem():
         self.config = config_;
         self.log = log_;
         self.tgzName = datetime.datetime.now().date().strftime('%Y%d%m') + ".tgz";
+        self.content = "#### Activity results\n<!channel> please review activity.\n| Activity   | Result state |\n|:-----------|:-------------|\n";
         
         """ Initialise logging """
         logging.basicConfig(filename = self.log, 
@@ -44,6 +47,7 @@ class ScriptingSystem():
         user_ = "";
         pswd_ = "";
         timeToSave_ = "";
+        notification_ = "";
         try:
             with open(self.config, 'r') as json_config:
                 data = json.load(json_config);
@@ -52,32 +56,41 @@ class ScriptingSystem():
                 ip_ = data['sftp']['ip'];
                 user_ = data['sftp']['user'];
                 pswd_ = data['sftp']['password'];
+                notification_ = data['notification'];
                 try:
                     timeToSave_ = int(data['time-to-save']);
                 except ValueError:
                     timeToSave_ = 10;
                     logging.warning("Time to save value format is not supported. Default value is 10 days.");
-        except json.JSONDecodeError:
-            logging.warning("Error occured while conf.txt is getting decoded");
         except Exception:
-            logging.error("Unknow error occured while conf.txt is getting decoded")
-            raise Exception();
+            logging.error("Unknow error occured while conf.txt is getting decoded");
+            self.content += "| JSON read | :exclamation: Error |\n";
+            #raise Exception();
         
         if USER_DUMP == "": 
             logging.error('File name must not be blank in \'conf.txt\'.');
-            raise Exception();
+            self.content += "| JSON read | :exclamation: Error |\n";
+            #raise Exception();
         if USER_ZIP == "":
             logging.error('Zip name must not be blank in \'conf.txt\'.');
-            raise Exception();
+            self.content += "| JSON read | :exclamation: Error |\n";
+            #raise Exception();
         if ip_ == "":
             logging.error('SFTP server ip must not be blank in \'conf.txt\'.');
-            raise Exception();
+            self.content += "| JSON read | :exclamation: Error |\n";
+            #raise Exception();
         if user_ == "":
             logging.error('SFTP server user must not be blank in \'conf.txt\'.');
-            raise Exception();
+            self.content += "| JSON read | :exclamation: Error |\n";
+            #raise Exception();
         if pswd_ == "":
             logging.error('SFTP server password must not be blank in \'conf.txt\'.');
-            raise Exception();
+            self.content += "| JSON read | :exclamation: Error |\n";
+            #raise Exception();
+        if notification_ != "always" and notification_ != "never" and notification_ != "error":
+            notification_ = "always";
+            logging.warning('Notifications keyword format not supported. Default value is always.');
+            self.content += "| JSON read | :exclamation: Error |\n";
             
         if USER_DUMP.find('.sql') == -1:
             USER_DUMP = USER_DUMP + '.sql';
@@ -92,6 +105,9 @@ class ScriptingSystem():
         self.user = user_;
         self.pswd = pswd_;
         self.timeToSave = timeToSave_;
+        self.notification = notification_;
+        
+        self.content += "| JSON read | :white_check_mark: OK |\n";
 
     """
         Make GET HTTP request to get zip file on web server
@@ -105,26 +121,27 @@ class ScriptingSystem():
             if req.status == 404: 
                 raise e.ResponseError();
             self.zf = zipfile.ZipFile(io.BytesIO(req.data), 'r');            # Decode zip from bytes
+            self.content += "| Request zip | :white_check_mark: OK |\n";
         except e.ResponseError:
             logging.error("Error 404 : zip file not found " + url);
-            raise e.ResponseError();
+            self.content += "| Request zip | :exclamation: Error |\n";
+            #raise e.ResponseError();
         except Exception:
             logging.error("Unknown error while requesting zip on localhost");
-            raise Exception();
+            self.content += "| Request zip | :exclamation: Error |\n";
+            #raise Exception();
     
     """
         Get last modified date of a specific file (name) and zip (zf_)
     """
     def getDate(self):
+        self.zipHasFile();
         infos = self.zf.infolist();
         i = 0;
         fileDate_ = "";
         for i in range(len(infos)):
             if infos[i].filename == self.fileName:
                 fileDate_ = datetime.datetime(*infos[i].date_time[0:3]);
-        if fileDate_ == "" :
-            logging.error("Unknown exception while reading date of " + self.fileName + ' file');
-            raise Exception();
         return fileDate_.date();
     
     """
@@ -134,9 +151,11 @@ class ScriptingSystem():
         try:
             self.zf.extractall();
             logging.info("Zip extracted");
+            self.content += "| Extract zip | :white_check_mark: OK |\n";
         except Exception:
             logging.error("Error occured while zip get extracted");
-            raise Exception();
+            self.content += "| Extract zip | :exclamation: Error |\n";
+            #raise Exception();
         finally:
             self.zf.close();
         
@@ -148,7 +167,7 @@ class ScriptingSystem():
             if info.filename == self.fileName:
                 return;
         logging.error(self.zipName + " does not contain " + self.fileName);
-        raise FileNotFoundError();
+        #raise FileNotFoundError();
     
     """
         Compress file to .tgz
@@ -158,55 +177,12 @@ class ScriptingSystem():
             err = os.system("tar -czf \"" + os.getcwd() + "\\" + self.tgzName + "\" \"" + self.fileName + "\"");
             if err != 0:
                 raise Exception();
+            self.content += "| Compress zip | :white_check_mark: OK |\n";
             os.remove(self.fileName);
         except Exception:
-            logging.error("Fail to compress (.tgz) " + "\"" + self.fileName + "\" file. TGZ file not created.")
+            logging.error("Fail to compress (.tgz) " + "\"" + self.fileName + "\" file. TGZ file not created.");
+            self.content += "| Compress zip | :exclamation: OK |\n";
             raise Exception();
-    
-    def archivalCheck(self, sftp_):
-        try:
-            files = sftp_.listdir('.');
-        except IOError:
-            logging.error("Remote path does not exist in archval function.");
-            raise IOError();
-        deadLine = (datetime.datetime.today() - datetime.timedelta(days = self.timeToSave)).date();
-        for file in files:
-            date = datetime.datetime.strptime(file.replace('.tgz', ''), '%Y%d%m').date();
-            if date < deadLine:
-                sftp_.remove(file);
-    
-    """
-        Initialize connection to sftp server and send tgz file 
-    """
-    def sendToSftpServer(self):
-        try:
-            with pysftp.Connection(self.ip, username = self.user, password = self.pswd) as sftp:
-                self.archivalCheck(sftp);
-                sftp.put(self.tgzName)              # upload file /data/guest/upload on remote
-            logging.info("Connection established with sftp server @" + self.ip);
-            os.remove(self.tgzName);
-        except IOError:
-            logging.error("Remote path does not exist");
-            raise IOError();
-        except OSError:
-            logging.error("Local path does not exist");
-            raise OSError();
-        except Exception:
-            logging.error("Unknown error occured while sending tgz file to sftp server");
-            raise Exception();
-    
-    """
-        Check if sftp server has tgz file
-    """
-    def checkFileAck(self):
-        with pysftp.Connection(self.ip, username = self.user, password = self.pswd) as sftp:
-            files = sftp.listdir();
-            for file in files:
-                if file == self.tgzName:
-                    logging.info("Tar file sent to sftp server " + self.ip + " on user " + self.user);
-                    return;
-        logging.error("Error occured while getting Ack");
-        raise Exception();
 
 """
     Main
@@ -222,11 +198,34 @@ def main() :
     script.extractZip();
 
     if script.getDate() == datetime.datetime.now().date():
-        logging.warning("The file has the same date than now");
+        logging.warning("The file has the same date than now.");
     else:
         script.compressToTgz();
-        script.sendToSftpServer();
-        script.checkFileAck();    
+        
+        """
+            SFTP server area
+        """
+        sftpOptions = {"ip": script.ip, 
+                       "user": script.user, 
+                       "password": script.pswd, 
+                       "timeToSave": script.timeToSave };
+        
+        sftp = SFTPServer.SFTPServer(sftpOptions, script.content, logging);
+        sftp.sendToSftpServer(script.tgzName);
+        
+        payload = { 
+            "icon_url": "https://www.mattermost.org/wp-content/uploads/2016/04/icon.png",
+            "text": sftp.content 
+            };
+        
+        #TODO - récupérer si des erreurs ont été commises
+        if script.notification == "always" or (script.notification == "error" and error == True):
+            with open("test.txt", "w") as t:
+                t.write(sftp.content);
+            #Mattermost.sendMattermostNotification(payload, logging);
+        
+        if os.path.exists(script.tgzName):
+            os.remove(script.tgzName);
 
 if __name__ == "__main__":
     main();
