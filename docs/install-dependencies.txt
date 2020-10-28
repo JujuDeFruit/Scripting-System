@@ -1,0 +1,6 @@
+Internal Mail server :
+	Tutorial : https://gist.github.com/raelgc/6031306
+	localhost : 35279155
+	Domain : localhost.com
+	Server : admin@localhost.com : admin
+	Set local IP : C:\Windows\System32\drivers\etc\hosts => "127.0.0.2 stmp.localhost.com"

@@ -5,7 +5,7 @@
 	"sftp" :
 		{ 
 			"ip": "192.168.1.64",
-			"user": "gest",
+			"user": "guest",
 			"password": "root"
 		},
 	"send-emails": "yes",
@@ -27,5 +27,5 @@
 					"raynaljulien70@gmail.com"
 				]
 		},
-	"notification": "always"
+	"notification": "error"
 }

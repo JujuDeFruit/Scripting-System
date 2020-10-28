@@ -1,381 +1,288 @@
-16/10/2020 01:11:20 PM - WARNING - Error occured while logging-in to your mail account. Email(s) not sent.
-16/10/2020 01:11:59 PM - WARNING - Unknown error occured while connecting to mail server. Email(s) not sent.
-16/10/2020 01:12:33 PM - WARNING - Error occured while logging-in to your mail account. Email(s) not sent.
-16/10/2020 01:13:56 PM - WARNING - Email server not supported. Try a domain name in the following list : { yahoo, gmail, neuf, bbox, bouygtel, free, live, laposte, orange, sfr, wanadoo, outlook }
-16/10/2020 01:14:33 PM - WARNING - Error occured while logging-in to your mail account. Email(s) not sent.
-16/10/2020 01:59:54 PM - WARNING - Error occured while logging-in to your mail account. Email(s) not sent.
-16/10/2020 02:01:23 PM - WARNING - Mail server unexpectly disconnected. Email(s) not sent.
-16/10/2020 02:02:13 PM - WARNING - Error occured while logging-in to your mail account. Email(s) not sent.
-16/10/2020 02:02:45 PM - WARNING - Error occured while logging-in to your mail account. Email(s) not sent.
-16/10/2020 05:25:19 PM - INFO - Zip extracted
-16/10/2020 05:25:20 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:25:20 PM - INFO - Authentication (password) successful!
-16/10/2020 05:25:20 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:25:21 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:25:21 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-16/10/2020 05:25:21 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:25:21 PM - INFO - Authentication (password) successful!
-16/10/2020 05:25:21 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:25:21 PM - INFO - Ack
-16/10/2020 05:25:21 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:45:33 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:45:33 PM - INFO - Zip extracted
-16/10/2020 05:45:33 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:45:33 PM - INFO - Authentication (password) successful!
-16/10/2020 05:45:33 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-16/10/2020 05:45:51 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:45:51 PM - INFO - Zip extracted
-16/10/2020 05:45:51 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:45:51 PM - INFO - Authentication (password) successful!
-16/10/2020 05:45:51 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-16/10/2020 05:46:17 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:46:17 PM - INFO - Zip extracted
-16/10/2020 05:46:22 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:46:23 PM - INFO - Authentication (password) successful!
-16/10/2020 05:46:42 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-16/10/2020 05:46:48 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:46:48 PM - INFO - Zip extracted
-16/10/2020 05:46:48 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:46:48 PM - INFO - Authentication (password) successful!
-16/10/2020 05:46:48 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:46:48 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:46:48 PM - ERROR - Remote path does not exist
-16/10/2020 05:48:39 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:48:39 PM - INFO - Zip extracted
-16/10/2020 05:48:45 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:48:45 PM - INFO - Authentication (password) successful!
-16/10/2020 05:48:48 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:49:12 PM - ERROR - Remote path does not exist in archval function.
-16/10/2020 05:49:17 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:49:17 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-16/10/2020 05:49:27 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:49:27 PM - INFO - Zip extracted
-16/10/2020 05:49:27 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:49:27 PM - INFO - Authentication (password) successful!
-16/10/2020 05:49:30 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:50:12 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:50:12 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-16/10/2020 05:50:14 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:50:14 PM - INFO - Zip extracted
-16/10/2020 05:50:14 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:50:14 PM - INFO - Authentication (password) successful!
-16/10/2020 05:50:16 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:50:22 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:50:22 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-16/10/2020 05:50:31 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:50:32 PM - INFO - Zip extracted
-16/10/2020 05:50:32 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:50:32 PM - INFO - Authentication (password) successful!
-16/10/2020 05:50:35 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:50:43 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:50:43 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-16/10/2020 05:50:54 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:50:54 PM - INFO - Zip extracted
-16/10/2020 05:50:55 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:50:55 PM - INFO - Authentication (password) successful!
-16/10/2020 05:50:57 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:51:42 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:51:42 PM - INFO - Zip extracted
-16/10/2020 05:51:42 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:51:42 PM - INFO - Authentication (password) successful!
-16/10/2020 05:51:42 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:51:42 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:51:42 PM - INFO - Connection established with sftp server @192.168.1.64
-16/10/2020 05:51:42 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-16/10/2020 05:51:42 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:51:42 PM - INFO - Authentication (password) successful!
-16/10/2020 05:51:43 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:51:43 PM - INFO - Ack
-16/10/2020 05:51:43 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:51:53 PM - ERROR - Remote path does not exist in archval function.
-16/10/2020 05:51:53 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:51:53 PM - ERROR - Remote path does not exist
-16/10/2020 05:52:05 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:52:05 PM - INFO - Zip extracted
-16/10/2020 05:52:05 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:52:05 PM - INFO - Authentication (password) successful!
-16/10/2020 05:53:55 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:53:55 PM - INFO - Zip extracted
-16/10/2020 05:53:55 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:53:55 PM - INFO - Authentication (password) successful!
-16/10/2020 05:53:56 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:53:56 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:53:56 PM - INFO - Connection established with sftp server @192.168.1.64
-16/10/2020 05:53:56 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-16/10/2020 05:53:56 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:53:56 PM - INFO - Authentication (password) successful!
-16/10/2020 05:53:56 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:53:56 PM - INFO - Ack
-16/10/2020 05:53:56 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:54:01 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:54:01 PM - INFO - Zip extracted
-16/10/2020 05:54:01 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:54:01 PM - INFO - Authentication (password) successful!
-16/10/2020 05:54:01 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:54:01 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:54:01 PM - INFO - Connection established with sftp server @192.168.1.64
-16/10/2020 05:54:01 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-16/10/2020 05:54:01 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:54:02 PM - INFO - Authentication (password) successful!
-16/10/2020 05:54:02 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:54:02 PM - INFO - Ack
-16/10/2020 05:54:02 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:54:04 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:54:04 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:54:04 PM - ERROR - Remote path does not exist
-16/10/2020 05:54:22 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:54:23 PM - INFO - Zip extracted
-16/10/2020 05:54:23 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:54:23 PM - INFO - Authentication (password) successful!
-16/10/2020 05:54:23 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:54:23 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:54:23 PM - INFO - Connection established with sftp server @192.168.1.64
-16/10/2020 05:54:23 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-16/10/2020 05:54:23 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:54:24 PM - INFO - Authentication (password) successful!
-16/10/2020 05:54:24 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:54:24 PM - INFO - Ack
-16/10/2020 05:54:24 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:54:57 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:54:57 PM - INFO - Zip extracted
-16/10/2020 05:54:58 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:54:58 PM - INFO - Authentication (password) successful!
-16/10/2020 05:54:58 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:54:59 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:54:59 PM - INFO - Connection established with sftp server @192.168.1.64
-16/10/2020 05:54:59 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-16/10/2020 05:54:59 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:54:59 PM - INFO - Authentication (password) successful!
-16/10/2020 05:54:59 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:54:59 PM - INFO - Ack
-16/10/2020 05:54:59 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:55:06 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:55:06 PM - INFO - Zip extracted
-16/10/2020 05:55:06 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:55:06 PM - INFO - Authentication (password) successful!
-16/10/2020 05:55:07 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:55:07 PM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
-16/10/2020 05:55:07 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:55:07 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-16/10/2020 05:55:21 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:55:21 PM - INFO - Zip extracted
-16/10/2020 05:55:21 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:55:21 PM - INFO - Authentication (password) successful!
-16/10/2020 05:55:22 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:55:22 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:55:22 PM - INFO - Connection established with sftp server @192.168.1.64
-16/10/2020 05:55:22 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-16/10/2020 05:55:22 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:55:22 PM - INFO - Authentication (password) successful!
-16/10/2020 05:55:22 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:55:22 PM - INFO - Ack
-16/10/2020 05:55:22 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:57:16 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:57:16 PM - INFO - Zip extracted
-16/10/2020 05:57:17 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:57:17 PM - INFO - Authentication (password) successful!
-16/10/2020 05:57:17 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:57:17 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:57:17 PM - INFO - Connection established with sftp server @192.168.1.64
-16/10/2020 05:57:17 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-16/10/2020 05:57:18 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:57:18 PM - INFO - Authentication (password) successful!
-16/10/2020 05:57:18 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:57:18 PM - INFO - Ack
-16/10/2020 05:57:18 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:57:45 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:57:45 PM - INFO - Zip extracted
-16/10/2020 05:57:45 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:57:45 PM - INFO - Authentication (password) successful!
-16/10/2020 05:57:46 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:57:46 PM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
-16/10/2020 05:57:46 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:57:46 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-16/10/2020 05:57:55 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:57:55 PM - INFO - Zip extracted
-16/10/2020 05:57:55 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:57:55 PM - INFO - Authentication (password) successful!
-16/10/2020 05:57:55 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 05:57:55 PM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
-16/10/2020 05:57:55 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 05:57:55 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-16/10/2020 05:59:58 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 05:59:58 PM - INFO - Zip extracted
-16/10/2020 05:59:59 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 05:59:59 PM - INFO - Authentication (password) successful!
-16/10/2020 05:59:59 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:00:00 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:00:00 PM - INFO - Connection established with sftp server @192.168.1.64
-16/10/2020 06:00:00 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-16/10/2020 06:00:00 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:00:00 PM - INFO - Authentication (password) successful!
-16/10/2020 06:00:00 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:00:00 PM - INFO - Ack
-16/10/2020 06:00:00 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:04:29 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 06:04:29 PM - INFO - Zip extracted
-16/10/2020 06:04:30 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:04:30 PM - INFO - Authentication (password) successful!
-16/10/2020 06:04:30 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:04:30 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:04:30 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-16/10/2020 06:04:50 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 06:04:50 PM - INFO - Zip extracted
-16/10/2020 06:04:50 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:04:50 PM - INFO - Authentication (password) successful!
-16/10/2020 06:04:51 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:04:51 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:04:51 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-16/10/2020 06:05:17 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 06:05:17 PM - INFO - Zip extracted
-16/10/2020 06:05:17 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:05:17 PM - INFO - Authentication (password) successful!
-16/10/2020 06:05:18 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:05:18 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:05:18 PM - INFO - Connection established with sftp server @192.168.1.64
-16/10/2020 06:05:18 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-16/10/2020 06:05:18 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:05:18 PM - INFO - Authentication (password) successful!
-16/10/2020 06:05:18 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:05:18 PM - INFO - Ack
-16/10/2020 06:05:18 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:05:29 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 06:05:29 PM - INFO - Zip extracted
-16/10/2020 06:05:30 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:05:30 PM - INFO - Authentication (password) successful!
-16/10/2020 06:05:31 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:05:31 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:05:31 PM - INFO - Connection established with sftp server @192.168.1.64
-16/10/2020 06:05:31 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-16/10/2020 06:05:31 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:05:31 PM - INFO - Authentication (password) successful!
-16/10/2020 06:05:31 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:05:31 PM - INFO - Ack
-16/10/2020 06:05:31 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:08:15 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 06:08:15 PM - INFO - Zip extracted
-16/10/2020 06:08:15 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:08:15 PM - INFO - Authentication (password) successful!
-16/10/2020 06:08:16 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:08:16 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:08:16 PM - INFO - Connection established with sftp server @192.168.1.64
-16/10/2020 06:08:16 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-16/10/2020 06:08:16 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:08:16 PM - INFO - Authentication (password) successful!
-16/10/2020 06:08:16 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:08:16 PM - INFO - Ack
-16/10/2020 06:08:16 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:08:32 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 06:08:32 PM - INFO - Zip extracted
-16/10/2020 06:08:32 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:08:32 PM - INFO - Authentication (password) successful!
-16/10/2020 06:08:33 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:08:33 PM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
-16/10/2020 06:08:33 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:08:33 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-16/10/2020 06:08:47 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 06:08:47 PM - INFO - Zip extracted
-16/10/2020 06:08:47 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:08:47 PM - INFO - Authentication (password) successful!
-16/10/2020 06:08:48 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:08:48 PM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
-16/10/2020 06:08:48 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:08:48 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-16/10/2020 06:08:57 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 06:08:57 PM - INFO - Zip extracted
-16/10/2020 06:08:57 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:08:57 PM - INFO - Authentication (password) successful!
-16/10/2020 06:08:58 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:08:58 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:08:58 PM - INFO - Connection established with sftp server @192.168.1.64
-16/10/2020 06:08:58 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-16/10/2020 06:08:58 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:08:58 PM - INFO - Authentication (password) successful!
-16/10/2020 06:08:58 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:08:58 PM - INFO - Ack
-16/10/2020 06:08:58 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:09:12 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 06:09:13 PM - INFO - Zip extracted
-16/10/2020 06:09:13 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:09:13 PM - INFO - Authentication (password) successful!
-16/10/2020 06:09:13 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:09:13 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:09:13 PM - INFO - Connection established with sftp server @192.168.1.64
-16/10/2020 06:09:13 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-16/10/2020 06:09:13 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:09:14 PM - INFO - Authentication (password) successful!
-16/10/2020 06:09:14 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:09:14 PM - INFO - Ack
-16/10/2020 06:09:14 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:10:13 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 06:10:13 PM - INFO - Zip extracted
-16/10/2020 06:10:14 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:10:14 PM - INFO - Authentication (password) successful!
-16/10/2020 06:10:14 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:10:14 PM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
-16/10/2020 06:10:14 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:10:14 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-16/10/2020 06:10:40 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 06:10:40 PM - INFO - Zip extracted
-16/10/2020 06:10:40 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:10:40 PM - INFO - Authentication (password) successful!
-16/10/2020 06:10:40 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:10:40 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:10:40 PM - INFO - Connection established with sftp server @192.168.1.64
-16/10/2020 06:10:40 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-16/10/2020 06:10:41 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:10:41 PM - INFO - Authentication (password) successful!
-16/10/2020 06:10:41 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:10:41 PM - INFO - Ack
-16/10/2020 06:10:41 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:10:58 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 06:10:59 PM - INFO - Zip extracted
-16/10/2020 06:10:59 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:10:59 PM - INFO - Authentication (password) successful!
-16/10/2020 06:10:59 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:10:59 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:10:59 PM - INFO - Connection established with sftp server @192.168.1.64
-16/10/2020 06:10:59 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-16/10/2020 06:10:59 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:11:00 PM - INFO - Authentication (password) successful!
-16/10/2020 06:11:00 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:11:00 PM - INFO - Ack
-16/10/2020 06:11:00 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:12:07 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 06:12:07 PM - INFO - Zip extracted
-16/10/2020 06:12:07 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:12:07 PM - INFO - Authentication (password) successful!
-16/10/2020 06:12:08 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:12:08 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:12:08 PM - INFO - Connection established with sftp server @192.168.1.64
-16/10/2020 06:12:08 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-16/10/2020 06:12:08 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:12:08 PM - INFO - Authentication (password) successful!
-16/10/2020 06:12:09 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:12:09 PM - INFO - Ack
-16/10/2020 06:12:09 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:17:06 PM - INFO - Zip extracted
-16/10/2020 06:17:06 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:17:06 PM - INFO - Authentication (password) successful!
-16/10/2020 06:17:07 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:17:07 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:17:07 PM - INFO - Connection established with sftp server @192.168.1.64
-16/10/2020 06:17:07 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:17:07 PM - INFO - Authentication (password) successful!
-16/10/2020 06:17:07 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:17:07 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-16/10/2020 06:17:07 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:18:09 PM - ERROR - Unknow error occured while conf.txt is getting decoded
-16/10/2020 06:19:27 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
-16/10/2020 06:23:09 PM - INFO - Zip extracted
-16/10/2020 06:23:09 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:23:09 PM - INFO - Authentication (password) successful!
-16/10/2020 06:23:10 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:23:10 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:23:10 PM - INFO - Connection established with sftp server @192.168.1.64
-16/10/2020 06:23:10 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-16/10/2020 06:23:10 PM - INFO - Authentication (password) successful!
-16/10/2020 06:23:10 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-16/10/2020 06:23:10 PM - INFO - Tar file sent to sftp server 192.168.1.64 on user guest
-16/10/2020 06:23:10 PM - INFO - [chan 0] sftp session closed.
-16/10/2020 06:25:01 PM - WARNING - Time to save value format is not supported. Default value is 1 day.
+19/10/2020 05:46:15 PM - INFO - Zip extracted
+19/10/2020 05:46:50 PM - INFO - Zip extracted
+19/10/2020 05:47:26 PM - INFO - Zip extracted
+19/10/2020 05:47:26 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 05:47:26 PM - INFO - Authentication (password) successful!
+19/10/2020 05:47:27 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+19/10/2020 05:47:27 PM - INFO - [chan 0] sftp session closed.
+19/10/2020 05:47:27 PM - INFO - Connection established with sftp server @192.168.1.64
+19/10/2020 05:48:28 PM - INFO - Zip extracted
+19/10/2020 05:48:28 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 05:48:28 PM - INFO - Authentication (password) successful!
+19/10/2020 05:48:29 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+19/10/2020 05:48:29 PM - INFO - [chan 0] sftp session closed.
+19/10/2020 05:48:29 PM - INFO - Connection established with sftp server @192.168.1.64
+19/10/2020 05:50:13 PM - INFO - Zip extracted
+19/10/2020 05:50:13 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 05:50:13 PM - INFO - Authentication (password) successful!
+19/10/2020 05:50:14 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+19/10/2020 05:50:14 PM - INFO - [chan 0] sftp session closed.
+19/10/2020 05:50:14 PM - INFO - Connection established with sftp server @192.168.1.64
+19/10/2020 05:51:07 PM - INFO - Zip extracted
+19/10/2020 05:51:07 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 05:51:07 PM - INFO - Authentication (password) successful!
+19/10/2020 05:51:07 PM - INFO - Connection established with sftp server @192.168.1.64
+19/10/2020 05:51:08 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+19/10/2020 05:51:08 PM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
+19/10/2020 05:51:08 PM - INFO - [chan 0] sftp session closed.
+19/10/2020 05:51:08 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 05:53:39 PM - INFO - Zip extracted
+19/10/2020 05:53:39 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 05:53:39 PM - INFO - Authentication (password) successful!
+19/10/2020 05:53:39 PM - INFO - Connection established with sftp server @192.168.1.64
+19/10/2020 05:53:40 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+19/10/2020 05:53:40 PM - INFO - [chan 0] sftp session closed.
+19/10/2020 05:56:25 PM - INFO - Zip extracted
+19/10/2020 05:56:25 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 05:56:27 PM - INFO - Authentication (password) failed.
+19/10/2020 05:56:27 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 05:57:45 PM - INFO - Zip extracted
+19/10/2020 05:57:45 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 05:57:47 PM - INFO - Authentication (password) failed.
+19/10/2020 05:57:47 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 05:59:01 PM - INFO - Zip extracted
+19/10/2020 05:59:01 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 05:59:01 PM - INFO - Authentication (password) successful!
+19/10/2020 05:59:01 PM - INFO - Connection established with sftp server @192.168.1.64
+19/10/2020 05:59:01 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+19/10/2020 05:59:01 PM - INFO - [chan 0] sftp session closed.
+19/10/2020 06:01:56 PM - INFO - Zip extracted
+19/10/2020 06:01:56 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:01:56 PM - INFO - Authentication (password) successful!
+19/10/2020 06:01:56 PM - INFO - Connection established with sftp server @192.168.1.64
+19/10/2020 06:01:57 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+19/10/2020 06:01:57 PM - INFO - [chan 0] sftp session closed.
+19/10/2020 06:02:38 PM - INFO - Zip extracted
+19/10/2020 06:02:39 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:02:41 PM - INFO - Authentication (password) failed.
+19/10/2020 06:02:41 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:02:53 PM - INFO - Zip extracted
+19/10/2020 06:02:54 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:02:56 PM - INFO - Authentication (password) failed.
+19/10/2020 06:02:56 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:03:36 PM - INFO - Zip extracted
+19/10/2020 06:03:36 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:03:40 PM - INFO - Authentication (password) failed.
+19/10/2020 06:03:40 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:04:17 PM - INFO - Zip extracted
+19/10/2020 06:04:17 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:04:19 PM - INFO - Authentication (password) failed.
+19/10/2020 06:04:19 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:08:01 PM - INFO - Zip extracted
+19/10/2020 06:08:01 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:08:05 PM - INFO - Authentication (password) failed.
+19/10/2020 06:08:05 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:11:02 PM - INFO - Zip extracted
+19/10/2020 06:11:03 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:11:05 PM - INFO - Authentication (password) failed.
+19/10/2020 06:11:05 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:23:40 PM - INFO - Zip extracted
+19/10/2020 06:23:40 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:23:40 PM - INFO - Authentication (password) successful!
+19/10/2020 06:23:40 PM - INFO - Connection established with sftp server @192.168.1.64
+19/10/2020 06:23:41 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+19/10/2020 06:23:41 PM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
+19/10/2020 06:23:41 PM - INFO - [chan 0] sftp session closed.
+19/10/2020 06:23:41 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:23:56 PM - INFO - Zip extracted
+19/10/2020 06:23:56 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:23:56 PM - INFO - Authentication (password) successful!
+19/10/2020 06:23:56 PM - INFO - Connection established with sftp server @192.168.1.64
+19/10/2020 06:23:57 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+19/10/2020 06:23:57 PM - INFO - [chan 0] sftp session closed.
+19/10/2020 06:24:26 PM - INFO - Zip extracted
+19/10/2020 06:24:26 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:24:28 PM - INFO - Authentication (password) failed.
+19/10/2020 06:24:28 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:26:51 PM - INFO - Zip extracted
+19/10/2020 06:26:51 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:26:55 PM - INFO - Authentication (password) failed.
+19/10/2020 06:26:55 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:27:03 PM - INFO - Zip extracted
+19/10/2020 06:27:03 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:27:07 PM - INFO - Authentication (password) failed.
+19/10/2020 06:27:07 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:28:24 PM - INFO - Zip extracted
+19/10/2020 06:28:24 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:28:26 PM - INFO - Authentication (password) failed.
+19/10/2020 06:28:26 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:29:29 PM - INFO - Zip extracted
+19/10/2020 06:29:29 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:29:33 PM - INFO - Authentication (password) failed.
+19/10/2020 06:29:33 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:29:53 PM - INFO - Zip extracted
+19/10/2020 06:29:53 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:29:55 PM - INFO - Authentication (password) failed.
+19/10/2020 06:29:55 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:30:50 PM - INFO - Zip extracted
+19/10/2020 06:30:50 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:30:52 PM - INFO - Authentication (password) failed.
+19/10/2020 06:30:52 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:33:58 PM - INFO - Zip extracted
+19/10/2020 06:33:58 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:34:02 PM - INFO - Authentication (password) failed.
+19/10/2020 06:34:02 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:34:22 PM - INFO - Zip extracted
+19/10/2020 06:34:23 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:34:26 PM - INFO - Authentication (password) failed.
+19/10/2020 06:34:26 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:36:21 PM - INFO - Zip extracted
+19/10/2020 06:36:21 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:36:23 PM - INFO - Authentication (password) failed.
+19/10/2020 06:36:23 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:36:44 PM - INFO - Zip extracted
+19/10/2020 06:36:44 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:36:46 PM - INFO - Authentication (password) failed.
+19/10/2020 06:36:46 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:37:01 PM - INFO - Zip extracted
+19/10/2020 06:37:01 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:37:05 PM - INFO - Authentication (password) failed.
+19/10/2020 06:37:05 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:37:19 PM - INFO - Zip extracted
+19/10/2020 06:37:20 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:37:22 PM - INFO - Authentication (password) failed.
+19/10/2020 06:37:22 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:37:55 PM - INFO - Zip extracted
+19/10/2020 06:37:55 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:37:59 PM - INFO - Authentication (password) failed.
+19/10/2020 06:37:59 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:40:02 PM - INFO - Zip extracted
+19/10/2020 06:40:03 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:40:07 PM - INFO - Authentication (password) failed.
+19/10/2020 06:40:07 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:40:26 PM - INFO - Zip extracted
+19/10/2020 06:40:26 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:40:30 PM - INFO - Authentication (password) failed.
+19/10/2020 06:40:30 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:42:23 PM - INFO - Zip extracted
+19/10/2020 06:42:23 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:42:25 PM - INFO - Authentication (password) failed.
+19/10/2020 06:42:25 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:42:52 PM - INFO - Zip extracted
+19/10/2020 06:42:52 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:42:54 PM - INFO - Authentication (password) failed.
+19/10/2020 06:42:54 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:43:13 PM - INFO - Zip extracted
+19/10/2020 06:43:14 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:43:18 PM - INFO - Authentication (password) failed.
+19/10/2020 06:43:18 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:45:11 PM - INFO - Zip extracted
+19/10/2020 06:45:11 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:45:15 PM - INFO - Authentication (password) failed.
+19/10/2020 06:45:15 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:49:41 PM - INFO - Zip extracted
+19/10/2020 06:49:41 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:49:43 PM - INFO - Authentication (password) failed.
+19/10/2020 06:49:43 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:50:11 PM - INFO - Zip extracted
+19/10/2020 06:50:11 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:50:13 PM - INFO - Authentication (password) failed.
+19/10/2020 06:50:13 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:50:35 PM - INFO - Zip extracted
+19/10/2020 06:50:35 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:50:37 PM - INFO - Authentication (password) failed.
+19/10/2020 06:50:37 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:50:48 PM - INFO - Zip extracted
+19/10/2020 06:50:48 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:50:52 PM - INFO - Authentication (password) failed.
+19/10/2020 06:50:52 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:50:59 PM - INFO - Zip extracted
+19/10/2020 06:50:59 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:51:03 PM - INFO - Authentication (password) failed.
+19/10/2020 06:51:03 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:51:52 PM - INFO - Zip extracted
+19/10/2020 06:51:52 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:51:54 PM - INFO - Authentication (password) failed.
+19/10/2020 06:51:54 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:52:32 PM - INFO - Zip extracted
+19/10/2020 06:52:32 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:52:36 PM - INFO - Authentication (password) failed.
+19/10/2020 06:52:36 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+19/10/2020 06:52:54 PM - INFO - Zip extracted
+19/10/2020 06:52:54 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+19/10/2020 06:52:58 PM - INFO - Authentication (password) failed.
+19/10/2020 06:52:58 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+20/10/2020 09:32:35 AM - INFO - Zip extracted
+20/10/2020 09:32:35 AM - ERROR - test.zip does not contain dumpfile.sql
+20/10/2020 09:33:49 AM - INFO - Zip extracted
+20/10/2020 09:33:49 AM - ERROR - test.zip does not contain dumpfile.sql
+20/10/2020 09:35:53 AM - INFO - Zip extracted
+20/10/2020 09:35:53 AM - ERROR - test.zip does not contain dumpfile.sql
+20/10/2020 09:37:40 AM - INFO - Zip extracted
+20/10/2020 09:37:40 AM - ERROR - test.zip does not contain dumpfile.sql
+20/10/2020 09:38:05 AM - INFO - Zip extracted
+20/10/2020 09:38:05 AM - ERROR - test.zip does not contain dumpfile.sql
+20/10/2020 09:38:18 AM - INFO - Zip extracted
+20/10/2020 09:38:18 AM - ERROR - test.zip does not contain dumpfile.sql
+20/10/2020 09:39:34 AM - INFO - Zip extracted
+20/10/2020 09:39:34 AM - ERROR - test.zip does not contain dumpfile.sql
+20/10/2020 09:39:42 AM - INFO - Zip extracted
+20/10/2020 09:39:42 AM - ERROR - test.zip does not contain dumpfile.sql
+20/10/2020 09:40:50 AM - INFO - Zip extracted
+20/10/2020 09:40:50 AM - CRITICAL - test.zip does not contain dumpfile.sql
+20/10/2020 05:45:01 PM - INFO - Zip extracted
+20/10/2020 05:45:01 PM - CRITICAL - test.zip does not contain dumpfile.sql
+20/10/2020 05:53:40 PM - INFO - Zip extracted
+20/10/2020 05:53:40 PM - CRITICAL - test.zip does not contain dumpfile.sql
+20/10/2020 05:53:51 PM - INFO - Zip extracted
+20/10/2020 05:53:51 PM - CRITICAL - test.zip does not contain dumpfile.sql
+20/10/2020 05:54:03 PM - INFO - Zip extracted
+20/10/2020 05:54:03 PM - CRITICAL - test.zip does not contain dumpfile.sql
+20/10/2020 05:54:04 PM - ERROR - Fail to compress (.tgz) "dumpfile.sql" file. TGZ file not created.
+20/10/2020 05:54:39 PM - INFO - Zip extracted
+20/10/2020 05:54:39 PM - CRITICAL - test.zip does not contain dumpfile.sql
+20/10/2020 05:54:39 PM - ERROR - Fail to compress (.tgz) "dumpfile.sql" file. TGZ file not created.
+20/10/2020 05:55:00 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+20/10/2020 05:56:38 PM - INFO - Zip extracted
+20/10/2020 05:56:38 PM - CRITICAL - test.zip does not contain dumpfile.sql
+20/10/2020 05:56:38 PM - ERROR - Fail to compress (.tgz) "dumpfile.sql" file. TGZ file not created.
+20/10/2020 05:56:59 PM - ERROR - Unknown error occured while sending tgz file to sftp server
+21/10/2020 06:03:38 PM - INFO - Zip extracted
+21/10/2020 06:03:51 PM - INFO - Zip extracted
+21/10/2020 06:04:13 PM - INFO - Zip extracted
+21/10/2020 06:04:13 PM - CRITICAL - test.zip does not contain dumpfile.sql
+21/10/2020 06:07:26 PM - INFO - Zip extracted
+21/10/2020 06:07:26 PM - CRITICAL - test.zip does not contain dumpfile.sql
+21/10/2020 06:08:32 PM - INFO - Zip extracted
+21/10/2020 06:13:32 PM - CRITICAL - test.zip does not contain dumpfile.sql
+21/10/2020 06:13:43 PM - INFO - Zip extracted
+21/10/2020 06:13:43 PM - CRITICAL - test.zip does not contain dumpfile.sql
+21/10/2020 06:13:46 PM - CRITICAL - test.zip does not contain dumpfile.sql
+21/10/2020 06:17:26 PM - INFO - Zip extracted
+21/10/2020 06:17:26 PM - CRITICAL - test.zip does not contain dumpfile.sql
+21/10/2020 06:18:30 PM - INFO - Zip extracted
+21/10/2020 06:18:30 PM - CRITICAL - test.zip does not contain dumpfile.sql
+21/10/2020 06:18:38 PM - INFO - Zip extracted
+21/10/2020 06:18:41 PM - CRITICAL - test.zip does not contain dumpfile.sql
+21/10/2020 06:22:53 PM - INFO - Zip extracted
+21/10/2020 06:22:53 PM - CRITICAL - test.zip does not contain dumpfile.sql
+21/10/2020 06:23:40 PM - INFO - Zip extracted
+21/10/2020 06:23:47 PM - CRITICAL - test.zip does not contain dumpfile.sql
+21/10/2020 06:23:50 PM - CRITICAL - test.zip does not contain dumpfile.sql
+21/10/2020 06:24:43 PM - INFO - Zip extracted
+21/10/2020 06:24:43 PM - CRITICAL - test.zip does not contain dumpfile.sql
+21/10/2020 06:25:52 PM - INFO - Zip extracted
+21/10/2020 06:25:52 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+21/10/2020 06:25:52 PM - INFO - Authentication (password) successful!
+21/10/2020 06:25:52 PM - INFO - Connection established with sftp server @192.168.1.64
+21/10/2020 06:25:53 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+21/10/2020 06:25:53 PM - INFO - [chan 0] sftp session closed.
+21/10/2020 06:26:47 PM - INFO - Zip extracted
+21/10/2020 06:26:47 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+21/10/2020 06:26:48 PM - INFO - Authentication (password) successful!
+21/10/2020 06:26:48 PM - INFO - Connection established with sftp server @192.168.1.64
+21/10/2020 06:26:48 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+21/10/2020 06:26:48 PM - INFO - [chan 0] sftp session closed.
+21/10/2020 06:30:32 PM - INFO - Zip extracted
+21/10/2020 06:30:32 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+21/10/2020 06:30:32 PM - INFO - Authentication (password) successful!
+21/10/2020 06:30:32 PM - INFO - Connection established with sftp server @192.168.1.64
+21/10/2020 06:30:33 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+21/10/2020 06:30:33 PM - INFO - [chan 0] sftp session closed.
+21/10/2020 06:30:33 PM - INFO - Done
+21/10/2020 06:30:46 PM - INFO - Zip extracted
+21/10/2020 06:30:46 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+21/10/2020 06:30:46 PM - INFO - Authentication (password) successful!
+21/10/2020 06:30:46 PM - INFO - Connection established with sftp server @192.168.1.64
+21/10/2020 06:30:47 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+21/10/2020 06:30:47 PM - INFO - [chan 0] sftp session closed.
