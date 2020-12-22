@@ -10,7 +10,7 @@
 
 import json
 import os
-import logging
+import re
 import smtplib
 import ssl
 from email.mime.multipart import MIMEMultipart
@@ -22,7 +22,7 @@ from email_validator import validate_email
 
 class EMail:
     """
-    A class to represent a ssh connection.
+    Class to manage a e-mail.
 
     Attributes
     ----------
@@ -54,12 +54,12 @@ class EMail:
         send e-mail via smtp server
     internal_server():
         send e-mail via internal server
-    send():
-        send e-mail
+    send_email():
+        send e-mail.
 
     """
 
-    def __init__(self, json_, logging_):
+    def __init__(self, json_, log):
 
         """
         Constructor to build the mail instance
@@ -76,7 +76,7 @@ class EMail:
         """
 
         self.server = None
-        self.logging = logging_
+        self.email_content = []
 
         # Authentification of sender email.
         auth_ = json_["auth"]
@@ -86,9 +86,15 @@ class EMail:
         title_ = json_["title"]
         # Array of all destination emails.
         dest_ = json_["dest"]
+
         # Get the mail external server IP.
         self.ip_server = json_["server"]["ip"]
-        self.content = ""
+
+        if not re.fullmatch("(\d{1,3}.){3}\d{1,3}", self.ip_server) and self.ip_server.split('.')[0] != "smtp":
+            self.ip_server = ""
+
+        # Get log object
+        self.log_email_matt = log
 
         try:
             # Try to cast port value from JSON to int.
@@ -96,105 +102,154 @@ class EMail:
         except ValueError:
             self.port = 465
             # If value is not supported, default port value is 465.
-            self.logging.warning(
-                "Email server port format not supported. \
-Default value is 465."
+            self.log_email_matt.warning(
+                "Getting email config",
+                "Email server port format not supported. Default value is 465."
             )
 
         if auth_["email"] == "":
-            self.logging.warning(
-                "Blank at the sending email \
-identifier in the conf file : \
+            self.log_email_matt.warning(
+                "Getting email config",
+                "Blank at the sending email identifier in the conf file : \
 example@ex.com. Email(s) not sent."
             )
-            self.content += "| Email | :exclamation: Error |\n"
 
         if auth_["password"] == "":
-            self.logging.warning(
-                "Blank at the sending email \
-password in the conf file. Email(s) not sent."
+            self.log_email_matt.warning(
+                "Getting email config",
+                "Blank at the sending email password in the conf file. \
+Email(s) not sent."
             )
-            self.content += "| Email | :exclamation: Error |\n"
 
         # If user did not input a correct format for attachment.
         if log_file_attached_ not in ("yes", "no", "y", "n"):
-            self.logging.warning(
+            log_file_attached_ = "yes"
+            self.log_email_matt.warning(
+                "Getting email config",
                 "Uncorrect value for attached log in conf file. Yes by default"
             )
-            log_file_attached_ = "yes"
 
         if title_ == "":
-            self.logging.warning(
-                "No title for email, 'Scripting System rapport' by default"
-            )
             # Default e-mail object.
             title_ = "Scripting System rapport"
+            self.log_email_matt.warning(
+                "Getting email config",
+                "No title for email, 'Scripting System rapport' by default"
+            )
+
 
         if len(dest_) == 0:
-            self.logging.warning("No destination emails !")
+            self.log_email_matt.warning(
+                "Getting email config",
+                "No destination emails !"
+                )
         else:
             for email_dest in dest_:
                 if not validate_email(email_dest):
-                    self.logging.warning(email_dest + " is not valid !")
+                    self.log_email_matt.warning(
+                        "Getting email config",
+                        email_dest + " is not valid !"
+                        )
                     dest_.remove(email_dest)
 
+        # Affect all values
         self.auth = auth_
         self.log_file_attached = log_file_attached_
         self.title = title_
         self.dest = dest_
-        # self.email_content = email_content_
 
-    def attachment(self, msg_):
+    def attachment(self, msg):
         """
         Attach log file to MIME message if user decided it.
 
         Parameter
         ---------
-        msg_: message object
+        msg: message object
             Message to attach file
 
         Return
         ------
-        msg_: message object
+        msg: message object
             Message with or not attached file
 
         """
         # If user wrote 'Yes' or 'Y' to attach file to e-mail.
-        if self.log_file_attached == "yes" or self.log_file_attached == "y":
+        if self.log_file_attached in ("yes", "y"):
             try:
-                log_filename = str(
-                    os.path.basename(
-                        logging.getLoggerClass().root.handlers[0].baseFilename
-                    )
-                )
+                # Get log filename. If this one change, no need to change its name there.
+                log_filename = self.log_email_matt.get_logfile()
+
+                # instance of MIMEBase and named as mime_instance
+                mime_instance = MIMEBase("application", "octet-stream")
+
                 with open(log_filename, "rb") as attachment:
-                    # instance of MIMEBase and named as mime_instance
-                    mime_instance = MIMEBase("application", "octet-stream")
 
                     # To change the payload into encoded form
-                    mime_instance.set_payload((attachment).read())
+                    mime_instance.set_payload(attachment.read())
 
                     # encode into base64
                     encoders.encode_base64(mime_instance)
 
                     # Change mail header to dispose attachment
                     mime_instance.add_header(
-                        "Content-Disposition", "attachment filename= " + log_filename
+                        "Content-Disposition",
+                        "attachment; filename= " + log_filename
                     )
 
                     # attach the instance 'mime_instance' to instance 'msg'
-                    msg_.attach(mime_instance)
-                    self.logging.info("Attachment is OK.")
-                    self.content += "| Attachment | :white_check_mark: OK |\n"
+                    msg.attach(mime_instance)
 
+                    self.log_email_matt.info("Attachment")
+
+            # Catching opening file exception.
             except EnvironmentError:
-                self.logging.warning(
-                    "Unknown error occured during mail \
-attachment loading. No attachment send with mails."
+                self.log_email_matt.warning(
+                    "Attachment",
+                    "Unknown error occured during mail attachment loading. \
+No attachment send with e-mails."
                 )
-                self.content += "| Attachment | :exclamation: Error |\n"
 
-        return msg_
+        return msg
+
+
+    def login(self):
+        """
+        Log-in mail server.
+
+        Parameters
+        ----------
+
+        Returns
+        -------
+        None.
+
+        """
+        try:
+            # Log-in to the sender e-mail.
+            self.server.login(self.auth["email"], self.auth["password"])
+
+        except smtplib.SMTPAuthenticationError:
+            self.log_email_matt.warning(
+                "Logging-in email server",
+                "The server did not accept the username/password combination. \
+E-mails not sent."
+            )
+
+        except smtplib.SMTPNotSupportedError:
+            self.log_email_matt.warning(
+                "Logging-in email server",
+                "The AUTH command is not supported by the server. \
+E-mails not sent."
+            )
+
+        # Another error
+        except smtplib.SMTPException:
+            self.log_email_matt.warning(
+                "Logging-in email server",
+                "Unknown error occured while logging-in to your mail account. \
+E-mail(s) not sent."
+            )
+
 
     def login_and_send(self):
         """
@@ -203,72 +258,78 @@ attachment loading. No attachment send with mails."
         Parameters
         ----------
 
-        Return
-        ------
+        Returns
+        -------
+        None.
 
         """
 
         try:
-            # Log-in to the sender e-mail.
-            self.server.login(self.auth["email"], self.auth["password"])
+            # Log-in e-mail server.
+            self.login()
 
             # Create a MIME message that will be send. Use MIME type to attach log file if needed.
             msg = MIMEMultipart()
+            
             # Subject of the send e-mail.
             msg["Subject"] = self.title
+            
             # Add text content to the mail.
-            msg.attach(MIMEText(self.content, "plain"))  # self.email_content
+            msg.attach(MIMEText(self.format_data(), "plain"))
+            
             # Attach log file to message if needed.
             msg = self.attachment(msg)
+            
             # Convert the MIME message into string to send it as a string
             # to all destination e-mails.
             self.server.sendmail(self.auth["email"], self.dest, msg.as_string())
 
-            # Close the server connection after using resources.
-            self.server.quit()
-
-            self.logging.info("Emails send.")
-            self.content += "| Sending e-mails | :white_check_mark: OK |\n"
-
-        # Auth error
-        except smtplib.SMTPAuthenticationError:
-            self.logging.warning(
-                "The server did not accept the username/password combination."
-            )
-            self.content += "| Sending e-mails | :exclamation: Error |\n"
+            self.log_email_matt.info("Sending e-mails")
 
         except smtplib.SMTPRecipientsRefused:
-            self.logging.warning("All recipients were refused. Nobody got the mail.")
-            self.content += "| Sending e-mails | :exclamation: Error |\n"
+            self.log_email_matt.warning(
+                "Sending e-mails",
+                "All recipients were refused. Nobody got the mail. \
+E-mail(s) not sent."
+                )
 
         except smtplib.SMTPSenderRefused:
-            self.logging.warning("The server didn’t accept the sending address.")
-            self.content += "| Sending e-mails | :exclamation: Error |\n"
+            self.log_email_matt.warning(
+                "Sending e-mails",
+                "The server did not accept the sending address(es). \
+E-mail(s) not sent."
+                )
 
         except smtplib.SMTPDataError:
-            self.logging.warning(
+            self.log_email_matt.warning(
+                "Sending e-mails",
                 "The server replied with an unexpected error code \
-                    (other than a refusal of a recipient)."
+(other than a refusal of a recipient).E-mail(s) not sent."
             )
-            self.content += "| Sending e-mails | :exclamation: Error |\n"
 
         # Another error
         except smtplib.SMTPException:
-            self.logging.warning(
-                "Unknown error occured while logging-in\
-                                 to your mail account. Email(s) not sent."
+            self.log_email_matt.warning(
+                "Sending e-mails",
+                "Unknown error occured while sending e-mails. \
+Email(s) not sent."
             )
-            self.content += "| Sending e-mails | :exclamation: Error |\n"
 
-    def email_server_smtp(self):
+        finally:
+            # Close the server connection after using resources.
+            self.server.quit();
+
+
+    def server_smtp(self):
         """
         Create a secure connection to SMTP server to send e-mails from external server.
 
         Parameters
         ----------
 
-        Return
-        ------
+        Returns
+        -------
+        None.
 
         """
 
@@ -289,8 +350,9 @@ attachment loading. No attachment send with mails."
         Parameters
         ----------
 
-        Return
-        ------
+        Returns
+        -------
+        None.
 
         """
 
@@ -303,27 +365,69 @@ attachment loading. No attachment send with mails."
                 "admin@localhost.com", ["raynaljulien70@gmail.com"], msg.as_string()
             )
 
-    def send(self):
+    def send_email(self):
         """
         If IP origin is empty, then send mail with internal server.
 
         Parameters
         ----------
 
-        Return
-        ------
+        Returns
+        -------
+        None.
 
         """
         if self.ip_server != "":
-            self.email_server_smtp()
+            self.server_smtp()
         else:
             self.internal_server()
 
 
+    def format_data(self):
+        """
+        Format data to be sent via e-mail.
+
+        Parameters
+        ----------
+
+        Returns
+        -------
+        formatted_data: string
+            formatted data ready to be sent.
+
+        """
+
+        formatted_data = ""
+        for line in self.email_content:
+            formatted_data += line + "\n"
+        return formatted_data
+
+
+    def add_content(self, message_type, message, time):
+        """
+        Add content to e-mail corps.
+
+        Parameters
+        ----------
+        message_type : string
+            INFO, ERROR ...
+        message : string
+            Message to print.
+        time: string (format %H:%M:%S)
+            Time info occured.
+
+        Returns
+        -------
+        None.
+
+        """
+        self.email_content.append(time + " - " + message_type + ": " + message)
+
+
 if __name__ == "__main__":
 
-    with open("conf.txt", "r") as json_config:
+    """with open("conf.txt", "r") as json_config:
         data = json.load(json_config)
         # data['email']['server']['ip'] = ''
         email = EMail(data["email"], logging, "")
-    email.send()
+    email.send()"""

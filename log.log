@@ -1,288 +1,195 @@
-19/10/2020 05:46:15 PM - INFO - Zip extracted
-19/10/2020 05:46:50 PM - INFO - Zip extracted
-19/10/2020 05:47:26 PM - INFO - Zip extracted
-19/10/2020 05:47:26 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 05:47:26 PM - INFO - Authentication (password) successful!
-19/10/2020 05:47:27 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-19/10/2020 05:47:27 PM - INFO - [chan 0] sftp session closed.
-19/10/2020 05:47:27 PM - INFO - Connection established with sftp server @192.168.1.64
-19/10/2020 05:48:28 PM - INFO - Zip extracted
-19/10/2020 05:48:28 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 05:48:28 PM - INFO - Authentication (password) successful!
-19/10/2020 05:48:29 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-19/10/2020 05:48:29 PM - INFO - [chan 0] sftp session closed.
-19/10/2020 05:48:29 PM - INFO - Connection established with sftp server @192.168.1.64
-19/10/2020 05:50:13 PM - INFO - Zip extracted
-19/10/2020 05:50:13 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 05:50:13 PM - INFO - Authentication (password) successful!
-19/10/2020 05:50:14 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-19/10/2020 05:50:14 PM - INFO - [chan 0] sftp session closed.
-19/10/2020 05:50:14 PM - INFO - Connection established with sftp server @192.168.1.64
-19/10/2020 05:51:07 PM - INFO - Zip extracted
-19/10/2020 05:51:07 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 05:51:07 PM - INFO - Authentication (password) successful!
-19/10/2020 05:51:07 PM - INFO - Connection established with sftp server @192.168.1.64
-19/10/2020 05:51:08 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-19/10/2020 05:51:08 PM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
-19/10/2020 05:51:08 PM - INFO - [chan 0] sftp session closed.
-19/10/2020 05:51:08 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 05:53:39 PM - INFO - Zip extracted
-19/10/2020 05:53:39 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 05:53:39 PM - INFO - Authentication (password) successful!
-19/10/2020 05:53:39 PM - INFO - Connection established with sftp server @192.168.1.64
-19/10/2020 05:53:40 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-19/10/2020 05:53:40 PM - INFO - [chan 0] sftp session closed.
-19/10/2020 05:56:25 PM - INFO - Zip extracted
-19/10/2020 05:56:25 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 05:56:27 PM - INFO - Authentication (password) failed.
-19/10/2020 05:56:27 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 05:57:45 PM - INFO - Zip extracted
-19/10/2020 05:57:45 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 05:57:47 PM - INFO - Authentication (password) failed.
-19/10/2020 05:57:47 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 05:59:01 PM - INFO - Zip extracted
-19/10/2020 05:59:01 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 05:59:01 PM - INFO - Authentication (password) successful!
-19/10/2020 05:59:01 PM - INFO - Connection established with sftp server @192.168.1.64
-19/10/2020 05:59:01 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-19/10/2020 05:59:01 PM - INFO - [chan 0] sftp session closed.
-19/10/2020 06:01:56 PM - INFO - Zip extracted
-19/10/2020 06:01:56 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:01:56 PM - INFO - Authentication (password) successful!
-19/10/2020 06:01:56 PM - INFO - Connection established with sftp server @192.168.1.64
-19/10/2020 06:01:57 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-19/10/2020 06:01:57 PM - INFO - [chan 0] sftp session closed.
-19/10/2020 06:02:38 PM - INFO - Zip extracted
-19/10/2020 06:02:39 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:02:41 PM - INFO - Authentication (password) failed.
-19/10/2020 06:02:41 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:02:53 PM - INFO - Zip extracted
-19/10/2020 06:02:54 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:02:56 PM - INFO - Authentication (password) failed.
-19/10/2020 06:02:56 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:03:36 PM - INFO - Zip extracted
-19/10/2020 06:03:36 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:03:40 PM - INFO - Authentication (password) failed.
-19/10/2020 06:03:40 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:04:17 PM - INFO - Zip extracted
-19/10/2020 06:04:17 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:04:19 PM - INFO - Authentication (password) failed.
-19/10/2020 06:04:19 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:08:01 PM - INFO - Zip extracted
-19/10/2020 06:08:01 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:08:05 PM - INFO - Authentication (password) failed.
-19/10/2020 06:08:05 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:11:02 PM - INFO - Zip extracted
-19/10/2020 06:11:03 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:11:05 PM - INFO - Authentication (password) failed.
-19/10/2020 06:11:05 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:23:40 PM - INFO - Zip extracted
-19/10/2020 06:23:40 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:23:40 PM - INFO - Authentication (password) successful!
-19/10/2020 06:23:40 PM - INFO - Connection established with sftp server @192.168.1.64
-19/10/2020 06:23:41 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-19/10/2020 06:23:41 PM - ERROR - Socket exception: Une connexion existante a dû être fermée par l’hôte distant (10054)
-19/10/2020 06:23:41 PM - INFO - [chan 0] sftp session closed.
-19/10/2020 06:23:41 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:23:56 PM - INFO - Zip extracted
-19/10/2020 06:23:56 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:23:56 PM - INFO - Authentication (password) successful!
-19/10/2020 06:23:56 PM - INFO - Connection established with sftp server @192.168.1.64
-19/10/2020 06:23:57 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-19/10/2020 06:23:57 PM - INFO - [chan 0] sftp session closed.
-19/10/2020 06:24:26 PM - INFO - Zip extracted
-19/10/2020 06:24:26 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:24:28 PM - INFO - Authentication (password) failed.
-19/10/2020 06:24:28 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:26:51 PM - INFO - Zip extracted
-19/10/2020 06:26:51 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:26:55 PM - INFO - Authentication (password) failed.
-19/10/2020 06:26:55 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:27:03 PM - INFO - Zip extracted
-19/10/2020 06:27:03 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:27:07 PM - INFO - Authentication (password) failed.
-19/10/2020 06:27:07 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:28:24 PM - INFO - Zip extracted
-19/10/2020 06:28:24 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:28:26 PM - INFO - Authentication (password) failed.
-19/10/2020 06:28:26 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:29:29 PM - INFO - Zip extracted
-19/10/2020 06:29:29 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:29:33 PM - INFO - Authentication (password) failed.
-19/10/2020 06:29:33 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:29:53 PM - INFO - Zip extracted
-19/10/2020 06:29:53 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:29:55 PM - INFO - Authentication (password) failed.
-19/10/2020 06:29:55 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:30:50 PM - INFO - Zip extracted
-19/10/2020 06:30:50 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:30:52 PM - INFO - Authentication (password) failed.
-19/10/2020 06:30:52 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:33:58 PM - INFO - Zip extracted
-19/10/2020 06:33:58 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:34:02 PM - INFO - Authentication (password) failed.
-19/10/2020 06:34:02 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:34:22 PM - INFO - Zip extracted
-19/10/2020 06:34:23 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:34:26 PM - INFO - Authentication (password) failed.
-19/10/2020 06:34:26 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:36:21 PM - INFO - Zip extracted
-19/10/2020 06:36:21 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:36:23 PM - INFO - Authentication (password) failed.
-19/10/2020 06:36:23 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:36:44 PM - INFO - Zip extracted
-19/10/2020 06:36:44 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:36:46 PM - INFO - Authentication (password) failed.
-19/10/2020 06:36:46 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:37:01 PM - INFO - Zip extracted
-19/10/2020 06:37:01 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:37:05 PM - INFO - Authentication (password) failed.
-19/10/2020 06:37:05 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:37:19 PM - INFO - Zip extracted
-19/10/2020 06:37:20 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:37:22 PM - INFO - Authentication (password) failed.
-19/10/2020 06:37:22 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:37:55 PM - INFO - Zip extracted
-19/10/2020 06:37:55 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:37:59 PM - INFO - Authentication (password) failed.
-19/10/2020 06:37:59 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:40:02 PM - INFO - Zip extracted
-19/10/2020 06:40:03 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:40:07 PM - INFO - Authentication (password) failed.
-19/10/2020 06:40:07 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:40:26 PM - INFO - Zip extracted
-19/10/2020 06:40:26 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:40:30 PM - INFO - Authentication (password) failed.
-19/10/2020 06:40:30 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:42:23 PM - INFO - Zip extracted
-19/10/2020 06:42:23 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:42:25 PM - INFO - Authentication (password) failed.
-19/10/2020 06:42:25 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:42:52 PM - INFO - Zip extracted
-19/10/2020 06:42:52 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:42:54 PM - INFO - Authentication (password) failed.
-19/10/2020 06:42:54 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:43:13 PM - INFO - Zip extracted
-19/10/2020 06:43:14 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:43:18 PM - INFO - Authentication (password) failed.
-19/10/2020 06:43:18 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:45:11 PM - INFO - Zip extracted
-19/10/2020 06:45:11 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:45:15 PM - INFO - Authentication (password) failed.
-19/10/2020 06:45:15 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:49:41 PM - INFO - Zip extracted
-19/10/2020 06:49:41 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:49:43 PM - INFO - Authentication (password) failed.
-19/10/2020 06:49:43 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:50:11 PM - INFO - Zip extracted
-19/10/2020 06:50:11 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:50:13 PM - INFO - Authentication (password) failed.
-19/10/2020 06:50:13 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:50:35 PM - INFO - Zip extracted
-19/10/2020 06:50:35 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:50:37 PM - INFO - Authentication (password) failed.
-19/10/2020 06:50:37 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:50:48 PM - INFO - Zip extracted
-19/10/2020 06:50:48 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:50:52 PM - INFO - Authentication (password) failed.
-19/10/2020 06:50:52 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:50:59 PM - INFO - Zip extracted
-19/10/2020 06:50:59 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:51:03 PM - INFO - Authentication (password) failed.
-19/10/2020 06:51:03 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:51:52 PM - INFO - Zip extracted
-19/10/2020 06:51:52 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:51:54 PM - INFO - Authentication (password) failed.
-19/10/2020 06:51:54 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:52:32 PM - INFO - Zip extracted
-19/10/2020 06:52:32 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:52:36 PM - INFO - Authentication (password) failed.
-19/10/2020 06:52:36 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-19/10/2020 06:52:54 PM - INFO - Zip extracted
-19/10/2020 06:52:54 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-19/10/2020 06:52:58 PM - INFO - Authentication (password) failed.
-19/10/2020 06:52:58 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-20/10/2020 09:32:35 AM - INFO - Zip extracted
-20/10/2020 09:32:35 AM - ERROR - test.zip does not contain dumpfile.sql
-20/10/2020 09:33:49 AM - INFO - Zip extracted
-20/10/2020 09:33:49 AM - ERROR - test.zip does not contain dumpfile.sql
-20/10/2020 09:35:53 AM - INFO - Zip extracted
-20/10/2020 09:35:53 AM - ERROR - test.zip does not contain dumpfile.sql
-20/10/2020 09:37:40 AM - INFO - Zip extracted
-20/10/2020 09:37:40 AM - ERROR - test.zip does not contain dumpfile.sql
-20/10/2020 09:38:05 AM - INFO - Zip extracted
-20/10/2020 09:38:05 AM - ERROR - test.zip does not contain dumpfile.sql
-20/10/2020 09:38:18 AM - INFO - Zip extracted
-20/10/2020 09:38:18 AM - ERROR - test.zip does not contain dumpfile.sql
-20/10/2020 09:39:34 AM - INFO - Zip extracted
-20/10/2020 09:39:34 AM - ERROR - test.zip does not contain dumpfile.sql
-20/10/2020 09:39:42 AM - INFO - Zip extracted
-20/10/2020 09:39:42 AM - ERROR - test.zip does not contain dumpfile.sql
-20/10/2020 09:40:50 AM - INFO - Zip extracted
-20/10/2020 09:40:50 AM - CRITICAL - test.zip does not contain dumpfile.sql
-20/10/2020 05:45:01 PM - INFO - Zip extracted
-20/10/2020 05:45:01 PM - CRITICAL - test.zip does not contain dumpfile.sql
-20/10/2020 05:53:40 PM - INFO - Zip extracted
-20/10/2020 05:53:40 PM - CRITICAL - test.zip does not contain dumpfile.sql
-20/10/2020 05:53:51 PM - INFO - Zip extracted
-20/10/2020 05:53:51 PM - CRITICAL - test.zip does not contain dumpfile.sql
-20/10/2020 05:54:03 PM - INFO - Zip extracted
-20/10/2020 05:54:03 PM - CRITICAL - test.zip does not contain dumpfile.sql
-20/10/2020 05:54:04 PM - ERROR - Fail to compress (.tgz) "dumpfile.sql" file. TGZ file not created.
-20/10/2020 05:54:39 PM - INFO - Zip extracted
-20/10/2020 05:54:39 PM - CRITICAL - test.zip does not contain dumpfile.sql
-20/10/2020 05:54:39 PM - ERROR - Fail to compress (.tgz) "dumpfile.sql" file. TGZ file not created.
-20/10/2020 05:55:00 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-20/10/2020 05:56:38 PM - INFO - Zip extracted
-20/10/2020 05:56:38 PM - CRITICAL - test.zip does not contain dumpfile.sql
-20/10/2020 05:56:38 PM - ERROR - Fail to compress (.tgz) "dumpfile.sql" file. TGZ file not created.
-20/10/2020 05:56:59 PM - ERROR - Unknown error occured while sending tgz file to sftp server
-21/10/2020 06:03:38 PM - INFO - Zip extracted
-21/10/2020 06:03:51 PM - INFO - Zip extracted
-21/10/2020 06:04:13 PM - INFO - Zip extracted
-21/10/2020 06:04:13 PM - CRITICAL - test.zip does not contain dumpfile.sql
-21/10/2020 06:07:26 PM - INFO - Zip extracted
-21/10/2020 06:07:26 PM - CRITICAL - test.zip does not contain dumpfile.sql
-21/10/2020 06:08:32 PM - INFO - Zip extracted
-21/10/2020 06:13:32 PM - CRITICAL - test.zip does not contain dumpfile.sql
-21/10/2020 06:13:43 PM - INFO - Zip extracted
-21/10/2020 06:13:43 PM - CRITICAL - test.zip does not contain dumpfile.sql
-21/10/2020 06:13:46 PM - CRITICAL - test.zip does not contain dumpfile.sql
-21/10/2020 06:17:26 PM - INFO - Zip extracted
-21/10/2020 06:17:26 PM - CRITICAL - test.zip does not contain dumpfile.sql
-21/10/2020 06:18:30 PM - INFO - Zip extracted
-21/10/2020 06:18:30 PM - CRITICAL - test.zip does not contain dumpfile.sql
-21/10/2020 06:18:38 PM - INFO - Zip extracted
-21/10/2020 06:18:41 PM - CRITICAL - test.zip does not contain dumpfile.sql
-21/10/2020 06:22:53 PM - INFO - Zip extracted
-21/10/2020 06:22:53 PM - CRITICAL - test.zip does not contain dumpfile.sql
-21/10/2020 06:23:40 PM - INFO - Zip extracted
-21/10/2020 06:23:47 PM - CRITICAL - test.zip does not contain dumpfile.sql
-21/10/2020 06:23:50 PM - CRITICAL - test.zip does not contain dumpfile.sql
-21/10/2020 06:24:43 PM - INFO - Zip extracted
-21/10/2020 06:24:43 PM - CRITICAL - test.zip does not contain dumpfile.sql
-21/10/2020 06:25:52 PM - INFO - Zip extracted
-21/10/2020 06:25:52 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-21/10/2020 06:25:52 PM - INFO - Authentication (password) successful!
-21/10/2020 06:25:52 PM - INFO - Connection established with sftp server @192.168.1.64
-21/10/2020 06:25:53 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-21/10/2020 06:25:53 PM - INFO - [chan 0] sftp session closed.
-21/10/2020 06:26:47 PM - INFO - Zip extracted
-21/10/2020 06:26:47 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-21/10/2020 06:26:48 PM - INFO - Authentication (password) successful!
-21/10/2020 06:26:48 PM - INFO - Connection established with sftp server @192.168.1.64
-21/10/2020 06:26:48 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-21/10/2020 06:26:48 PM - INFO - [chan 0] sftp session closed.
-21/10/2020 06:30:32 PM - INFO - Zip extracted
-21/10/2020 06:30:32 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-21/10/2020 06:30:32 PM - INFO - Authentication (password) successful!
-21/10/2020 06:30:32 PM - INFO - Connection established with sftp server @192.168.1.64
-21/10/2020 06:30:33 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-21/10/2020 06:30:33 PM - INFO - [chan 0] sftp session closed.
-21/10/2020 06:30:33 PM - INFO - Done
-21/10/2020 06:30:46 PM - INFO - Zip extracted
-21/10/2020 06:30:46 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
-21/10/2020 06:30:46 PM - INFO - Authentication (password) successful!
-21/10/2020 06:30:46 PM - INFO - Connection established with sftp server @192.168.1.64
-21/10/2020 06:30:47 PM - INFO - [chan 0] Opened sftp connection (server version 3)
-21/10/2020 06:30:47 PM - INFO - [chan 0] sftp session closed.
+22/12/2020 09:41:41 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 09:41:41 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 09:41:41 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 09:41:41 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 09:41:41 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 09:41:41 PM - ERROR - SFTP connection: Unknown SSH error occured.
+22/12/2020 09:41:41 PM - ERROR - SFTP archival: Connection to sftp is not done.
+22/12/2020 09:41:41 PM - INFO - Not done with 2 errors.
+22/12/2020 09:41:42 PM - INFO - Task: "Attachment" went smoothly.
+22/12/2020 09:41:43 PM - INFO - Task: "Sending e-mails" went smoothly.
+22/12/2020 09:41:53 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 09:41:53 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 09:41:53 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 09:41:53 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 09:41:53 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 09:41:53 PM - ERROR - SFTP connection: Unknown SSH error occured.
+22/12/2020 09:41:53 PM - ERROR - SFTP archival: Connection to sftp is not done.
+22/12/2020 09:41:53 PM - INFO - Not done with 2 errors.
+22/12/2020 09:41:54 PM - INFO - Task: "Attachment" went smoothly.
+22/12/2020 09:41:55 PM - INFO - Task: "Sending e-mails" went smoothly.
+22/12/2020 09:42:51 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 09:42:51 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 09:42:51 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 09:42:51 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 09:42:51 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 09:42:51 PM - ERROR - SFTP connection: Unknown SSH error occured.
+22/12/2020 09:42:51 PM - ERROR - SFTP archival: Connection to sftp is not done.
+22/12/2020 09:42:51 PM - INFO - Not done with 2 errors.
+22/12/2020 09:42:52 PM - INFO - Task: "Attachment" went smoothly.
+22/12/2020 09:42:53 PM - INFO - Task: "Sending e-mails" went smoothly.
+22/12/2020 09:48:33 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 09:48:33 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 09:48:33 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 09:48:33 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 09:48:33 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 09:48:33 PM - ERROR - SFTP connection: Unknown SSH error occured.
+22/12/2020 09:48:33 PM - ERROR - SFTP archival: Connection to sftp is not done.
+22/12/2020 09:48:33 PM - INFO - Not done with 2 errors.
+22/12/2020 09:48:36 PM - INFO - Task: "Attachment" went smoothly.
+22/12/2020 09:48:39 PM - INFO - Task: "Sending e-mails" went smoothly.
+22/12/2020 09:50:36 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 09:50:36 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 09:50:36 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 09:50:36 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 09:50:36 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 09:52:37 PM - ERROR - SFTP connection: Unknown SSH error occured.
+22/12/2020 09:52:43 PM - ERROR - SFTP archival: Connection to sftp is not done.
+22/12/2020 09:52:43 PM - INFO - Not done with 2 errors.
+22/12/2020 09:56:51 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 09:56:51 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 09:56:51 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 09:56:51 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 09:56:52 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 09:58:27 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 09:58:27 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 09:58:27 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 09:58:27 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 09:58:28 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 10:01:18 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 10:01:18 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 10:01:18 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 10:01:18 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 10:01:18 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 10:03:00 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 10:03:00 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 10:03:00 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 10:03:00 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 10:03:01 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 10:04:19 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 10:04:19 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 10:04:19 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 10:04:19 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 10:04:19 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 10:06:00 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 10:06:00 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 10:06:00 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 10:06:00 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 10:06:00 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 10:06:49 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 10:06:49 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 10:06:49 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 10:06:49 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 10:06:49 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 10:11:04 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 10:11:04 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 10:11:04 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 10:11:04 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 10:11:04 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 10:11:19 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 10:11:19 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 10:11:19 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 10:11:19 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 10:11:19 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 10:12:42 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 10:12:42 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 10:12:42 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 10:12:42 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 10:12:42 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 10:29:56 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 10:29:56 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 10:29:56 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 10:29:56 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 10:29:56 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 10:35:39 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 10:35:39 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 10:35:39 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 10:35:39 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 10:35:40 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 10:36:20 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 10:36:20 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 10:36:20 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 10:36:20 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 10:36:20 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 10:41:31 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 10:41:31 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 10:41:31 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 10:41:31 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 10:41:31 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 10:41:31 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+22/12/2020 10:41:31 PM - INFO - Authentication (password) successful!
+22/12/2020 10:41:31 PM - INFO - SFTP connection: Connection established with sftp server @192.168.43.94
+22/12/2020 10:41:32 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+22/12/2020 10:41:32 PM - INFO - Task: "SFTP archival" went smoothly.
+22/12/2020 10:41:32 PM - INFO - [chan 0] sftp session closed.
+22/12/2020 10:41:32 PM - INFO - Done
+22/12/2020 10:41:33 PM - INFO - Task: "Attachment" went smoothly.
+22/12/2020 10:41:34 PM - INFO - Task: "Sending e-mails" went smoothly.
+22/12/2020 10:41:41 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 10:41:41 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 10:41:41 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 10:41:41 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 10:41:42 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 10:41:42 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+22/12/2020 10:41:42 PM - INFO - Authentication (password) successful!
+22/12/2020 10:41:42 PM - INFO - SFTP connection: Connection established with sftp server @192.168.43.94
+22/12/2020 10:41:42 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+22/12/2020 10:41:42 PM - INFO - Task: "SFTP archival" went smoothly.
+22/12/2020 10:41:42 PM - INFO - [chan 0] sftp session closed.
+22/12/2020 10:41:42 PM - INFO - Done
+22/12/2020 10:41:43 PM - INFO - Task: "Attachment" went smoothly.
+22/12/2020 10:41:44 PM - INFO - Task: "Sending e-mails" went smoothly.
+22/12/2020 10:43:07 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 10:43:07 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 10:43:07 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 10:43:07 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 10:43:08 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 10:43:08 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+22/12/2020 10:43:08 PM - INFO - Authentication (password) successful!
+22/12/2020 10:43:08 PM - INFO - SFTP connection: Connection established with sftp server @192.168.43.94
+22/12/2020 10:43:08 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+22/12/2020 10:43:08 PM - INFO - Task: "SFTP archival" went smoothly.
+22/12/2020 10:43:08 PM - INFO - [chan 0] sftp session closed.
+22/12/2020 10:43:08 PM - INFO - Done
+22/12/2020 10:43:10 PM - INFO - Task: "Attachment" went smoothly.
+22/12/2020 10:43:10 PM - INFO - Task: "Sending e-mails" went smoothly.
+22/12/2020 10:47:53 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 10:47:53 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 10:47:53 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 10:47:53 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 10:47:53 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 10:47:53 PM - INFO - Connected (version 2.0, client OpenSSH_7.9p1)
+22/12/2020 10:47:53 PM - INFO - Authentication (password) successful!
+22/12/2020 10:47:53 PM - INFO - SFTP connection: Connection established with sftp server @192.168.43.94
+22/12/2020 10:47:54 PM - INFO - [chan 0] Opened sftp connection (server version 3)
+22/12/2020 10:47:54 PM - INFO - Task: "SFTP archival" went smoothly.
+22/12/2020 10:47:54 PM - INFO - [chan 0] sftp session closed.
+22/12/2020 10:47:54 PM - INFO - Done
+22/12/2020 10:47:56 PM - INFO - Task: "Attachment" went smoothly.
+22/12/2020 10:47:58 PM - INFO - Task: "Sending e-mails" went smoothly.
+22/12/2020 10:49:44 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 10:49:44 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 10:49:44 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 10:49:44 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 10:49:44 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 10:51:25 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 10:51:25 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 10:51:26 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 10:51:26 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 10:51:26 PM - INFO - Compare dates: Modification dates are differents.
+22/12/2020 10:51:47 PM - ERROR - SFTP connection: Unknow SSH error occured.
+22/12/2020 10:51:47 PM - ERROR - SFTP archival: Connection to sftp is not done.
+22/12/2020 10:51:47 PM - INFO - Not done with 2 errors.
+22/12/2020 10:51:49 PM - INFO - Task: "Attachment" went smoothly.
+22/12/2020 10:51:50 PM - INFO - Task: "Sending e-mails" went smoothly.
+22/12/2020 11:03:12 PM - INFO - Task: "JSON read" went smoothly.
+22/12/2020 11:03:12 PM - INFO - Task: "Request ZIP" went smoothly.
+22/12/2020 11:03:12 PM - INFO - Task: "ZIP extracted" went smoothly.
+22/12/2020 11:03:12 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+22/12/2020 11:03:33 PM - ERROR - SFTP connection: Unknow SSH error occured.
+22/12/2020 11:03:33 PM - ERROR - SFTP archival: Connection to sftp is not done.
+22/12/2020 11:03:33 PM - ERROR - Send to SFTP: Sending to SFTP server not done.
+22/12/2020 11:03:33 PM - ERROR - ACK: Checking ACK not done.
+22/12/2020 11:03:33 PM - INFO - Not done with 4 errors.
+22/12/2020 11:03:34 PM - INFO - Task: "Attachment" went smoothly.
+22/12/2020 11:03:35 PM - INFO - Task: "Sending e-mails" went smoothly.

@@ -9,14 +9,13 @@ Created on Mon Dec 21 11:37:28 2020
 #pylint: disable=R0915
 
 import io
+import string
 import zipfile
 import datetime
-import logging
 import os
 import json
 import urllib3
-from urllib3 import exceptions as e
-from e_mail import EMail
+from log_email_mattermost import LogEmailMattermost
 
 class ScriptingSystem:
 
@@ -56,9 +55,9 @@ class ScriptingSystem:
     """
 
 
-    def __init__(self, port_, config_, log_):
+    def __init__(self, port_, config_):
         """
-        initialize all variables needed from source to destination.
+        Initialize all variables needed from source to destination.
 
         Parameters
         ----------
@@ -71,43 +70,22 @@ class ScriptingSystem:
         # Port to connect to web server
         self.port = port_
 
-        # Zip file object
-        self.zfile = None
-
         # YYYYDDMM.tgz
         self.tgz_name = datetime.datetime.now().date().strftime("%Y%d%m") + ".tgz"
 
-        # Email object
-        self.email = None
-
-        # Content of Mattermost notification
-        self.content = "#### Activity results\n<!channel> please review activity.\n\
-| Activity   | Result state |\n|:-----------|:-------------|\n"
-        self.email_content = ""
-
-        """ Initialise logging """
-        logging.basicConfig(
-            # Log file
-            filename=log_,
-            # This is an error log
-            level=logging.ERROR,
-            # Log file writting format
-            format="%(asctime)s - %(levelname)s - %(message)s",
-            datefmt="%d/%m/%Y %I:%M:%S %p",
-            force=True,
-        )
-
-        self.logging = logging
-
         # Initialize to none all needed variables.
+
+        # Zip file object
+        self.zfile = None
+        # Zip name on web server.
         self.zip_name = None
         self.file_name = None
         self.ip_sftp = None
         self.user = None
         self.pswd = None
         self.time_to_save = None
-        self.notification = None
         self.send = None
+        self.log_email_matt = None
 
 
     def get_configuration(self):
@@ -117,19 +95,17 @@ class ScriptingSystem:
         Parameters
         ----------
 
-        Return
-        ------
-        boolean:
-            True if an error occured, else False.
+        Returns
+        -------
+        None.
 
         """
-        user_zip = ""
-        user_dump = ""
-        ip_ = ""
-        user_ = ""
-        pswd_ = ""
-        time_to_save_ = ""
-        notification_ = ""
+        user_zip = None
+        user_dump = None
+        ip_ = None
+        user_ = None
+        pswd_ = None
+        time_to_save_ = None
 
         try:
             # Try reading config file as a serialize data (JSON) to get specific parameters
@@ -140,86 +116,57 @@ class ScriptingSystem:
                 ip_ = data["sftp"]["ip"]
                 user_ = data["sftp"]["user"]
                 pswd_ = data["sftp"]["password"]
-                notification_ = data["notification"]
-                self.email = EMail(data["email"], logging, )
-                send_ = data["send-emails"].lower()
+
+                # Initialize logging object to manage logs, mattermost notification and e-mails.
+                # Set notification value (always, never or error)
+                self.log_email_matt = LogEmailMattermost(data['email'], data["notification"])
+
                 try:
-                    time_to_save_ = int(data["time-to-save"])
                     # Cast to int
+                    time_to_save_ = int(data["time-to-save"])
+
                 except ValueError:
                     time_to_save_ = 10
-                    logging.warning(
+                    self.log_email_matt.warning(
+                        "JSON read",
                         "Time to save value format is not supported. Default value is 10 days."
                     )
-        except EnvironmentError:
-            logging.error("Unknow error occured while conf.txt is getting decoded")
-            # Add message to log file
-            self.content += "| JSON read | :exclamation: Error |\n"
-            # Add row to Mattermost notification
-            self.email_content += "Error : JSON read.\n"
 
+        except EnvironmentError:
+            self.log_email_matt.error("JSON read")
+
+        # Check all entries and log infos.
         if user_dump == "":
-            logging.error("File name must not be blank in 'conf.txt'.")
-            # Add message to log file
-            self.content += "| JSON read | :exclamation: Error |\n"
-            # Add row to Mattermost notification
-            self.email_content += "Error : DUMP file in JSON must not be blank.\n"
+            self.log_email_matt.error("JSON read", "File name must not be blank in 'conf.txt'.")
 
         if user_zip == "":
-            logging.error("Zip name must not be blank in 'conf.txt'.")
-            self.content += "| JSON read | :exclamation: Error |\n"
-            self.email_content += "Error : ZIP file in JSON must not be blank.\n"
+            self.log_email_matt.error("JSON read", "Zip name must not be blank in 'conf.txt'.")
 
         if ip_ == "":
-            logging.error("SFTP server IP must not be blank in 'conf.txt'.")
-            self.content += "| JSON read | :exclamation: Error |\n"
-            self.email_content += "Error : SFTP server IP in JSON must not be blank.\n"
+            self.log_email_matt.error("JSON read", "SFTP server IP must not be blank in 'conf.txt'.")
 
         if user_ == "":
-            logging.error("SFTP server user must not be blank in 'conf.txt'.")
-            self.content += "| JSON read | :exclamation: Error |\n"
-            self.email_content += "Error : SFTP user in JSON must not be blank.\n"
+            self.log_email_matt.error("JSON read", "SFTP server user must not be blank in 'conf.txt'.")
 
         if pswd_ == "":
-            logging.error("SFTP server password must not be blank in 'conf.txt'.")
-            self.content += "| JSON read | :exclamation: Error |\n"
-            self.email_content += "Error : SFTP password in JSON must not be blank.\n"
+            self.log_email_matt.error("JSON read", "SFTP server password must not be blank in 'conf.txt'.")
 
-        if send_ not in ("yes", "y", "no", "n"):
-            send_ = "yes"
-            logging.warning("Sending email format not supported. Default value is Yes.")
-            self.content += "| JSON read | :exclamation: Error |\n"
-            self.email_content += "Warning : Send format in JSON not supported.\n"
-
-        if notification_ not in ("always", "never", "error"):
-            notification_ = "always"
-            logging.warning(
-                "Notifications keyword format not supported. Default value is always."
-            )
-            self.content += "| JSON read | :exclamation: Error |\n"
-            self.email_content += (
-                "Warning : Notification format in JSON not supported.\n"
-            )
-
+        # Add extension if there are not.
         if user_dump.find(".sql") == -1:
             user_dump = user_dump + ".sql"
         if user_zip.find(".zip") == -1:
             user_zip = user_zip + ".zip"
 
+        # Affect all values.
         self.zip_name = user_zip
         self.file_name = user_dump
         self.ip_sftp = ip_
         self.user = user_
         self.pswd = pswd_
         self.time_to_save = time_to_save_
-        self.notification = notification_
-        self.send = send_
 
-        if self.content.find("Error") == -1:
-            self.content += "| JSON read | :white_check_mark: OK |\n"
-            self.email_content += "Info : JSON read OK.\n"
-            return True
-        return False
+        if not self.log_email_matt.error_nb > 0:
+            self.log_email_matt.info('JSON read')
 
 
     def request_zip(self):
@@ -229,59 +176,78 @@ class ScriptingSystem:
         Parameters
         ----------
 
-        Return
-        ------
-        boolean:
-            True, if there was at least one error, else False.
+        Returns
+        -------
+        None.
 
         """
 
         # Create requester
         http = urllib3.PoolManager()
-        req = ""
+        req = None
+
         try:
+
+            # Create request type 'GET' to get zip file on http server
             url = "http://localhost:" + str(self.port) + "/" + self.zip_name
             req = http.request("GET", url)
-            # Create request type 'GET' to get zip file on http server
-            # Error on GET request => file not found
-            if req.status == 404:
-                raise e.ResponseError()
-            self.zfile = zipfile.ZipFile(io.BytesIO(req.data), "r")
+
             # Decode zip from bytes
-            self.content += "| Request zip | :white_check_mark: OK |\n"
-            self.email_content += "Info : ZIP request on HTTP OK.\n"
-            return False
+            self.zfile = zipfile.ZipFile(io.BytesIO(req.data), "r")
 
-        except e.HTTPError:
-            logging.error("Error 404 : zip file not found %s", url)
-            self.content += "| Request zip | :exclamation: Error |\n"
-            self.email_content += "Error : ZIP request on HTTP.\n"
-            return True
+            self.log_email_matt.info("Request ZIP")
+
+        except urllib3.exceptions.HTTPError:
+            self.log_email_matt.error("Request ZIP", 'HTTP error, check zip file on web server.')
+
+        except urllib3.exceptions.PoolError:
+            self.log_email_matt.error("Request ZIP", "Connection error, check your IP destination address.")
+
+        except urllib3.exceptions.ProtocolError:
+            self.log_email_matt.error("Request ZIP", "Connection refused, check your IP destination address.")
+
+        except urllib3.exceptions.RequestError:
+            self.log_email_matt.error("Request ZIP", "Request error, check your IP destination address.")
 
 
-    def get_date(self):
+        except urllib3.exceptions.TimeoutError:
+            self.log_email_matt.error("Request ZIP", 'Max try reach, check destination IP and ZIP file on server.')
+
+
+    def compare_date(self):
         """
-        Get last modified date of a specific file (name) and zip (zfile).
+        Get last modified date of file (name) and zip (zfile).
 
         Parameters
         ----------
 
-        Return
-        ------
-        date:
-            filename last modification date.
+        Returns
+        -------
+        boolean:
+            Return if file date is not the same than before - file has been changed today
 
         """
+
+        if self.zfile is not None:
+            return
+
         infos = self.zfile.infolist()
         i = 0
-        file_date_ = None
-        for i in enumerate(infos):
+        file_date = None
+        for i in range(len(infos)):
             if infos[i].filename == self.file_name:
-                file_date_ = datetime.datetime(*infos[i].date_time[0:3])
+                file_date = datetime.datetime(*infos[i].date_time[0:3])
 
-        if file_date_ is not None:
-            return file_date_.date()
-        return None
+        if file_date is not None:
+            same_date = file_date.date() == datetime.datetime.now().date()
+            if same_date == True:
+                self.log_email_matt.warning("Compare dates", "Modification dates are the same.")
+            else:
+                self.log_email_matt.info("Compare dates", "Modification dates are differents.")
+
+        return same_date
+
+        return False
 
 
     def extract_zip(self):
@@ -291,37 +257,29 @@ class ScriptingSystem:
         Parameters
         ----------
 
-        Return
-        ------
-        error: boolean
-            True if an error occured, else False.
+        Returns
+        -------
+        None.
 
         """
-        error = False
+
+        if self.zfile is None:
+            self.log_email_matt.error("ZIP extracted", "ZIP file does not exist.")
+            return
 
         try:
-            self.zfile.extractall()
-            logging.info("Zip extracted")
-            self.content += "| Extract zip | :white_check_mark: OK |\n"
-            self.email_content += "Info : Extracting ZIP OK.\n"
+                self.zfile.extractall()
+                self.log_email_matt.info("ZIP extracted")
 
         except zipfile.BadZipFile:
-            logging.error("Bad zip file")
-            self.content += "| Extract zip | :exclamation: Error |\n"
-            self.email_content += "Error : Extracting ZIP.\n"
-            error = True
+            self.log_email_matt.error("ZIP extracted", "Bad ZIP file. ZIP file not extracted.")
 
         except zipfile.LargeZipFile:
-            logging.error("ZIP file would require ZIP64 functionality but\
-that has not been enabled.")
-            self.content += "| Extract zip | :exclamation: Error |\n"
-            self.email_content += "Error : Extracting ZIP.\n"
-            error = True
+            self.log_email_matt.error("ZIP extracted", "ZIP file would require ZIP64 functionality but\
+that has not been enabled. ZIP file not extracted.")
 
         finally:
-            self.zfile.close()
-
-        return error
+                self.zfile.close()
 
 
     def zip_has_file(self):
@@ -331,17 +289,51 @@ that has not been enabled.")
         Parameters
         ----------
 
-        Return
-        ------
+        Returns
+        -------
         boolean:
             True if zip has file, else False.
 
         """
 
-        for info in self.zfile.infolist():
-            if info.filename == self.file_name:
-                return True
-        logging.critical("%s does not contain %s", self.zip_name, self.file_name)
+        if self.zfile is not None:
+            for info in self.zfile.infolist():
+                if info.filename == self.file_name:
+                    self.log_email_matt.info(
+                        "ZIP has file",
+                        self.zip_name + " contains " + self.file_name
+                        )
+                    return True
+                self.log_email_matt.error(
+                    "ZIP has file",
+                    self.zip_name + " does not contain " + self.file_name
+                    )
+        else:
+            # Raise all other errors, on the ground program will not process all other operations
+            self.log_email_matt.error(
+                "ZIP has file",
+                self.zip_name + " does not contain " + self.file_name
+                )
+            self.log_email_matt.error(
+                "Compress file",
+                'Fail to compress (.tgz) ' + self.file_name + ' file. TGZ file not created.',
+                )
+            self.log_email_matt.error(
+                "SFTP connection",
+                "Connection not launch with SFTP server."
+                )
+            self.log_email_matt.error(
+                "SFTP archival",
+                "SFTP archival not done."
+                )
+            self.log_email_matt.error(
+                "Send to SFTP",
+                "Sending to SFTP server not done."
+                )
+            self.log_email_matt.error(
+                "ACK",
+                "Checking ACK not done."
+                )
         return False
 
 
@@ -352,14 +344,11 @@ that has not been enabled.")
         Parameters
         ----------
 
-        Return
-        ------
-        error: boolean
-            If an error occured return True, else False.
+        Returns
+        -------
+        None.
 
         """
-
-        error = False
 
         err = os.system(
             'tar -czf "'
@@ -371,13 +360,33 @@ that has not been enabled.")
             + '"'
         )
         if err != 0:
-            logging.error(
-                'Fail to compress (.tgz) "%s" file. TGZ file not created.',
-                self.file_name
-            )
-            self.content += "| Compress zip | :exclamation: Error |\n"
-            error = True
+            self.log_email_matt.error(
+                "Compress file",
+                    'Fail to compress (.tgz) ' + self.file_name + ' file. TGZ file not created.',
+                )
         # Delete file name
-        if os.path.exists(self.file_name()):
+        if os.path.exists(self.file_name):
             os.remove(self.file_name)
-        return error
+
+
+    def clean(self, sftp):
+        """
+        Clean all the folder, by removing everything that has to be removed.
+
+        Parmeters
+        ---------
+        sftp: sftp object
+            client discussing with sftp server.
+
+        Returns
+        -------
+        None.
+
+        """
+
+        if os.path.exists(self.tgz_name):
+            os.remove(self.tgz_name)
+        if os.path.exists(self.file_name):
+            os.remove(self.file_name)
+
+        sftp.close()
