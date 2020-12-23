@@ -1,31 +1,25 @@
 {
-	"zip": "test",
-	"file": "dumpfile.sql",
+	"zip": "",
+	"file": "",
 	"time-to-save": "1",
-	"sftp" :
-		{ 
-			"ip": "192.168.43.94",
-			"user": "guest",
-			"password": "root"
+	"sftp": {
+		"ip": "",
+		"user": "",
+		"password": ""
+	},
+	"email": {
+		"send-emails": "yes",
+		"auth": {
+			"email": "",
+			"password": ""
 		},
-	"email":
-		{
-			"send-emails": "yes",
-			"auth":
-				{	
-					"email": "julien.raynal@yahoo.fr",
-					"password": "kTM8g8f8"
-				},
-			"server": 
-				{
-					"ip": "smtp.mail.yahoo.com",
-					"port": "465"
-				},
-			"log-file-attached": "yes",
-			"title": "Daily report",
-			"dest": [
-					"raynaljulien70@gmail.com"
-				]
+		"server": {
+			"ip": "",
+			"port": ""
 		},
-	"notification": "always"
+		"log-file-attached": "yes",
+		"title": "",
+		"dest": []
+	},
+	"notification": "error"
 }

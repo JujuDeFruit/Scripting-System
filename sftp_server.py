@@ -10,6 +10,7 @@ import datetime
 import os
 import pysftp
 
+
 class SFTPServer:
 
     """
@@ -17,18 +18,18 @@ class SFTPServer:
 
     Attributes
     ----------
-    config: string
-        configuration filename
-    port: int
-        port used to connect to web server
-    zfile: Zipfile object
-        zip file object to manage zip
-    tgz_name: string
-        name of tar.gz file
-    content: string
-        Mattermost notification content
-    email_content: string
-        email corps content
+    log_email_matt: LogEmailMattermost
+        Object to manage all logs.
+    time_to_save: int
+        Time in days to store data on server.
+    ip_sftp: string
+        IP of SFTP server.
+    user: string
+        Username of user to connect.
+    pswd: string
+        Passwaord to connect to user.
+    is_date_ok: boolean
+        Comparison of last modification date of dump file and today.
 
     Methods
     -------
@@ -38,6 +39,8 @@ class SFTPServer:
         Check and remove old tgz files depending on the time to save files.
     check_file_ack(tgz_name_):
         Check if sftp server has tgz file.
+    close():
+        Close sftp connection if this one is still opened.
 
     """
 
@@ -74,36 +77,28 @@ class SFTPServer:
             cnopts.hostkeys = None
             self.sftp = pysftp.Connection(
                 self.ip_sftp, username=self.user, password=self.pswd, cnopts=cnopts
-                )
+            )
 
             self.log_email_matt.info(
                 "SFTP connection",
-                "Connection established with sftp server @" + self.ip_sftp
-                )
+                "Connection established with sftp server @" + self.ip_sftp,
+            )
 
         except pysftp.ConnectionException:
-            self.log_email_matt.error(
-                "SFTP connection"
-                "Connection error occured."
-                )
+            self.log_email_matt.error("SFTP connection" "Connection error occured.")
 
         except pysftp.AuthenticationException:
             self.log_email_matt.error(
-                "SFTP connection",
-                "Authentication error occured."
-                )
+                "SFTP connection", "Authentication error occured."
+            )
 
         except pysftp.HostKeysException:
             self.log_email_matt.error(
-                "SFTP connection",
-                "Loading host keys error occured."
-                )
+                "SFTP connection", "Loading host keys error occured."
+            )
 
         except pysftp.SSHException:
-            self.log_email_matt.error(
-                "SFTP connection",
-                "Unknow SSH error occured."
-                )
+            self.log_email_matt.error("SFTP connection", "Unknow SSH error occured.")
 
     def send_to_sftp_server(self, tgz_name_):
         """
@@ -132,15 +127,11 @@ class SFTPServer:
                 path = "Local"
             else:
                 path = "Remote"
-            self.log_email_matt.error(
-                "Send to SFTP",
-                path + " path does not exists."
-                )
+            self.log_email_matt.error("Send to SFTP", path + " path does not exists.")
 
         finally:
             if self.sftp is not None:
                 self.close()
-
 
     def archival_check(self):
         """
@@ -165,8 +156,7 @@ class SFTPServer:
                 ).date()
                 for file in files:
                     date = datetime.datetime.strptime(
-                        file.replace(".tgz", ""),
-                        "%Y%d%m"
+                        file.replace(".tgz", ""), "%Y%d%m"
                     ).date()
                     if date < dead_line:
                         self.sftp.remove(file)
@@ -174,23 +164,15 @@ class SFTPServer:
 
             else:
                 self.log_email_matt.error(
-                    "SFTP archival",
-                    "Connection to sftp is not done."
-                    )
+                    "SFTP archival", "Connection to sftp is not done."
+                )
                 self.log_email_matt.error(
-                    "Send to SFTP",
-                    "Sending to SFTP server not done."
-                    )
-                self.log_email_matt.error(
-                    "ACK",
-                    "Checking ACK not done."
-                    )
+                    "Send to SFTP", "Sending to SFTP server not done."
+                )
+                self.log_email_matt.error("ACK", "Checking ACK not done.")
 
         except IOError:
-            self.log_email_matt.error(
-                "SFTP archival",
-                "Remote path does not exist."
-                )
+            self.log_email_matt.error("SFTP archival", "Remote path does not exist.")
 
         finally:
             if not self.is_date_ok and self.sftp is not None:
@@ -213,24 +195,18 @@ class SFTPServer:
 
         with pysftp.Connection(
                 self.ip_sftp, username=self.user, password=self.pswd
-        ) as sftp:
+                ) as sftp:
             files = sftp.listdir()
             for file in files:
                 if file == tgz_name_:
-                    self.log_email_matt.info(
-                        "ACK",
-                        "Tar file sent to sftp server."
-                    )
+                    self.log_email_matt.info("ACK", "Tar file sent to sftp server.")
                     return
-        self.log_email_matt.error(
-            "ACK",
-            "Unknown error occured"
-            )
+        self.log_email_matt.error("ACK", "Unknown error occured")
         self.close()
 
     def close(self):
         """
-        Destructor. Close sftp connection if this one is still opened.
+        Close sftp connection if this one is still opened.
 
         Parameters
         ----------

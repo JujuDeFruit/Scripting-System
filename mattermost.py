@@ -7,9 +7,11 @@ Mattermost notification managing
 @author: Julien Raynal
 """
 
-#pylint: disable=R0903
+# pylint: disable=R0903
+# pylint: disable=W0612
 
 import requests
+
 
 class Mattermost:
     """
@@ -17,27 +19,34 @@ class Mattermost:
 
     Attributes
     ----------
-    payload: dict
-        content of the notification
-    logging : log object
-        object to interact with log file
+    log_email_matt : log object
+        Object to manage all logs, log file, e-mail and mattermost notification.
     hooks : string
         url to send notification
+    mattermost_content: dict
+        content of the notification
 
     Methods
     -------
+    info(task):
+        Add a well progress task to notification.
+    error(task):
+        Add a well progress task to notification.
+    format_data():
+        Set data to mattermost format to be send as an array.
     send_mattermost_notification():
         send notification to mattermost TSE server.
 
     """
 
-
-    def __init__(self, send):
+    def __init__(self, logs):
         """
         Constructor. Initialize all attributes.
 
         Parameters
         ----------
+        logs: log object
+            Object to manage all logs, log file, e-mail and mattermost notification.
 
         Returns
         -------
@@ -45,20 +54,20 @@ class Mattermost:
 
         """
 
-        self.hooks = "https://chat.telecomste.fr/" + "hooks/" + "otnp6d3trpf3peo1gdinzq77gh"
+        self.log_email_matt = logs
+
+        self.hooks = (
+            "https://chat.telecomste.fr/" + "hooks/" + "otnp6d3trpf3peo1gdinzq77gh"
+        )
 
         # Initialize mattermost notification content.
         self.mattermost_content = {
             "tasks": [
                 " Progress             ",
-                ":--------------------------" # 25 dashes
-                ],
-            "state": [
-                " State              ",
-                ":-------------------"
-                ],
+                ":-------------------------------",  # 30 dashes
+            ],
+            "state": [" State              ", ":-------------------"],
         }
-
 
     def info(self, task):
         """
@@ -84,7 +93,6 @@ class Mattermost:
         # Add the state to states array
         self.mattermost_content["state"].append(" :white_check_mark: ")
 
-
     def error(self, task):
         """
         Add a well progress task to notification.
@@ -109,7 +117,6 @@ class Mattermost:
         # Add the state to states array
         self.mattermost_content["state"].append(" :no_entry:         ")
 
-
     def format_data(self):
         """
         Set data to mattermost format to be send as an array.
@@ -119,7 +126,8 @@ class Mattermost:
 
         Returns
         -------
-        String of formatted data.
+        formatted_data: string
+            String of formatted data.
 
         """
 
@@ -127,7 +135,13 @@ class Mattermost:
 
         # Spaces are already accounted when tasks are added.
         for i in range(len(self.mattermost_content["tasks"])):
-            formatted_data += "|" + self.mattermost_content['tasks'][i] + "|"+ self.mattermost_content['state'][i] + "|\n"
+            formatted_data += (
+                "|"
+                + self.mattermost_content["tasks"][i]
+                + "|"
+                + self.mattermost_content["state"][i]
+                + "|\n"
+            )
         return formatted_data
 
     def send_mattermost_notification(self):
@@ -157,32 +171,24 @@ class Mattermost:
             # Raise error if request was not accepted.
             req.raise_for_status()
 
-        except requests.ConnectionError:
-            self.logging.warning(
-                "Error occured during mattermost notification sending. \
-Notification not sent. Network error."
-                )
+        except requests.exceptions.ConnectionError:
+            self.log_email_matt.warning(
+                "Mattermost notification",
+                "Notification not sent. Connection error, please check\
+your mattermost chat is still runinng.",
+            )
 
         except requests.exceptions.HTTPError as err:
-            self.logging.warning(
-                "Error occured during mattermost notification sending. \
-Notification not sent. " + err.args[0]
+            self.log_email_matt.warning(
+                "Mattermost notification",
+                "Notification not sent. HTTP error code: " + err.args[0],
             )
 
         except requests.exceptions.Timeout:
-            self.logging.warning(
-                "Error occured during mattermost notification sending. \
-Notification not sent. Timeout."
+            self.log_email_matt.warning(
+                "Mattermost notification",
+                "Notification not sent. Timeout, please retry.",
             )
 
         except requests.exceptions.RequestException:
-            self.logging.warning(
-                "Error occured during mattermost notification sending. \
-Notification not sent. Unknown error."
-            )
-
-
-if __name__ == "__main__":
-
-    m = Mattermost()
-    m.send_mattermost_notification()
+            self.log_email_matt.warning("Mattermost notification", "Unknown error.")

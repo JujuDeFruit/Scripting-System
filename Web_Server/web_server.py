@@ -23,8 +23,9 @@ def launch():
     Parameters
     ----------
 
-    Return
-    ------
+    Returns
+    -------
+    None.
 
     """
 
@@ -37,7 +38,6 @@ def launch():
 
     except Exception:
         print("Error launching server web !")
-        raise Exception()
 
 
 def launch_web_server_as_a_service():
@@ -47,8 +47,9 @@ def launch_web_server_as_a_service():
     Parameters
     ----------
 
-    Return
-    ------
+    Returns
+    -------
+    None.
 
     """
 
@@ -65,8 +66,9 @@ def stop_web_server():
     Parameters
     ----------
 
-    Return
-    ------
+    Returns
+    -------
+    None.
 
     """
 
@@ -84,4 +86,5 @@ def stop_web_server():
 
 if __name__ == "__main__":
     launch_web_server_as_a_service()
+    # Kill server process before exit.
     atexit.register(stop_web_server)
