@@ -9,8 +9,8 @@ Created on Mon Dec 21 20:54:54 2020
 import os
 import logging
 from datetime import datetime
-from mattermost import Mattermost
-from e_mail import EMail
+from modules.mattermost import Mattermost
+from modules.e_mail import EMail
 
 
 class LogEmailMattermost:
@@ -105,6 +105,11 @@ class LogEmailMattermost:
         if email_config is not None:
             # Initialize e-mail object.
             self.email = EMail(email_config, self)
+            # If an error occured in the constructor of e-mail,
+            # then affect None to this variable to prevent default.
+            if self.email.critical_nb > 0:
+                self.email = None
+                return
 
             try:
                 self.send_emails = email_config["send-emails"].lower()
@@ -292,7 +297,6 @@ To be sure to have all keywords, please regenerate config file template.",
             if self.send_emails in ("yes", "y"):
                 self.email.send_email()
 
-        msg = "Done"
         if self.error_nb > 0 and self.warning_nb > 0:
             msg = (
                 "Not done with "
@@ -301,10 +305,12 @@ To be sure to have all keywords, please regenerate config file template.",
                 + str(self.warning_nb)
                 + " warnings."
             )
-        if self.error_nb > 0:
+        elif self.error_nb > 0:
             msg = "Not done with " + str(self.error_nb) + " errors."
-        if self.warning_nb > 0:
+        elif self.warning_nb > 0:
             msg = "Done with " + str(self.warning_nb) + " warnings."
+        else:
+            msg = "Done"
 
         if self.error_nb > 0:
             logging.error(msg)

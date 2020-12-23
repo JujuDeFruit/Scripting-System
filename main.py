@@ -5,8 +5,8 @@
 
 """
 
-from scripting_system import ScriptingSystem
-from sftp_server import SFTPServer
+from modules.scripting_system import ScriptingSystem
+from modules.sftp_server import SFTPServer
 
 
 def main():

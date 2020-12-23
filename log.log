@@ -477,3 +477,99 @@
 23/12/2020 05:08:45 PM - INFO - Task: "Attachment" went smoothly.
 23/12/2020 05:08:46 PM - INFO - Task: "Sending e-mails" went smoothly.
 23/12/2020 05:08:46 PM - ERROR - Not done with 8 errors.
+23/12/2020 05:45:08 PM - WARNING - Getting email config: Missing keyword 'server' in e-mail bracket in config file. To be sure to have all keywords, please regenerate config file template.
+23/12/2020 05:45:08 PM - INFO - Task: "JSON read" went smoothly.
+23/12/2020 05:45:08 PM - INFO - Task: "Request ZIP" went smoothly.
+23/12/2020 05:45:08 PM - INFO - Task: "ZIP extracted" went smoothly.
+23/12/2020 05:45:08 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+23/12/2020 05:45:09 PM - INFO - Compare dates: Modification dates are differents.
+23/12/2020 05:45:30 PM - ERROR - SFTP connection: Unknow SSH error occured.
+23/12/2020 05:45:30 PM - ERROR - SFTP archival: Connection to sftp is not done.
+23/12/2020 05:45:30 PM - ERROR - Send to SFTP: Sending to SFTP server not done.
+23/12/2020 05:45:30 PM - ERROR - ACK: Checking ACK not done.
+23/12/2020 05:46:36 PM - WARNING - Getting email config: Missing keyword 'server' in e-mail bracket in config file. To be sure to have all keywords, please regenerate config file template.
+23/12/2020 05:46:36 PM - INFO - Task: "JSON read" went smoothly.
+23/12/2020 05:46:36 PM - INFO - Task: "Request ZIP" went smoothly.
+23/12/2020 05:46:36 PM - INFO - Task: "ZIP extracted" went smoothly.
+23/12/2020 05:46:36 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+23/12/2020 05:46:36 PM - INFO - Compare dates: Modification dates are differents.
+23/12/2020 05:46:57 PM - ERROR - SFTP connection: Unknow SSH error occured.
+23/12/2020 05:46:57 PM - ERROR - SFTP archival: Connection to sftp is not done.
+23/12/2020 05:46:57 PM - ERROR - Send to SFTP: Sending to SFTP server not done.
+23/12/2020 05:46:57 PM - ERROR - ACK: Checking ACK not done.
+23/12/2020 05:47:44 PM - WARNING - Getting email config: Missing keyword 'server' in e-mail bracket in config file. To be sure to have all keywords, please regenerate config file template.
+23/12/2020 05:47:44 PM - INFO - Task: "JSON read" went smoothly.
+23/12/2020 05:47:44 PM - INFO - Task: "Request ZIP" went smoothly.
+23/12/2020 05:47:44 PM - INFO - Task: "ZIP extracted" went smoothly.
+23/12/2020 05:47:44 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+23/12/2020 05:47:44 PM - INFO - Compare dates: Modification dates are differents.
+23/12/2020 05:48:05 PM - ERROR - SFTP connection: Unknow SSH error occured.
+23/12/2020 05:48:05 PM - ERROR - SFTP archival: Connection to sftp is not done.
+23/12/2020 05:48:05 PM - ERROR - Send to SFTP: Sending to SFTP server not done.
+23/12/2020 05:48:05 PM - ERROR - ACK: Checking ACK not done.
+23/12/2020 05:51:15 PM - WARNING - Getting email config: Missing keyword 'server' in e-mail bracket in config file. To be sure to have all keywords, please regenerate config file template.
+23/12/2020 05:51:15 PM - INFO - Task: "JSON read" went smoothly.
+23/12/2020 05:51:15 PM - INFO - Task: "Request ZIP" went smoothly.
+23/12/2020 05:51:15 PM - INFO - Task: "ZIP extracted" went smoothly.
+23/12/2020 05:51:15 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+23/12/2020 05:51:15 PM - INFO - Compare dates: Modification dates are differents.
+23/12/2020 05:51:36 PM - ERROR - SFTP connection: Unknow SSH error occured.
+23/12/2020 05:51:36 PM - ERROR - SFTP archival: Connection to sftp is not done.
+23/12/2020 05:51:36 PM - ERROR - Send to SFTP: Sending to SFTP server not done.
+23/12/2020 05:51:36 PM - ERROR - ACK: Checking ACK not done.
+23/12/2020 06:00:56 PM - INFO - Task: "JSON read" went smoothly.
+23/12/2020 06:00:56 PM - INFO - Task: "Request ZIP" went smoothly.
+23/12/2020 06:00:56 PM - INFO - Task: "ZIP extracted" went smoothly.
+23/12/2020 06:00:56 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+23/12/2020 06:00:56 PM - INFO - Compare dates: Modification dates are differents.
+23/12/2020 06:01:17 PM - ERROR - SFTP connection: Unknow SSH error occured.
+23/12/2020 06:01:17 PM - ERROR - SFTP archival: Connection to sftp is not done.
+23/12/2020 06:01:17 PM - ERROR - Send to SFTP: Sending to SFTP server not done.
+23/12/2020 06:01:17 PM - ERROR - ACK: Checking ACK not done.
+23/12/2020 06:01:19 PM - INFO - Task: "Attachment" went smoothly.
+23/12/2020 06:01:20 PM - INFO - Task: "Sending e-mails" went smoothly.
+23/12/2020 06:01:20 PM - ERROR - Not done with 4 errors.
+23/12/2020 06:04:47 PM - WARNING - Getting email config: Missing keyword 'server' in e-mail bracket in config file. To be sure to have all keywords, please regenerate config file template.
+23/12/2020 06:08:00 PM - WARNING - Getting email config: Missing keyword 'server' in e-mail bracket in config file. To be sure to have all keywords, please regenerate config file template.
+23/12/2020 06:08:00 PM - INFO - Task: "JSON read" went smoothly.
+23/12/2020 06:08:00 PM - INFO - Task: "Request ZIP" went smoothly.
+23/12/2020 06:08:00 PM - INFO - Task: "ZIP extracted" went smoothly.
+23/12/2020 06:08:00 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+23/12/2020 06:08:00 PM - INFO - Compare dates: Modification dates are differents.
+23/12/2020 06:08:21 PM - ERROR - SFTP connection: Unknow SSH error occured.
+23/12/2020 06:08:21 PM - ERROR - SFTP archival: Connection to sftp is not done.
+23/12/2020 06:08:21 PM - ERROR - Send to SFTP: Sending to SFTP server not done.
+23/12/2020 06:08:21 PM - ERROR - ACK: Checking ACK not done.
+23/12/2020 06:09:46 PM - WARNING - Getting email config: Missing keyword 'server' in e-mail bracket in config file. To be sure to have all keywords, please regenerate config file template.
+23/12/2020 06:12:51 PM - WARNING - Getting email config: Missing keyword 'server' in e-mail bracket in config file. To be sure to have all keywords, please regenerate config file template.
+23/12/2020 06:12:51 PM - INFO - Task: "JSON read" went smoothly.
+23/12/2020 06:12:51 PM - INFO - Task: "Request ZIP" went smoothly.
+23/12/2020 06:12:51 PM - INFO - Task: "ZIP extracted" went smoothly.
+23/12/2020 06:12:51 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+23/12/2020 06:12:51 PM - INFO - Compare dates: Modification dates are differents.
+23/12/2020 06:13:12 PM - ERROR - SFTP connection: Unknow SSH error occured.
+23/12/2020 06:13:12 PM - ERROR - SFTP archival: Connection to sftp is not done.
+23/12/2020 06:13:12 PM - ERROR - Send to SFTP: Sending to SFTP server not done.
+23/12/2020 06:13:12 PM - ERROR - ACK: Checking ACK not done.
+23/12/2020 06:13:12 PM - ERROR - Done with 1 warnings.
+23/12/2020 06:16:05 PM - WARNING - Getting email config: Missing keyword 'server' in e-mail bracket in config file. To be sure to have all keywords, please regenerate config file template.
+23/12/2020 06:16:05 PM - INFO - Task: "JSON read" went smoothly.
+23/12/2020 06:16:05 PM - INFO - Task: "Request ZIP" went smoothly.
+23/12/2020 06:16:05 PM - INFO - Task: "ZIP extracted" went smoothly.
+23/12/2020 06:16:05 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+23/12/2020 06:16:05 PM - INFO - Compare dates: Modification dates are differents.
+23/12/2020 06:16:26 PM - ERROR - SFTP connection: Unknow SSH error occured.
+23/12/2020 06:16:26 PM - ERROR - SFTP archival: Connection to sftp is not done.
+23/12/2020 06:16:26 PM - ERROR - Send to SFTP: Sending to SFTP server not done.
+23/12/2020 06:16:26 PM - ERROR - ACK: Checking ACK not done.
+23/12/2020 06:17:38 PM - WARNING - Getting email config: Missing keyword 'server' in e-mail bracket in config file. To be sure to have all keywords, please regenerate config file template.
+23/12/2020 06:17:38 PM - INFO - Task: "JSON read" went smoothly.
+23/12/2020 06:17:38 PM - INFO - Task: "Request ZIP" went smoothly.
+23/12/2020 06:17:38 PM - INFO - Task: "ZIP extracted" went smoothly.
+23/12/2020 06:17:38 PM - INFO - ZIP has file: test.zip contains dumpfile.sql
+23/12/2020 06:17:38 PM - INFO - Compare dates: Modification dates are differents.
+23/12/2020 06:17:59 PM - ERROR - SFTP connection: Unknow SSH error occured.
+23/12/2020 06:17:59 PM - ERROR - SFTP archival: Connection to sftp is not done.
+23/12/2020 06:17:59 PM - ERROR - Send to SFTP: Sending to SFTP server not done.
+23/12/2020 06:17:59 PM - ERROR - ACK: Checking ACK not done.
+23/12/2020 06:17:59 PM - ERROR - Not done with 4 errors and 1 warnings.

@@ -15,7 +15,7 @@ import datetime
 import os
 import json
 import urllib3
-from log_email_mattermost import LogEmailMattermost
+from modules.log_email_mattermost import LogEmailMattermost
 
 
 class ScriptingSystem:

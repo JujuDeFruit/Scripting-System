@@ -29,6 +29,9 @@ class EMail:
         Secured connection to server.
     email_content: array of strings
         Content of sent e-mail. Each line of array is a new line in e-mail.
+    critical_nb: int
+        Number of critical occured while processing. It is like a boolean,
+        on the ground program quit when encounter at least on critical.
     log_email_matt : LogEmailMattermost
         Object to interact with all logs.
     ip_server : string
@@ -84,6 +87,8 @@ class EMail:
         self.server = None
         self.email_content = []
 
+        self.critical_nb = 0
+
         # Get log object
         self.log_email_matt = log
 
@@ -108,6 +113,7 @@ class EMail:
                 "E-mail config need value. It must not be blank. \
 Please regenerate config file template.",
             )
+            self.critical_nb += 1
             return
 
         except KeyError as err:
@@ -118,6 +124,7 @@ Please regenerate config file template.",
                 + "' in e-mail bracket in config file. \
 To be sure to have all keywords, please regenerate config file template.",
             )
+            self.critical_nb += 1
             return
 
         if (
@@ -451,6 +458,7 @@ No attachment send with e-mails.",
         None.
 
         """
+
         if self.ip_server != "":
             self.smtp_server()
         else:
