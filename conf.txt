@@ -14,7 +14,7 @@
 			"auth":
 				{	
 					"email": "julien.raynal@yahoo.fr",
-					"password": "kTM8g8f8"
+					"password": ""
 				},
 			"server": 
 				{
