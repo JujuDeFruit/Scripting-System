@@ -3,11 +3,7 @@
 	"file": "dumpfile",
 	"time-to-save": "1",
 	"sftp" :
-<<<<<<< HEAD
-		{ 
-=======
 		{
->>>>>>> refs/remotes/origin/dev_Julien
 			"ip": "78.121.71.100",
 			"user": "inforx",
 			"password": "TseTse-2021"
