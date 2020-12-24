@@ -8,7 +8,7 @@ Created on Wed Dec 23 17:18:02 2020
 """
 import os
 import json
-from modules.log_email_mattermost import LogEmailMattermost
+from log_email_mattermost import LogEmailMattermost
 
 data = {
     "zip": "",
