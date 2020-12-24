@@ -165,8 +165,8 @@ class ScriptingSystem:
         except json.JSONDecodeError:
             self.log_email_matt.critical(
                 "JSON read",
-                "Config file need value. It must not be blank. \
-Please regenerate config file template.",
+                "Config file need correct values. \
+There must be JSON compile error(s) in config file.",
             )
             self.critical_nb += 1
             return

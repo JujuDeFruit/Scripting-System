@@ -80,7 +80,6 @@ class LogEmailMattermost:
             # Log file writting format
             format="%(asctime)s - %(levelname)s - %(message)s",
             datefmt="%d/%m/%Y %I:%M:%S %p",
-            force=True,
         )
 
         self.mattermost = None

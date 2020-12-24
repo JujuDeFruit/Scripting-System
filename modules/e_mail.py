@@ -110,8 +110,8 @@ class EMail:
         except json.JSONDecodeError:
             self.log_email_matt.warning(
                 "Getting email config",
-                "E-mail config need value. It must not be blank. \
-Please regenerate config file template.",
+                "E-mail config need correct values. There must be \
+compilation errors in e-mail section in config file."
             )
             self.critical_nb += 1
             return

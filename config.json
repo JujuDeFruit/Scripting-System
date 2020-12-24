@@ -16,7 +16,10 @@
 					"email": "julien.raynal@yahoo.fr",
 					"password": "kTM8g8f8"
 				},
-
+			"server":
+				{
+					"ip"
+				}
 			"log-file-attached": "yes",
 			"title": "Daily report",
 			"dest": [
