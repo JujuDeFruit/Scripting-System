@@ -149,18 +149,22 @@ class SFTPServer:
         try:
             if self.sftp is not None:
                 # Current directory.
-                files = self.sftp.listdir(".")
+                files = self.sftp.listdir("TSE-INFORX")
                 dead_line = (
                     datetime.datetime.today()
                     - datetime.timedelta(days=self.time_to_save)
                 ).date()
                 for file in files:
-                    date = datetime.datetime.strptime(
-                        file.replace(".tgz", ""), "%Y%d%m"
-                    ).date()
-                    if date < dead_line:
-                        self.sftp.remove(file)
-                self.log_email_matt.info("SFTP archival")
+                    try:
+                        date = datetime.datetime.strptime(
+                            file.replace(".tgz", ""), "%Y%d%m"
+                            ).date()
+                        if date < dead_line:
+                            self.sftp.remove(file)
+                        self.log_email_matt.info("SFTP archival")
+
+                    except ValueError:
+                        pass
 
             else:
                 self.log_email_matt.error(

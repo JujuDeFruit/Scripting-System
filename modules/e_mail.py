@@ -346,14 +346,17 @@ Email(s) not sent.",
 
         """
 
-        # context = ssl.create_default_context()
-        with smtplib.SMTP("localhost") as server:
-            server.login("admin", "admin")
-            msg = MIMEMultipart()
-            msg["Subject"] = "Object"
-            server.sendmail(
-                "script@localhost.com", ["raynaljulien70@gmail.com"], msg.as_string()
-            )
+        try:
+            # context = ssl.create_default_context()
+            with smtplib.SMTP("localhost") as server:
+                server.login("admin", "admin")
+                msg = MIMEMultipart()
+                msg["Subject"] = "Object"
+                server.sendmail(
+                    "script@localhost.com", ["raynaljulien70@gmail.com"], msg.as_string()
+                )
+        except Exception:
+            pass
 
     def add_content(self, message_type, message, time):
         """

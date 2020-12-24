@@ -4,9 +4,9 @@
 	"time-to-save": "1",
 	"sftp" :
 		{ 
-			"ip": "192.168.43.94",
-			"user": "guest",
-			"password": "root"
+			"ip": "78.121.71.100",
+			"user": "inforx",
+			"password": "TseTse-2021"
 		},
 	"email":
 		{
@@ -14,12 +14,13 @@
 			"auth":
 				{	
 					"email": "julien.raynal@yahoo.fr",
-					"password": ""
+					"password": "kTM8g8f8"
 				},
 			"server":
 				{
-					"ip"
-				}
+					"ip": "smtp.mail.yahoo.com",
+					"port": "465"
+				},
 			"log-file-attached": "yes",
 			"title": "Daily report",
 			"dest": [
