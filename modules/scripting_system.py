@@ -455,7 +455,7 @@ that has not been enabled. ZIP file not extracted.",
         err = os.system(
             'tar -czf "'
             + os.getcwd()
-            + "\\"
+            + "/"
             + self.tgz_name
             + '" "'
             + self.file_name
