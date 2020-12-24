@@ -180,9 +180,9 @@ class SFTPServer:
         except IOError:
             self.log_email_matt.error("SFTP archival", "Remote path does not exist.")
 
-        """finally:
+        finally:
             if not self.is_date_ok and self.sftp is not None:
-                self.close()"""
+                self.close()
 
     def check_file_ack(self, tgz_name_):
         """
