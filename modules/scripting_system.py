@@ -472,8 +472,8 @@ that has not been enabled. ZIP file not extracted.",
             )
 
         # Delete file name
-        if os.path.exists(os.getcwd() + "\\" + self.file_name):
-            os.remove(os.getcwd() + "\\" + self.file_name)
+        if os.path.exists(os.getcwd() + "/" + self.file_name):
+            os.remove(os.getcwd() + "/" + self.file_name)
 
     def clean(self, sftp):
         """
@@ -490,11 +490,11 @@ that has not been enabled. ZIP file not extracted.",
 
         """
 
-        if os.path.exists(os.getcwd() + "\\" + self.tgz_name):
-            os.remove(os.getcwd() + "\\" + self.tgz_name)
+        if os.path.exists(os.getcwd() + "/" + self.tgz_name):
+            os.remove(os.getcwd() + "/" + self.tgz_name)
         for file in self.zfile.infolist():
-            if os.path.exists(os.getcwd() + "\\" + file.filename):
-                os.remove(os.getcwd() + "\\" + file.filename)
+            if os.path.exists(os.getcwd() + "/" + file.filename):
+                os.remove(os.getcwd() + "/" + file.filename)
 
         if sftp is not None:
             sftp.close()
