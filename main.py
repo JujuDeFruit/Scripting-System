@@ -54,7 +54,7 @@ def main():
 
         sftp.archival_check()
 
-        if True:#is_date_ok
+        if is_date_ok:
             sftp.send_to_sftp_server(script.tgz_name)
             sftp.check_file_ack(script.tgz_name)
 
