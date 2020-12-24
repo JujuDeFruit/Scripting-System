@@ -182,6 +182,14 @@ class SFTPServer:
 
         finally:
             if not self.is_date_ok and self.sftp is not None:
+                self.log_email_matt.info(
+                    "Send to SFTP", 
+                    "Sending to SFTP server not done because dates do not correspond."
+                )
+                self.log_email_matt.error(
+                    "ACK",
+                    "Checking ACK not done because dates do not correspond."
+                    )
                 self.close()
 
     def check_file_ack(self, tgz_name_):
