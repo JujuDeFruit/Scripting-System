@@ -33,7 +33,6 @@ def launch():
 
     try:
         my_server = socketserver.TCPServer(("", WEB_SERVER_PORT), handler_object)
-        print("http://localhost:" + str(WEB_SERVER_PORT) + " | OK")
         my_server.serve_forever()
 
     except Exception:
@@ -57,6 +56,7 @@ def launch_web_server_as_a_service():
     download_thread.start()
     # Launch web server as a service.
     os.system("python3 -m http.server " + str(WEB_SERVER_PORT))
+    print("http://localhost:" + str(WEB_SERVER_PORT) + " | OK")
 
 
 def stop_web_server():
