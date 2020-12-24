@@ -116,11 +116,13 @@ class SFTPServer:
         """
 
         try:
-            # upload file to /data/guest/upload on remote
-            self.sftp.put(tgz_name_)
-            os.remove(tgz_name_)
-
-            self.log_email_matt.info("Send to SFTP")
+            if self.sftp is not None:
+                # upload file to /data/guest/upload on remote
+                with self.sftp.cd("TSE-INFORX"):
+                    self.sftp.put(tgz_name_)
+                os.remove(tgz_name_)
+    
+                self.log_email_matt.info("Send to SFTP")
 
         except (IOError, OSError) as err:
             if err is OSError:
@@ -178,9 +180,9 @@ class SFTPServer:
         except IOError:
             self.log_email_matt.error("SFTP archival", "Remote path does not exist.")
 
-        finally:
+        """finally:
             if not self.is_date_ok and self.sftp is not None:
-                self.close()
+                self.close()"""
 
     def check_file_ack(self, tgz_name_):
         """
@@ -197,16 +199,48 @@ class SFTPServer:
 
         """
 
-        with pysftp.Connection(
-                self.ip_sftp, username=self.user, password=self.pswd
-                ) as sftp:
-            files = sftp.listdir()
-            for file in files:
-                if file == tgz_name_:
-                    self.log_email_matt.info("ACK", "Tar file sent to sftp server.")
-                    return
-        self.log_email_matt.error("ACK", "Unknown error occured")
-        self.close()
+        try:
+            cnopts = pysftp.CnOpts()
+            cnopts.hostkeys = None
+            with pysftp.Connection(
+                    self.ip_sftp,
+                    username=self.user,
+                    password=self.pswd,
+                    cnopts=cnopts
+                    ) as sftp:
+                with sftp.cd("TSE-INFORX"):
+                    files = sftp.listdir()
+                    for file in files:
+                        if file == tgz_name_:
+                            self.log_email_matt.info("ACK", "Tar file sent to sftp server.")
+                            return
+            self.log_email_matt.error("ACK", "Tar file is not on server.")
+            self.close()
+
+        except pysftp.ConnectionException:
+            self.log_email_matt.error("ACK" "Connection error occured.")
+
+        except pysftp.AuthenticationException:
+            self.log_email_matt.error(
+                "ACK", "Authentication error occured."
+            )
+
+        except pysftp.HostKeysException:
+            self.log_email_matt.error(
+                "ACK", "Loading host keys error occured."
+            )
+
+        except pysftp.SSHException:
+            self.log_email_matt.error(
+                "ACK",
+                "Unknow SSH error occured."
+                )
+
+        except IOError:
+            self.log_email_matt.error(
+                "ACK",
+                "Remote path does not exists."
+                )
 
     def close(self):
         """
