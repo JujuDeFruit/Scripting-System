@@ -1,10 +1,10 @@
 *.log
-config.json
+*.json
 
 __pycache__
 web_server/__pycache__
 modules/__pycache__
 
-web_server/test.zip
+web_server/myzip.zip
 
 hmailserver
