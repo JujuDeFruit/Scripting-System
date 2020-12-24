@@ -186,7 +186,7 @@ class SFTPServer:
                     "Send to SFTP", 
                     "Sending to SFTP server not done because dates do not correspond."
                 )
-                self.log_email_matt.error(
+                self.log_email_matt.info(
                     "ACK",
                     "Checking ACK not done because dates do not correspond."
                     )
