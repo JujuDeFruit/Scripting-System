@@ -1,0 +1,30 @@
+{
+	"zip": "test",
+	"file": "dumpfile",
+	"time-to-save": "1",
+	"sftp" :
+		{ 
+			"ip": "192.168.43.94",
+			"user": "guest",
+			"password": "root"
+		},
+	"email":
+		{
+			"send-emails": "yes",
+			"auth":
+				{	
+					"email": "julien.raynal@yahoo.fr",
+					"password": ""
+				},
+			"server":
+				{
+					"ip"
+				}
+			"log-file-attached": "yes",
+			"title": "Daily report",
+			"dest": [
+					"raynaljulien70@gmail.com"
+				]
+		},
+	"notification": "always"
+}
