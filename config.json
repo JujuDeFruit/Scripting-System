@@ -10,7 +10,7 @@
 	"email": {
 		"send-emails": "yes",
 		"auth": {
-			"email": "julien.raynal@yahoo.fr",
+			"email": "julilen.raynal@yahoo.fr",
 			"password": "kTM8g8f8"
 		},
 		"server": {
@@ -18,10 +18,17 @@
 			"port": "465"
 		},
 		"log-file-attached": "yes",
+<<<<<<< HEAD
 		"title": "Daily report",
 		"dest": [
 				"raynaljulien70@gmail.com"
 			]
+=======
+		"title": "My Daily report",
+		"dest": [
+			"raynaljulien70@gmail.com"
+		]
+>>>>>>> bc396170eace45cc98da15820e37beb19ee46abc
 	},
 	"notification": "error"
 }
