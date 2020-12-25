@@ -492,9 +492,10 @@ that has not been enabled. ZIP file not extracted.",
 
         if os.path.exists(os.getcwd() + "/" + self.tgz_name):
             os.remove(os.getcwd() + "/" + self.tgz_name)
-        for file in self.zfile.infolist():
-            if os.path.exists(os.getcwd() + "/" + file.filename):
-                os.remove(os.getcwd() + "/" + file.filename)
+        if self.zfile is not None:
+            for file in self.zfile.infolist():
+                if os.path.exists(os.getcwd() + "/" + file.filename):
+                    os.remove(os.getcwd() + "/" + file.filename)
 
         if sftp is not None:
             sftp.close()
