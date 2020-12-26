@@ -20,6 +20,25 @@ python3 -m pip --version
 python3 -m pip install email_validator
 python3 -m pip install pysftp
 
+# Configure rights on files
+folders=("/" "/modules" "/Web_Server")
+
+for path in ${folders[@]}
+do
+        for entrypy in "$PWD""$path"/*.py
+        do
+                sudo chmod 511 "$entrypy"
+        done
+        sudo chmod 511 "$PWD""$path"
+done
+
+for entrysh in "$PWD"/*.sh
+do
+        sudo chmod 511 "$entrysh"
+done
+
+sudo chmod 777 "$PWD""/config.json" 
+
 # Create crontab and make archival automatic every day.
 { crontab -l -u $USER; echo "0 0 * * * cd $PWD; python3 main.py"; } | crontab -u $USER -
 
