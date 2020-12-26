@@ -33,6 +33,8 @@ class SFTPServer:
 
     Methods
     -------
+    connect(action):
+        Connect to sftp server with ssh keys.
     send_to_sftp_server(tgz_name_):
         Send tgz file to sftp server.
     archival_check():
@@ -71,34 +73,81 @@ class SFTPServer:
         self.is_date_ok = is_date_ok
 
         self.sftp = None
+        self.sftp = self.connect("SFTP connection")
+
+    def connect(self, action):
+        """
+        Connect to sftp server by managing ssh keys.
+
+        Parameters
+        ----------
+        action: string
+            Current action written in logs (ACK or auth)
+
+        Returns
+        -------
+        Sftp server object.
+
+        """
+
+        cnopts = None
+        try:
+            cnopts = pysftp.CnOpts(knownhosts=pysftp.known_hosts())
+
+        except IOError:
+            # Cannot find known_hosts at standard place
+            self.log_email_matt.error(
+                "SFTP connection",
+                "Please be sure known_hosts file is under user/.ssh folder."
+                )
+
+        host_keys = None
+        if cnopts is not None:
+            if cnopts.hostkeys.lookup(self.ip_sftp) is None:
+                host_keys = cnopts.hostkeys
+                cnopts.hostkeys = None
+
         # Initialize connection to sftp server
         try:
-            cnopts = pysftp.CnOpts()
-            cnopts.hostkeys = None
-            self.sftp = pysftp.Connection(
+            #cnopts.hostkeys = None
+            sftp = pysftp.Connection(
                 self.ip_sftp, username=self.user, password=self.pswd, cnopts=cnopts
             )
 
+            if host_keys != None:
+                host_keys.add(self.ip_sftp, sftp.remote_server_key.get_name(), sftp.remote_server_key)
+                host_keys.save(pysftp.known_hosts())
+
             self.log_email_matt.info(
-                "SFTP connection",
+                action,
                 "Connection established with sftp server @" + self.ip_sftp,
             )
+            return sftp
 
         except pysftp.ConnectionException:
-            self.log_email_matt.error("SFTP connection" "Connection error occured.")
+            self.log_email_matt.error(
+                action,
+                "Connection error occured."
+                )
 
         except pysftp.AuthenticationException:
             self.log_email_matt.error(
-                "SFTP connection", "Authentication error occured."
+                action,
+                "Authentication error occured."
             )
 
         except pysftp.HostKeysException:
             self.log_email_matt.error(
-                "SFTP connection", "Loading host keys error occured."
+                action,
+                "Loading host keys error occured."
             )
 
         except pysftp.SSHException:
-            self.log_email_matt.error("SFTP connection", "Unknow SSH error occured.")
+            self.log_email_matt.error(
+                action,
+                "Unknow SSH error occured."
+                )
+
 
     def send_to_sftp_server(self, tgz_name_):
         """
@@ -182,11 +231,11 @@ class SFTPServer:
 
         finally:
             if not self.is_date_ok and self.sftp is not None:
-                self.log_email_matt.info(
+                self.log_email_matt.warning(
                     "Send to SFTP", 
                     "Sending to SFTP server not done because dates do not correspond."
                 )
-                self.log_email_matt.info(
+                self.log_email_matt.warning(
                     "ACK",
                     "Checking ACK not done because dates do not correspond."
                     )
@@ -207,23 +256,17 @@ class SFTPServer:
 
         """
 
+        sftp = None
         try:
-            cnopts = pysftp.CnOpts()
-            cnopts.hostkeys = None
-            with pysftp.Connection(
-                    self.ip_sftp,
-                    username=self.user,
-                    password=self.pswd,
-                    cnopts=cnopts
-                    ) as sftp:
-                with sftp.cd("TSE-INFORX"):
-                    files = sftp.listdir()
-                    for file in files:
-                        if file == tgz_name_:
-                            self.log_email_matt.info("ACK", "Tar file sent to sftp server.")
-                            return
+            sftp = self.connect("ACK")
+            with sftp.cd("TSE-INFORX"):
+                files = sftp.listdir()
+                for file in files:
+                    if file == tgz_name_:
+                        self.log_email_matt.info("ACK", "Tar file sent to sftp server.")
+                        return
             self.log_email_matt.error("ACK", "Tar file is not on server.")
-            self.close()
+            sftp.close()
 
         except pysftp.ConnectionException:
             self.log_email_matt.error("ACK" "Connection error occured.")
@@ -249,6 +292,10 @@ class SFTPServer:
                 "ACK",
                 "Remote path does not exists."
                 )
+
+        finally:
+            if sftp is not None:
+                sftp.close()
 
     def close(self):
         """

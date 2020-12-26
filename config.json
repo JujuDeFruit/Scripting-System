@@ -3,9 +3,9 @@
 	"file": "dumpfile",
 	"time-to-save": "1",
 	"sftp": {
-		"ip": "78.121.71.100",
-		"user": "inforx",
-		"password": "TseTse-2021"
+		"ip": "192.168.1.188",
+		"user": "julien",
+		"password": "root"
 	},
 	"email": {
 		"send-emails": "yes",
@@ -23,5 +23,5 @@
 			"raynaljulien70@gmail.com"
 		]
 	},
-	"notification": "error"
+	"notification": "never"
 }

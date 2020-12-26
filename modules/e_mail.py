@@ -324,7 +324,7 @@ Email(s) not sent.",
         except TimeoutError:
             self.log_email_matt.warning(
                 "E-mail server connection",
-                "Timeout error, check e-mail server is not down. E-mails not sent.",
+                "Timeout error, check e-mail server is down. E-mails not sent.",
             )
 
         if self.server is not None:

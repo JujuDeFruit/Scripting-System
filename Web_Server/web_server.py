@@ -35,7 +35,8 @@ def launch():
         my_server = socketserver.TCPServer(("", WEB_SERVER_PORT), handler_object)
         my_server.serve_forever()
 
-    except Exception:
+    except Exception as err:
+        print(err)
         print("Error launching server web !")
 
 
@@ -54,10 +55,9 @@ def launch_web_server_as_a_service():
 
     download_thread = threading.Thread(target=launch, name="launcher")
     download_thread.start()
+    print("http://localhost:" + str(WEB_SERVER_PORT) + " | OK")
     # Launch web server as a service.
     os.system("python3 -m http.server " + str(WEB_SERVER_PORT))
-    print("http://localhost:" + str(WEB_SERVER_PORT) + " | OK")
-
 
 def stop_web_server():
     """
