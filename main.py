@@ -5,6 +5,7 @@
 
 """
 
+import os
 from modules.scripting_system import ScriptingSystem
 from modules.sftp_server import SFTPServer
 
@@ -23,7 +24,7 @@ def main():
     """
 
     script = None
-    script = ScriptingSystem(8000, "config.json")
+    script = ScriptingSystem(8000, os.getcwd() + "/config.json")
 
     script.get_configuration()
 

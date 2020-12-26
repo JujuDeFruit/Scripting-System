@@ -324,7 +324,7 @@ Email(s) not sent.",
         except TimeoutError:
             self.log_email_matt.warning(
                 "E-mail server connection",
-                "Timeout error, check e-mail server is not down. E-mails not sent.",
+                "Timeout error, check e-mail server is down. E-mails not sent.",
             )
 
         if self.server is not None:
@@ -346,14 +346,17 @@ Email(s) not sent.",
 
         """
 
-        # context = ssl.create_default_context()
-        with smtplib.SMTP("localhost") as server:
-            server.login("admin", "admin")
-            msg = MIMEMultipart()
-            msg["Subject"] = "Object"
-            server.sendmail(
-                "script@localhost.com", ["raynaljulien70@gmail.com"], msg.as_string()
-            )
+        try:
+            # context = ssl.create_default_context()
+            with smtplib.SMTP("localhost") as server:
+                server.login("admin", "admin")
+                msg = MIMEMultipart()
+                msg["Subject"] = "Object"
+                server.sendmail(
+                    "script@localhost.com", ["raynaljulien70@gmail.com"], msg.as_string()
+                )
+        except Exception:
+            pass
 
     def add_content(self, message_type, message, time):
         """

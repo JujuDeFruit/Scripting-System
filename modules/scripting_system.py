@@ -189,35 +189,35 @@ when you will regenerate template.",
             self.log_email_matt.error("JSON read")
 
         # Check all entries and log infos.
-        if user_dump == "":
+        if user_dump == "" or user_dump is None:
             self.log_email_matt.error(
                 "JSON read", "File name must not be blank in 'conf.txt'."
             )
 
-        if user_zip == "":
+        if user_zip == "" or user_zip is None:
             self.log_email_matt.error(
                 "JSON read", "Zip name must not be blank in 'conf.txt'."
             )
 
-        if ip_ == "":
+        if ip_ == "" or ip_ is None:
             self.log_email_matt.error(
                 "JSON read", "SFTP server IP must not be blank in 'conf.txt'."
             )
 
-        if user_ == "":
+        if user_ == "" or user_ is None:
             self.log_email_matt.error(
                 "JSON read", "SFTP server user must not be blank in 'conf.txt'."
             )
 
-        if pswd_ == "":
+        if pswd_ == "" or pswd_ is None:
             self.log_email_matt.error(
                 "JSON read", "SFTP server password must not be blank in 'conf.txt'."
             )
 
         # Add extension if there are not.
-        if user_dump.find(".sql") == -1:
+        if user_dump is not None and user_dump.find(".sql") == -1:
             user_dump = user_dump + ".sql"
-        if user_zip.find(".zip") == -1:
+        if user_zip is not None and user_zip.find(".zip") == -1:
             user_zip = user_zip + ".zip"
 
         # Affect all values.
@@ -309,9 +309,11 @@ when you will regenerate template.",
             self.zfile = zipfile.ZipFile(io.BytesIO(data), "r")
 
         except zipfile.BadZipFile:
+            self.zfile = None
             pass
 
         except zipfile.LargeZipFile:
+            self.zfile = None
             pass
 
     def compare_date(self):
@@ -372,7 +374,7 @@ when you will regenerate template.",
             return
 
         try:
-            self.zfile.extractall()
+            self.zfile.extractall(os.getcwd())
             self.log_email_matt.info("ZIP extracted")
 
         except zipfile.BadZipFile:
@@ -453,7 +455,7 @@ that has not been enabled. ZIP file not extracted.",
         err = os.system(
             'tar -czf "'
             + os.getcwd()
-            + "\\"
+            + "/"
             + self.tgz_name
             + '" "'
             + self.file_name
@@ -470,8 +472,8 @@ that has not been enabled. ZIP file not extracted.",
             )
 
         # Delete file name
-        if os.path.exists(self.file_name):
-            os.remove(self.file_name)
+        if os.path.exists(os.getcwd() + "/" + self.file_name):
+            os.remove(os.getcwd() + "/" + self.file_name)
 
     def clean(self, sftp):
         """
@@ -488,10 +490,12 @@ that has not been enabled. ZIP file not extracted.",
 
         """
 
-        if os.path.exists(self.tgz_name):
-            os.remove(self.tgz_name)
-        if os.path.exists(self.file_name):
-            os.remove(self.file_name)
+        if os.path.exists(os.getcwd() + "/" + self.tgz_name):
+            os.remove(os.getcwd() + "/" + self.tgz_name)
+        if self.zfile is not None:
+            for file in self.zfile.infolist():
+                if os.path.exists(os.getcwd() + "/" + file.filename):
+                    os.remove(os.getcwd() + "/" + file.filename)
 
         if sftp is not None:
             sftp.close()
