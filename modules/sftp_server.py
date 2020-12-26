@@ -104,16 +104,18 @@ class SFTPServer:
         host_keys = None
         if cnopts is not None:
             if cnopts.hostkeys.lookup(self.ip_sftp) is None:
+                # Load current known keys.
                 host_keys = cnopts.hostkeys
+                # Set parameter to accept connection
                 cnopts.hostkeys = None
 
         # Initialize connection to sftp server
         try:
-            #cnopts.hostkeys = None
             sftp = pysftp.Connection(
                 self.ip_sftp, username=self.user, password=self.pswd, cnopts=cnopts
             )
 
+            # If a new host key has been detected add this one to known_hosts
             if host_keys != None:
                 host_keys.add(self.ip_sftp, sftp.remote_server_key.get_name(), sftp.remote_server_key)
                 host_keys.save(pysftp.known_hosts())
