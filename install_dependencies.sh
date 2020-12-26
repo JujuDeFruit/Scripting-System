@@ -30,14 +30,14 @@ sudo find . -type d ! -name "." -exec chmod 511 {} \;
 sudo find . -type f -iname "config.json" -exec chmod 777 {} \;
 
 # Create crontab and make archival automatic every day.
-{ crontab -l -u $USER; echo "0 0 * * * cd $PWD; python3 main.py"; } | crontab -u $USER -
-
 # Configure crontab to call main.py everyday at midnight.
 # We suppose web server is launched 
 # and we do not need to launch it manually.
-# Each day at midnight (0 0) go to PWD (Scripting-System folder)
-# and execute main.py. It is written in good crontab.
+# Each day at 11 pm (0 23) go to PWD (Scripting-System folder)
+# and execute main.py. 
+{ crontab -l -u $USER; echo "0 23 * * * cd $PWD; python3 main.py"; } | crontab -u $USER -
 
+# Check crontab was created.
 if sudo test -f "/var/spool/cron/crontabs/$USER"
 then
 	echo "Successfully crontab created in /var/spool/cron/crontabs."
