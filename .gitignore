@@ -1,8 +1,5 @@
-*.log
-
 __pycache__
 web_server/__pycache__
 modules/__pycache__
 
 hmailserver
-docs
