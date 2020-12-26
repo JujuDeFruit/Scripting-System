@@ -11,20 +11,25 @@ import json
 from modules.log_email_mattermost import LogEmailMattermost
 
 data = {
-    "zip": "",
-    "file": "",
+    "zip": "my_zip",
+    "file": "dumpfile",
     "time-to-save": "1",
-    "sftp": {"ip": "", "user": "", "password": ""},
+    "sftp": {
+        "ip": "my_sftp_ip",
+        "user": "my_sftp_user",
+        "password": "my_sftp_password",
+    },
     "email": {
         "send-emails": "yes",
-        "auth": {"email": "", "password": ""},
-        "server": {"ip": "", "port": ""},
+        "auth": {"email": "exemple@exemple.com", "password": "my_password_for_mail"},
+        "server": {"ip": "smtp.mail.yahoo.com", "port": "465"},
         "log-file-attached": "yes",
-        "title": "",
-        "dest": [],
+        "title": "My Daily report",
+        "dest": ["first@email.com", "second@email.com"],
     },
-    "notification": "error",
+    "notification": "never",
 }
+
 
 if os.path.exists("config.json"):
     os.remove("config.json")
