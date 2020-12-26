@@ -32,11 +32,9 @@ do
         sudo chmod 511 "$PWD""$path"
 done
 
-for entrysh in "$PWD"/*.sh
-do
-        sudo chmod 511 "$entrysh"
-done
-
+# find all bash files in this folder and allox them just to be executed.
+sudo find "$PWD" -type f -iname "*.sh" -exec chmod 511 {} \;
+# Config file can be change by anyone.
 sudo chmod 777 "$PWD""/config.json" 
 
 # Create crontab and make archival automatic every day.
