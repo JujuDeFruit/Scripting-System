@@ -20,7 +20,8 @@
 		"log-file-attached": "yes",
 		"title": "My Daily report",
 		"dest": [
-			"raynaljulien70@gmail.com"
+			"first@email.com",
+			"second@email.com"
 		]
 	},
 	"notification": "never"
