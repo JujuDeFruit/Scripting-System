@@ -265,6 +265,10 @@ E-mail(s) not sent.",
 
             self.log_email_matt.info("Sending e-mails")
 
+            # Close the server connection after using resources.
+            if self.server is not None:
+                self.server.quit()
+
         except smtplib.SMTPRecipientsRefused:
             self.log_email_matt.warning(
                 "Sending e-mails",
@@ -286,6 +290,13 @@ E-mail(s) not sent.",
 (other than a refusal of a recipient).E-mail(s) not sent.",
             )
 
+        except smtplib.SMTPServerDisconnected:
+            self.log_email_matt.warning(
+                "Sending e-mails",
+                "Server disconnected, check at your IP e-mail server or \
+at your server. E-mails not sent.",
+            )
+
         # Another error
         except smtplib.SMTPException:
             self.log_email_matt.warning(
@@ -293,11 +304,6 @@ E-mail(s) not sent.",
                 "Unknown error occured while sending e-mails. \
 Email(s) not sent.",
             )
-
-        finally:
-            # Close the server connection after using resources.
-            if self.server is not None:
-                self.server.quit()
 
     def smtp_server(self):
         """
@@ -325,6 +331,13 @@ Email(s) not sent.",
             self.log_email_matt.warning(
                 "E-mail server connection",
                 "Timeout error, check e-mail server is down. E-mails not sent.",
+            )
+
+        except smtplib.SMTPServerDisconnected:
+            self.log_email_matt.warning(
+                "E-mail server connection",
+                "Server disconnected, check at your IP e-mail server or \
+at your server. E-mails not sent.",
             )
 
         if self.server is not None:
