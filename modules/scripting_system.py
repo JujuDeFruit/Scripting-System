@@ -308,13 +308,8 @@ when you will regenerate template.",
             # Decode zip from bytes
             self.zfile = zipfile.ZipFile(io.BytesIO(data), "r")
 
-        except zipfile.BadZipFile:
+        except (zipfile.BadZipFile, zipfile.LargeZipFile):
             self.zfile = None
-            pass
-
-        except zipfile.LargeZipFile:
-            self.zfile = None
-            pass
 
     def compare_date(self):
         """

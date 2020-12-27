@@ -5,6 +5,7 @@ Created on Mon Oct 19 12:11:28 2020
 @author: Julien
 """
 # pylint: disable=R0902
+# pylint: disable=R1702
 
 import datetime
 import os
@@ -98,8 +99,8 @@ class SFTPServer:
             # Cannot find known_hosts at standard place
             self.log_email_matt.error(
                 "SFTP connection",
-                "Please be sure known_hosts file is under user/.ssh folder."
-                )
+                "Please be sure known_hosts file is under user/.ssh folder.",
+            )
 
         host_keys = None
         if cnopts is not None:
@@ -116,8 +117,12 @@ class SFTPServer:
             )
 
             # If a new host key has been detected add this one to known_hosts
-            if host_keys != None:
-                host_keys.add(self.ip_sftp, sftp.remote_server_key.get_name(), sftp.remote_server_key)
+            if host_keys is not None:
+                host_keys.add(
+                    self.ip_sftp,
+                    sftp.remote_server_key.get_name(),
+                    sftp.remote_server_key,
+                )
                 host_keys.save(pysftp.known_hosts())
 
             self.log_email_matt.info(
@@ -127,29 +132,16 @@ class SFTPServer:
             return sftp
 
         except pysftp.ConnectionException:
-            self.log_email_matt.error(
-                action,
-                "Connection error occured."
-                )
+            self.log_email_matt.error(action, "Connection error occured.")
 
         except pysftp.AuthenticationException:
-            self.log_email_matt.error(
-                action,
-                "Authentication error occured."
-            )
+            self.log_email_matt.error(action, "Authentication error occured.")
 
         except pysftp.HostKeysException:
-            self.log_email_matt.error(
-                action,
-                "Loading host keys error occured."
-            )
+            self.log_email_matt.error(action, "Loading host keys error occured.")
 
         except pysftp.SSHException:
-            self.log_email_matt.error(
-                action,
-                "Unknow SSH error occured."
-                )
-
+            self.log_email_matt.error(action, "Unknow SSH error occured.")
 
     def send_to_sftp_server(self, tgz_name_):
         """
@@ -172,7 +164,7 @@ class SFTPServer:
                 with self.sftp.cd("TSE-INFORX"):
                     self.sftp.put(tgz_name_)
                 os.remove(tgz_name_)
-    
+
                 self.log_email_matt.info("Send to SFTP")
 
         except (IOError, OSError) as err:
@@ -211,7 +203,7 @@ class SFTPServer:
                     try:
                         date = datetime.datetime.strptime(
                             file.replace(".tgz", ""), "%Y%d%m"
-                            ).date()
+                        ).date()
                         if date < dead_line:
                             self.sftp.remove(file)
                         self.log_email_matt.info("SFTP archival")
@@ -234,13 +226,12 @@ class SFTPServer:
         finally:
             if not self.is_date_ok and self.sftp is not None:
                 self.log_email_matt.warning(
-                    "Send to SFTP", 
-                    "Sending to SFTP server not done because dates do not correspond."
+                    "Send to SFTP",
+                    "Sending to SFTP server not done because dates do not correspond.",
                 )
                 self.log_email_matt.warning(
-                    "ACK",
-                    "Checking ACK not done because dates do not correspond."
-                    )
+                    "ACK", "Checking ACK not done because dates do not correspond."
+                )
                 self.close()
 
     def check_file_ack(self, tgz_name_):
@@ -274,26 +265,16 @@ class SFTPServer:
             self.log_email_matt.error("ACK" "Connection error occured.")
 
         except pysftp.AuthenticationException:
-            self.log_email_matt.error(
-                "ACK", "Authentication error occured."
-            )
+            self.log_email_matt.error("ACK", "Authentication error occured.")
 
         except pysftp.HostKeysException:
-            self.log_email_matt.error(
-                "ACK", "Loading host keys error occured."
-            )
+            self.log_email_matt.error("ACK", "Loading host keys error occured.")
 
         except pysftp.SSHException:
-            self.log_email_matt.error(
-                "ACK",
-                "Unknow SSH error occured."
-                )
+            self.log_email_matt.error("ACK", "Unknow SSH error occured.")
 
         except IOError:
-            self.log_email_matt.error(
-                "ACK",
-                "Remote path does not exists."
-                )
+            self.log_email_matt.error("ACK", "Remote path does not exists.")
 
         finally:
             if sftp is not None:
