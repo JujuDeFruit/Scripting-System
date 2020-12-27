@@ -28,6 +28,8 @@ sudo find . -type f -iname "*.py" -exec chmod 511 {} \;
 sudo find . -type d ! -name "." -exec chmod 511 {} \;
 # Config file can be change by anyone.
 sudo find . -type f -iname "config.json" -exec chmod 777 {} \;
+# Log file can be read only.
+sudo find . -type f -iname "log.log" -exec chmod 744 {} \;
 
 # Create crontab and make archival automatic every day.
 # Configure crontab to call main.py everyday at midnight.
