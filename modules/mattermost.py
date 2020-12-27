@@ -19,7 +19,7 @@ class Mattermost:
 
     Attributes
     ----------
-    log_email_matt : log object
+    log_email_matt : LogEmailMattermost
         Object to manage all logs, log file, e-mail and mattermost notification.
     hooks : string
         url to send notification
