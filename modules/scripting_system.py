@@ -191,27 +191,27 @@ when you will regenerate template.",
         # Check all entries and log infos.
         if user_dump == "" or user_dump is None:
             self.log_email_matt.error(
-                "JSON read", "File name must not be blank in 'conf.txt'."
+                "JSON read", "File name must not be blank in 'config.json'."
             )
 
         if user_zip == "" or user_zip is None:
             self.log_email_matt.error(
-                "JSON read", "Zip name must not be blank in 'conf.txt'."
+                "JSON read", "Zip name must not be blank in 'config.json'."
             )
 
         if ip_ == "" or ip_ is None:
             self.log_email_matt.error(
-                "JSON read", "SFTP server IP must not be blank in 'conf.txt'."
+                "JSON read", "SFTP server IP must not be blank in 'config.json'."
             )
 
         if user_ == "" or user_ is None:
             self.log_email_matt.error(
-                "JSON read", "SFTP server user must not be blank in 'conf.txt'."
+                "JSON read", "SFTP server user must not be blank in 'config.json'."
             )
 
         if pswd_ == "" or pswd_ is None:
             self.log_email_matt.error(
-                "JSON read", "SFTP server password must not be blank in 'conf.txt'."
+                "JSON read", "SFTP server password must not be blank in 'config.json'."
             )
 
         # Add extension if there are not.
