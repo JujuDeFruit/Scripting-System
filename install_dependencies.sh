@@ -19,6 +19,9 @@ python3 -m pip --version
 
 python3 -m pip install email_validator
 python3 -m pip install pysftp
+python3 -m pip install smtplib
+python3 -m pip install urllib3
+python3 -m pip install zipfile
 
 # Configure rights on files
 # Find all python, bash files and folders in this folder 
