@@ -6,6 +6,9 @@
 
 python3 --version
 
+# Upgrade python3 with the last version.
+sudo apt-get install --upgrade python3
+
 # Install Pip if it is not installed yet.
 # Pip is a dependencies manager. It simplifies libraries imports.
 sudo apt-get install python3-pip
