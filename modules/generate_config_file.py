@@ -8,7 +8,6 @@ Created on Wed Dec 23 17:18:02 2020
 """
 import os
 import json
-from modules.log_email_mattermost import LogEmailMattermost
 
 data = {
     "zip": "my_zip",
@@ -33,10 +32,9 @@ data = {
 
 if os.path.exists("config.json"):
     os.remove("config.json")
-
 try:
     with open("config.json", "w") as config:
         json.dump(data, config, indent="\t")
+    print("Configuration file regenerated successfully.")
 except EnvironmentError:
-    log = LogEmailMattermost()
-    log.error("Generating config file")
+    print("Configuration file not created")

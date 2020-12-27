@@ -3,15 +3,15 @@
 	"file": "dumpfile",
 	"time-to-save": "1",
 	"sftp": {
-		"ip": "192.168.1.188",
-		"user": "julien",
-		"password": "root"
+		"ip": "my_sftp_ip",
+		"user": "my_sftp_user",
+		"password": "my_sftp_password"
 	},
 	"email": {
 		"send-emails": "yes",
 		"auth": {
-			"email": "julien.raynal@yahoo.fr",
-			"password": "kTM8g8f8"
+			"email": "exemple@exemple.com",
+			"password": "my_password_for_mail"
 		},
 		"server": {
 			"ip": "smtp.mail.yahoo.com",
@@ -20,7 +20,8 @@
 		"log-file-attached": "yes",
 		"title": "My Daily report",
 		"dest": [
-			"raynaljulien70@gmail.com"
+			"first@email.com",
+			"second@email.com"
 		]
 	},
 	"notification": "never"
