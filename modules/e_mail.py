@@ -77,10 +77,8 @@ class EMail:
         ----------
         json_: dict
             Contains all e-mail parameters in config file.
-        logging_: log object
-            log object to write in log file.
-        port: int
-            Port used to connect to e-mail server.
+        log: LogEmailMattermost
+            Object to manage all logs.
 
         """
 
