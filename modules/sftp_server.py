@@ -48,7 +48,7 @@ class SFTPServer:
 
     def __init__(self, sftp_server_infos, logging, is_date_ok):
         """
-        Contructor of the SFTPServer class
+        Constructor of the SFTPServer class
 
         Parameters
         ----------
