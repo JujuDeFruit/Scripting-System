@@ -27,7 +27,7 @@ class SFTPServer:
     user: string
         Username of user to connect.
     pswd: string
-        Passwaord to connect to user.
+        Password to connect to user.
     is_date_ok: boolean
         Comparison of last modification date of dump file and today.
 
